@@ -1,0 +1,198 @@
+The target system is: Linux -  - arm
+The host system is: Linux - 5.15.0-139-generic - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /home/ktw/Documents/tm2sdk-master/sysroots/x86_64-oesdk-linux/usr/bin/arm-oe-linux-gnueabi/arm-oe-linux-gnueabi-gcc 
+Build flags: ;;;-march=armv7-a;-mfloat-abi=softfp;-mfpu=neon;--sysroot=/home/ktw/Documents/tm2sdk-master/sysroots/armv7a-vfp-neon-oe-linux-gnueabi;--sysroot=/home/ktw/Documents/tm2sdk-master/sysroots/armv7a-vfp-neon-oe-linux-gnueabi;;;-march=armv7-a;-mfloat-abi=softfp;-mfpu=neon;--sysroot=/home/ktw/Documents/tm2sdk-master/sysroots/armv7a-vfp-neon-oe-linux-gnueabi;--sysroot=/home/ktw/Documents/tm2sdk-master/sysroots/armv7a-vfp-neon-oe-linux-gnueabi
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles/3.16.3/CompilerIdC/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_c03e5/fast && /usr/bin/make -f CMakeFiles/cmTC_c03e5.dir/build.make CMakeFiles/cmTC_c03e5.dir/build
+make[1]: Entering directory '/home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c03e5.dir/testCCompiler.c.o
+/home/ktw/Documents/tm2sdk-master/sysroots/x86_64-oesdk-linux/usr/bin/arm-oe-linux-gnueabi/arm-oe-linux-gnueabi-gcc --sysroot=/home/ktw/Documents/tm2sdk-master/sysroots/armv7a-vfp-neon-oe-linux-gnueabi   -march=armv7-a -mfloat-abi=softfp -mfpu=neon --sysroot=/home/ktw/Documents/tm2sdk-master/sysroots/armv7a-vfp-neon-oe-linux-gnueabi --sysroot=/home/ktw/Documents/tm2sdk-master/sysroots/armv7a-vfp-neon-oe-linux-gnueabi   -march=armv7-a -mfloat-abi=softfp -mfpu=neon --sysroot=/home/ktw/Documents/tm2sdk-master/sysroots/armv7a-vfp-neon-oe-linux-gnueabi --sysroot=/home/ktw/Documents/tm2sdk-master/sysroots/armv7a-vfp-neon-oe-linux-gnueabi    -o CMakeFiles/cmTC_c03e5.dir/testCCompiler.c.o   -c /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C static library libcmTC_c03e5.a
+/usr/bin/cmake -P CMakeFiles/cmTC_c03e5.dir/cmake_clean_target.cmake
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c03e5.dir/link.txt --verbose=1
+/home/ktw/Documents/tm2sdk-master/sysroots/x86_64-oesdk-linux/usr/bin/arm-oe-linux-gnueabi/arm-oe-linux-gnueabi-ar qc libcmTC_c03e5.a  CMakeFiles/cmTC_c03e5.dir/testCCompiler.c.o
+/home/ktw/Documents/tm2sdk-master/sysroots/x86_64-oesdk-linux/usr/bin/arm-oe-linux-gnueabi/arm-oe-linux-gnueabi-ranlib libcmTC_c03e5.a
+make[1]: Leaving directory '/home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles/CMakeTmp'
+
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_bab32/fast && /usr/bin/make -f CMakeFiles/cmTC_bab32.dir/build.make CMakeFiles/cmTC_bab32.dir/build
+make[1]: Entering directory '/home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_bab32.dir/CMakeCCompilerABI.c.o
+/home/ktw/Documents/tm2sdk-master/sysroots/x86_64-oesdk-linux/usr/bin/arm-oe-linux-gnueabi/arm-oe-linux-gnueabi-gcc --sysroot=/home/ktw/Documents/tm2sdk-master/sysroots/armv7a-vfp-neon-oe-linux-gnueabi   -march=armv7-a -mfloat-abi=softfp -mfpu=neon --sysroot=/home/ktw/Documents/tm2sdk-master/sysroots/armv7a-vfp-neon-oe-linux-gnueabi --sysroot=/home/ktw/Documents/tm2sdk-master/sysroots/armv7a-vfp-neon-oe-linux-gnueabi   -march=armv7-a -mfloat-abi=softfp -mfpu=neon --sysroot=/home/ktw/Documents/tm2sdk-master/sysroots/armv7a-vfp-neon-oe-linux-gnueabi --sysroot=/home/ktw/Documents/tm2sdk-master/sysroots/armv7a-vfp-neon-oe-linux-gnueabi    -v -o CMakeFiles/cmTC_bab32.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c
+Using built-in specs.
+COLLECT_GCC=/home/ktw/Documents/tm2sdk-master/sysroots/x86_64-oesdk-linux/usr/bin/arm-oe-linux-gnueabi/arm-oe-linux-gnueabi-gcc
+Target: arm-oe-linux-gnueabi
+Configured with: /home/p10255/work_view/KT_MDM9607_LA10_WORK/MDM9607_LA10/apps_proc/oe-core/build/tmp-glibc/work-shared/gcc-4.9.2-r0/gcc-4.9.2/configure --build=x86_64-linux --host=x86_64-oesdk-linux --target=arm-oe-linux-gnueabi --prefix=/usr/local/oecore-x86_64/sysroots/x86_64-oesdk-linux/usr --exec_prefix=/usr/local/oecore-x86_64/sysroots/x86_64-oesdk-linux/usr --bindir=/usr/local/oecore-x86_64/sysroots/x86_64-oesdk-linux/usr/bin/arm-oe-linux-gnueabi --sbindir=/usr/local/oecore-x86_64/sysroots/x86_64-oesdk-linux/usr/bin/arm-oe-linux-gnueabi --libexecdir=/usr/local/oecore-x86_64/sysroots/x86_64-oesdk-linux/usr/libexec/arm-oe-linux-gnueabi --datadir=/usr/local/oecore-x86_64/sysroots/x86_64-oesdk-linux/usr/share --sysconfdir=/usr/local/oecore-x86_64/sysroots/x86_64-oesdk-linux/etc --sharedstatedir=/usr/local/oecore-x86_64/sysroots/x86_64-oesdk-linux/com --localstatedir=/usr/local/oecore-x86_64/sysroots/x86_64-oesdk-linux/var --libdir=/usr/local/oecore-x86_64/sysroots/x86_64-oesdk-linux/usr/lib/arm-oe-linux-gnueabi --includedir=/usr/local/oecore-x86_64/sysroots/x86_64-oesdk-linux/usr/include --oldincludedir=/usr/local/oecore-x86_64/sysroots/x86_64-oesdk-linux/usr/include --infodir=/usr/local/oecore-x86_64/sysroots/x86_64-oesdk-linux/usr/share/info --mandir=/usr/local/oecore-x86_64/sysroots/x86_64-oesdk-linux/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/home/p10255/work_view/KT_MDM9607_LA10_WORK/MDM9607_LA10/apps_proc/oe-core/build/tmp-glibc/sysroots/x86_64-nativesdk-oesdk-linux --with-gnu-ld --enable-shared --enable-languages=c,c++ --enable-threads=posix --enable-multilib --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=arm-oe-linux-gnueabi- --without-local-prefix --enable-target-optspace --enable-lto --enable-libssp --disable-bootstrap --disable-libmudflap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --with-gxx-include-dir=/not/exist/usr/include/c++/4.9.2 --with-build-time-tools=/home/p10255/work_view/KT_MDM9607_LA10_WORK/MDM9607_LA10/apps_proc/oe-core/build/tmp-glibc/sysroots/x86_64-linux/usr/arm-oe-linux-gnueabi/bin --with-sysroot=/not/exist --with-build-sysroot=/home/p10255/work_view/KT_MDM9607_LA10_WORK/MDM9607_LA10/apps_proc/oe-core/build/tmp-glibc/sysroots/mdm9607-perf --enable-poison-system-directories --with-mpfr=/home/p10255/work_view/KT_MDM9607_LA10_WORK/MDM9607_LA10/apps_proc/oe-core/build/tmp-glibc/sysroots/x86_64-nativesdk-oesdk-linux --with-mpc=/home/p10255/work_view/KT_MDM9607_LA10_WORK/MDM9607_LA10/apps_proc/oe-core/build/tmp-glibc/sysroots/x86_64-nativesdk-oesdk-linux --enable-nls
+Thread model: posix
+gcc version 4.9.2 (GCC) 
+COLLECT_GCC_OPTIONS='--sysroot=/home/ktw/Documents/tm2sdk-master/sysroots/armv7a-vfp-neon-oe-linux-gnueabi' '-march=armv7-a' '-mfloat-abi=softfp' '-mfpu=neon' '-march=armv7-a' '-mfloat-abi=softfp' '-mfpu=neon' '-v' '-o' 'CMakeFiles/cmTC_bab32.dir/CMakeCCompilerABI.c.o' '-c' '-mtls-dialect=gnu'
+ /home/ktw/Documents/tm2sdk-master/sysroots/x86_64-oesdk-linux/usr/bin/arm-oe-linux-gnueabi/../../libexec/arm-oe-linux-gnueabi/gcc/arm-oe-linux-gnueabi/4.9.2/cc1 -quiet -v -iprefix /home/ktw/Documents/tm2sdk-master/sysroots/x86_64-oesdk-linux/usr/bin/arm-oe-linux-gnueabi/../../lib/arm-oe-linux-gnueabi/gcc/arm-oe-linux-gnueabi/4.9.2/ -isysroot /home/ktw/Documents/tm2sdk-master/sysroots/armv7a-vfp-neon-oe-linux-gnueabi /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -march=armv7-a -mfloat-abi=softfp -mfpu=neon -march=armv7-a -mfloat-abi=softfp -mfpu=neon -mtls-dialect=gnu -auxbase-strip CMakeFiles/cmTC_bab32.dir/CMakeCCompilerABI.c.o -version -o /tmp/ccFiybG2.s
+GNU C (GCC) version 4.9.2 (arm-oe-linux-gnueabi)
+	compiled by GNU C version 4.9.2, GMP version 6.0.0, MPFR version 3.1.2, MPC version 1.0.2
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/home/ktw/Documents/tm2sdk-master/sysroots/x86_64-oesdk-linux/usr/bin/arm-oe-linux-gnueabi/../../lib/arm-oe-linux-gnueabi/gcc/arm-oe-linux-gnueabi/4.9.2/../../../../../arm-oe-linux-gnueabi/include"
+ignoring duplicate directory "/home/ktw/Documents/tm2sdk-master/sysroots/x86_64-oesdk-linux/usr/bin/arm-oe-linux-gnueabi/../../lib/arm-oe-linux-gnueabi/gcc/../../../lib/arm-oe-linux-gnueabi/gcc/arm-oe-linux-gnueabi/4.9.2/include"
+ignoring nonexistent directory "/home/ktw/Documents/tm2sdk-master/sysroots/armv7a-vfp-neon-oe-linux-gnueabi/usr/lib/gcc/arm-oe-linux-gnueabi/4.9.2/include"
+ignoring nonexistent directory "/home/ktw/Documents/tm2sdk-master/sysroots/armv7a-vfp-neon-oe-linux-gnueabi/usr/local/include"
+ignoring duplicate directory "/home/ktw/Documents/tm2sdk-master/sysroots/x86_64-oesdk-linux/usr/bin/arm-oe-linux-gnueabi/../../lib/arm-oe-linux-gnueabi/gcc/../../../lib/arm-oe-linux-gnueabi/gcc/arm-oe-linux-gnueabi/4.9.2/include-fixed"
+ignoring nonexistent directory "/home/ktw/Documents/tm2sdk-master/sysroots/x86_64-oesdk-linux/usr/bin/arm-oe-linux-gnueabi/../../lib/arm-oe-linux-gnueabi/gcc/../../../lib/arm-oe-linux-gnueabi/gcc/arm-oe-linux-gnueabi/4.9.2/../../../../../arm-oe-linux-gnueabi/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /home/ktw/Documents/tm2sdk-master/sysroots/x86_64-oesdk-linux/usr/bin/arm-oe-linux-gnueabi/../../lib/arm-oe-linux-gnueabi/gcc/arm-oe-linux-gnueabi/4.9.2/include
+ /home/ktw/Documents/tm2sdk-master/sysroots/x86_64-oesdk-linux/usr/bin/arm-oe-linux-gnueabi/../../lib/arm-oe-linux-gnueabi/gcc/arm-oe-linux-gnueabi/4.9.2/include-fixed
+ /home/ktw/Documents/tm2sdk-master/sysroots/armv7a-vfp-neon-oe-linux-gnueabi/usr/include
+End of search list.
+GNU C (GCC) version 4.9.2 (arm-oe-linux-gnueabi)
+	compiled by GNU C version 4.9.2, GMP version 6.0.0, MPFR version 3.1.2, MPC version 1.0.2
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 29342c625d7bcbdcfe72918d055d493f
+COLLECT_GCC_OPTIONS='--sysroot=/home/ktw/Documents/tm2sdk-master/sysroots/armv7a-vfp-neon-oe-linux-gnueabi' '-march=armv7-a' '-mfloat-abi=softfp' '-mfpu=neon' '-march=armv7-a' '-mfloat-abi=softfp' '-mfpu=neon' '-v' '-o' 'CMakeFiles/cmTC_bab32.dir/CMakeCCompilerABI.c.o' '-c' '-mtls-dialect=gnu'
+ /home/ktw/Documents/tm2sdk-master/sysroots/x86_64-oesdk-linux/usr/bin/arm-oe-linux-gnueabi/../../libexec/arm-oe-linux-gnueabi/gcc/arm-oe-linux-gnueabi/4.9.2/as -v -march=armv7-a -march=armv7-a -mfloat-abi=softfp -mfloat-abi=softfp -mfpu=neon -mfpu=neon -meabi=5 -o CMakeFiles/cmTC_bab32.dir/CMakeCCompilerABI.c.o /tmp/ccFiybG2.s
+GNU assembler version 2.24 (arm-oe-linux-gnueabi) using BFD version (GNU Binutils) 2.24
+COMPILER_PATH=/home/ktw/Documents/tm2sdk-master/sysroots/x86_64-oesdk-linux/usr/bin/arm-oe-linux-gnueabi/../../libexec/arm-oe-linux-gnueabi/gcc/arm-oe-linux-gnueabi/4.9.2/:/home/ktw/Documents/tm2sdk-master/sysroots/x86_64-oesdk-linux/usr/bin/arm-oe-linux-gnueabi/../../libexec/arm-oe-linux-gnueabi/gcc/
+LIBRARY_PATH=/home/ktw/Documents/tm2sdk-master/sysroots/x86_64-oesdk-linux/usr/bin/arm-oe-linux-gnueabi/../../lib/arm-oe-linux-gnueabi/gcc/arm-oe-linux-gnueabi/4.9.2/:/home/ktw/Documents/tm2sdk-master/sysroots/x86_64-oesdk-linux/usr/bin/arm-oe-linux-gnueabi/../../lib/arm-oe-linux-gnueabi/gcc/:/home/ktw/Documents/tm2sdk-master/sysroots/armv7a-vfp-neon-oe-linux-gnueabi/lib/:/home/ktw/Documents/tm2sdk-master/sysroots/armv7a-vfp-neon-oe-linux-gnueabi/usr/lib/arm-oe-linux-gnueabi/4.9.2/:/home/ktw/Documents/tm2sdk-master/sysroots/armv7a-vfp-neon-oe-linux-gnueabi/usr/lib/
+COLLECT_GCC_OPTIONS='--sysroot=/home/ktw/Documents/tm2sdk-master/sysroots/armv7a-vfp-neon-oe-linux-gnueabi' '-march=armv7-a' '-mfloat-abi=softfp' '-mfpu=neon' '-march=armv7-a' '-mfloat-abi=softfp' '-mfpu=neon' '-v' '-o' 'CMakeFiles/cmTC_bab32.dir/CMakeCCompilerABI.c.o' '-c' '-mtls-dialect=gnu'
+Linking C static library libcmTC_bab32.a
+/usr/bin/cmake -P CMakeFiles/cmTC_bab32.dir/cmake_clean_target.cmake
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bab32.dir/link.txt --verbose=1
+/home/ktw/Documents/tm2sdk-master/sysroots/x86_64-oesdk-linux/usr/bin/arm-oe-linux-gnueabi/arm-oe-linux-gnueabi-ar qc libcmTC_bab32.a  CMakeFiles/cmTC_bab32.dir/CMakeCCompilerABI.c.o
+/home/ktw/Documents/tm2sdk-master/sysroots/x86_64-oesdk-linux/usr/bin/arm-oe-linux-gnueabi/arm-oe-linux-gnueabi-ranlib libcmTC_bab32.a
+make[1]: Leaving directory '/home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles/CMakeTmp'
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/home/ktw/Documents/tm2sdk-master/sysroots/x86_64-oesdk-linux/usr/bin/arm-oe-linux-gnueabi/../../lib/arm-oe-linux-gnueabi/gcc/arm-oe-linux-gnueabi/4.9.2/include]
+    add: [/home/ktw/Documents/tm2sdk-master/sysroots/x86_64-oesdk-linux/usr/bin/arm-oe-linux-gnueabi/../../lib/arm-oe-linux-gnueabi/gcc/arm-oe-linux-gnueabi/4.9.2/include-fixed]
+    add: [/home/ktw/Documents/tm2sdk-master/sysroots/armv7a-vfp-neon-oe-linux-gnueabi/usr/include]
+  end of search list found
+  collapse include dir [/home/ktw/Documents/tm2sdk-master/sysroots/x86_64-oesdk-linux/usr/bin/arm-oe-linux-gnueabi/../../lib/arm-oe-linux-gnueabi/gcc/arm-oe-linux-gnueabi/4.9.2/include] ==> [/home/ktw/Documents/tm2sdk-master/sysroots/x86_64-oesdk-linux/usr/lib/arm-oe-linux-gnueabi/gcc/arm-oe-linux-gnueabi/4.9.2/include]
+  collapse include dir [/home/ktw/Documents/tm2sdk-master/sysroots/x86_64-oesdk-linux/usr/bin/arm-oe-linux-gnueabi/../../lib/arm-oe-linux-gnueabi/gcc/arm-oe-linux-gnueabi/4.9.2/include-fixed] ==> [/home/ktw/Documents/tm2sdk-master/sysroots/x86_64-oesdk-linux/usr/lib/arm-oe-linux-gnueabi/gcc/arm-oe-linux-gnueabi/4.9.2/include-fixed]
+  collapse include dir [/home/ktw/Documents/tm2sdk-master/sysroots/armv7a-vfp-neon-oe-linux-gnueabi/usr/include] ==> [/home/ktw/Documents/tm2sdk-master/sysroots/armv7a-vfp-neon-oe-linux-gnueabi/usr/include]
+  implicit include dirs: [/home/ktw/Documents/tm2sdk-master/sysroots/x86_64-oesdk-linux/usr/lib/arm-oe-linux-gnueabi/gcc/arm-oe-linux-gnueabi/4.9.2/include;/home/ktw/Documents/tm2sdk-master/sysroots/x86_64-oesdk-linux/usr/lib/arm-oe-linux-gnueabi/gcc/arm-oe-linux-gnueabi/4.9.2/include-fixed;/home/ktw/Documents/tm2sdk-master/sysroots/armv7a-vfp-neon-oe-linux-gnueabi/usr/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(arm-oe-linux-gnueabi-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/make cmTC_bab32/fast && /usr/bin/make -f CMakeFiles/cmTC_bab32.dir/build.make CMakeFiles/cmTC_bab32.dir/build]
+  ignore line: [make[1]: Entering directory '/home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_bab32.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/home/ktw/Documents/tm2sdk-master/sysroots/x86_64-oesdk-linux/usr/bin/arm-oe-linux-gnueabi/arm-oe-linux-gnueabi-gcc --sysroot=/home/ktw/Documents/tm2sdk-master/sysroots/armv7a-vfp-neon-oe-linux-gnueabi   -march=armv7-a -mfloat-abi=softfp -mfpu=neon --sysroot=/home/ktw/Documents/tm2sdk-master/sysroots/armv7a-vfp-neon-oe-linux-gnueabi --sysroot=/home/ktw/Documents/tm2sdk-master/sysroots/armv7a-vfp-neon-oe-linux-gnueabi   -march=armv7-a -mfloat-abi=softfp -mfpu=neon --sysroot=/home/ktw/Documents/tm2sdk-master/sysroots/armv7a-vfp-neon-oe-linux-gnueabi --sysroot=/home/ktw/Documents/tm2sdk-master/sysroots/armv7a-vfp-neon-oe-linux-gnueabi    -v -o CMakeFiles/cmTC_bab32.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/home/ktw/Documents/tm2sdk-master/sysroots/x86_64-oesdk-linux/usr/bin/arm-oe-linux-gnueabi/arm-oe-linux-gnueabi-gcc]
+  ignore line: [Target: arm-oe-linux-gnueabi]
+  ignore line: [Configured with: /home/p10255/work_view/KT_MDM9607_LA10_WORK/MDM9607_LA10/apps_proc/oe-core/build/tmp-glibc/work-shared/gcc-4.9.2-r0/gcc-4.9.2/configure --build=x86_64-linux --host=x86_64-oesdk-linux --target=arm-oe-linux-gnueabi --prefix=/usr/local/oecore-x86_64/sysroots/x86_64-oesdk-linux/usr --exec_prefix=/usr/local/oecore-x86_64/sysroots/x86_64-oesdk-linux/usr --bindir=/usr/local/oecore-x86_64/sysroots/x86_64-oesdk-linux/usr/bin/arm-oe-linux-gnueabi --sbindir=/usr/local/oecore-x86_64/sysroots/x86_64-oesdk-linux/usr/bin/arm-oe-linux-gnueabi --libexecdir=/usr/local/oecore-x86_64/sysroots/x86_64-oesdk-linux/usr/libexec/arm-oe-linux-gnueabi --datadir=/usr/local/oecore-x86_64/sysroots/x86_64-oesdk-linux/usr/share --sysconfdir=/usr/local/oecore-x86_64/sysroots/x86_64-oesdk-linux/etc --sharedstatedir=/usr/local/oecore-x86_64/sysroots/x86_64-oesdk-linux/com --localstatedir=/usr/local/oecore-x86_64/sysroots/x86_64-oesdk-linux/var --libdir=/usr/local/oecore-x86_64/sysroots/x86_64-oesdk-linux/usr/lib/arm-oe-linux-gnueabi --includedir=/usr/local/oecore-x86_64/sysroots/x86_64-oesdk-linux/usr/include --oldincludedir=/usr/local/oecore-x86_64/sysroots/x86_64-oesdk-linux/usr/include --infodir=/usr/local/oecore-x86_64/sysroots/x86_64-oesdk-linux/usr/share/info --mandir=/usr/local/oecore-x86_64/sysroots/x86_64-oesdk-linux/usr/share/man --disable-silent-rules --disable-dependency-tracking --with-libtool-sysroot=/home/p10255/work_view/KT_MDM9607_LA10_WORK/MDM9607_LA10/apps_proc/oe-core/build/tmp-glibc/sysroots/x86_64-nativesdk-oesdk-linux --with-gnu-ld --enable-shared --enable-languages=c,c++ --enable-threads=posix --enable-multilib --enable-c99 --enable-long-long --enable-symvers=gnu --enable-libstdcxx-pch --program-prefix=arm-oe-linux-gnueabi- --without-local-prefix --enable-target-optspace --enable-lto --enable-libssp --disable-bootstrap --disable-libmudflap --with-system-zlib --with-linker-hash-style=gnu --enable-linker-build-id --with-ppl=no --with-cloog=no --enable-checking=release --enable-cheaders=c_global --with-gxx-include-dir=/not/exist/usr/include/c++/4.9.2 --with-build-time-tools=/home/p10255/work_view/KT_MDM9607_LA10_WORK/MDM9607_LA10/apps_proc/oe-core/build/tmp-glibc/sysroots/x86_64-linux/usr/arm-oe-linux-gnueabi/bin --with-sysroot=/not/exist --with-build-sysroot=/home/p10255/work_view/KT_MDM9607_LA10_WORK/MDM9607_LA10/apps_proc/oe-core/build/tmp-glibc/sysroots/mdm9607-perf --enable-poison-system-directories --with-mpfr=/home/p10255/work_view/KT_MDM9607_LA10_WORK/MDM9607_LA10/apps_proc/oe-core/build/tmp-glibc/sysroots/x86_64-nativesdk-oesdk-linux --with-mpc=/home/p10255/work_view/KT_MDM9607_LA10_WORK/MDM9607_LA10/apps_proc/oe-core/build/tmp-glibc/sysroots/x86_64-nativesdk-oesdk-linux --enable-nls]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 4.9.2 (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/home/ktw/Documents/tm2sdk-master/sysroots/armv7a-vfp-neon-oe-linux-gnueabi' '-march=armv7-a' '-mfloat-abi=softfp' '-mfpu=neon' '-march=armv7-a' '-mfloat-abi=softfp' '-mfpu=neon' '-v' '-o' 'CMakeFiles/cmTC_bab32.dir/CMakeCCompilerABI.c.o' '-c' '-mtls-dialect=gnu']
+  ignore line: [ /home/ktw/Documents/tm2sdk-master/sysroots/x86_64-oesdk-linux/usr/bin/arm-oe-linux-gnueabi/../../libexec/arm-oe-linux-gnueabi/gcc/arm-oe-linux-gnueabi/4.9.2/cc1 -quiet -v -iprefix /home/ktw/Documents/tm2sdk-master/sysroots/x86_64-oesdk-linux/usr/bin/arm-oe-linux-gnueabi/../../lib/arm-oe-linux-gnueabi/gcc/arm-oe-linux-gnueabi/4.9.2/ -isysroot /home/ktw/Documents/tm2sdk-master/sysroots/armv7a-vfp-neon-oe-linux-gnueabi /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -march=armv7-a -mfloat-abi=softfp -mfpu=neon -march=armv7-a -mfloat-abi=softfp -mfpu=neon -mtls-dialect=gnu -auxbase-strip CMakeFiles/cmTC_bab32.dir/CMakeCCompilerABI.c.o -version -o /tmp/ccFiybG2.s]
+  ignore line: [GNU C (GCC) version 4.9.2 (arm-oe-linux-gnueabi)]
+  ignore line: [	compiled by GNU C version 4.9.2  GMP version 6.0.0  MPFR version 3.1.2  MPC version 1.0.2]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/home/ktw/Documents/tm2sdk-master/sysroots/x86_64-oesdk-linux/usr/bin/arm-oe-linux-gnueabi/../../lib/arm-oe-linux-gnueabi/gcc/arm-oe-linux-gnueabi/4.9.2/../../../../../arm-oe-linux-gnueabi/include"]
+  ignore line: [ignoring duplicate directory "/home/ktw/Documents/tm2sdk-master/sysroots/x86_64-oesdk-linux/usr/bin/arm-oe-linux-gnueabi/../../lib/arm-oe-linux-gnueabi/gcc/../../../lib/arm-oe-linux-gnueabi/gcc/arm-oe-linux-gnueabi/4.9.2/include"]
+  ignore line: [ignoring nonexistent directory "/home/ktw/Documents/tm2sdk-master/sysroots/armv7a-vfp-neon-oe-linux-gnueabi/usr/lib/gcc/arm-oe-linux-gnueabi/4.9.2/include"]
+  ignore line: [ignoring nonexistent directory "/home/ktw/Documents/tm2sdk-master/sysroots/armv7a-vfp-neon-oe-linux-gnueabi/usr/local/include"]
+  ignore line: [ignoring duplicate directory "/home/ktw/Documents/tm2sdk-master/sysroots/x86_64-oesdk-linux/usr/bin/arm-oe-linux-gnueabi/../../lib/arm-oe-linux-gnueabi/gcc/../../../lib/arm-oe-linux-gnueabi/gcc/arm-oe-linux-gnueabi/4.9.2/include-fixed"]
+  ignore line: [ignoring nonexistent directory "/home/ktw/Documents/tm2sdk-master/sysroots/x86_64-oesdk-linux/usr/bin/arm-oe-linux-gnueabi/../../lib/arm-oe-linux-gnueabi/gcc/../../../lib/arm-oe-linux-gnueabi/gcc/arm-oe-linux-gnueabi/4.9.2/../../../../../arm-oe-linux-gnueabi/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /home/ktw/Documents/tm2sdk-master/sysroots/x86_64-oesdk-linux/usr/bin/arm-oe-linux-gnueabi/../../lib/arm-oe-linux-gnueabi/gcc/arm-oe-linux-gnueabi/4.9.2/include]
+  ignore line: [ /home/ktw/Documents/tm2sdk-master/sysroots/x86_64-oesdk-linux/usr/bin/arm-oe-linux-gnueabi/../../lib/arm-oe-linux-gnueabi/gcc/arm-oe-linux-gnueabi/4.9.2/include-fixed]
+  ignore line: [ /home/ktw/Documents/tm2sdk-master/sysroots/armv7a-vfp-neon-oe-linux-gnueabi/usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C (GCC) version 4.9.2 (arm-oe-linux-gnueabi)]
+  ignore line: [	compiled by GNU C version 4.9.2  GMP version 6.0.0  MPFR version 3.1.2  MPC version 1.0.2]
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 29342c625d7bcbdcfe72918d055d493f]
+  ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/home/ktw/Documents/tm2sdk-master/sysroots/armv7a-vfp-neon-oe-linux-gnueabi' '-march=armv7-a' '-mfloat-abi=softfp' '-mfpu=neon' '-march=armv7-a' '-mfloat-abi=softfp' '-mfpu=neon' '-v' '-o' 'CMakeFiles/cmTC_bab32.dir/CMakeCCompilerABI.c.o' '-c' '-mtls-dialect=gnu']
+  ignore line: [ /home/ktw/Documents/tm2sdk-master/sysroots/x86_64-oesdk-linux/usr/bin/arm-oe-linux-gnueabi/../../libexec/arm-oe-linux-gnueabi/gcc/arm-oe-linux-gnueabi/4.9.2/as -v -march=armv7-a -march=armv7-a -mfloat-abi=softfp -mfloat-abi=softfp -mfpu=neon -mfpu=neon -meabi=5 -o CMakeFiles/cmTC_bab32.dir/CMakeCCompilerABI.c.o /tmp/ccFiybG2.s]
+  ignore line: [GNU assembler version 2.24 (arm-oe-linux-gnueabi) using BFD version (GNU Binutils) 2.24]
+  ignore line: [COMPILER_PATH=/home/ktw/Documents/tm2sdk-master/sysroots/x86_64-oesdk-linux/usr/bin/arm-oe-linux-gnueabi/../../libexec/arm-oe-linux-gnueabi/gcc/arm-oe-linux-gnueabi/4.9.2/:/home/ktw/Documents/tm2sdk-master/sysroots/x86_64-oesdk-linux/usr/bin/arm-oe-linux-gnueabi/../../libexec/arm-oe-linux-gnueabi/gcc/]
+  ignore line: [LIBRARY_PATH=/home/ktw/Documents/tm2sdk-master/sysroots/x86_64-oesdk-linux/usr/bin/arm-oe-linux-gnueabi/../../lib/arm-oe-linux-gnueabi/gcc/arm-oe-linux-gnueabi/4.9.2/:/home/ktw/Documents/tm2sdk-master/sysroots/x86_64-oesdk-linux/usr/bin/arm-oe-linux-gnueabi/../../lib/arm-oe-linux-gnueabi/gcc/:/home/ktw/Documents/tm2sdk-master/sysroots/armv7a-vfp-neon-oe-linux-gnueabi/lib/:/home/ktw/Documents/tm2sdk-master/sysroots/armv7a-vfp-neon-oe-linux-gnueabi/usr/lib/arm-oe-linux-gnueabi/4.9.2/:/home/ktw/Documents/tm2sdk-master/sysroots/armv7a-vfp-neon-oe-linux-gnueabi/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/home/ktw/Documents/tm2sdk-master/sysroots/armv7a-vfp-neon-oe-linux-gnueabi' '-march=armv7-a' '-mfloat-abi=softfp' '-mfpu=neon' '-march=armv7-a' '-mfloat-abi=softfp' '-mfpu=neon' '-v' '-o' 'CMakeFiles/cmTC_bab32.dir/CMakeCCompilerABI.c.o' '-c' '-mtls-dialect=gnu']
+  ignore line: [Linking C static library libcmTC_bab32.a]
+  ignore line: [/usr/bin/cmake -P CMakeFiles/cmTC_bab32.dir/cmake_clean_target.cmake]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bab32.dir/link.txt --verbose=1]
+  ignore line: [/home/ktw/Documents/tm2sdk-master/sysroots/x86_64-oesdk-linux/usr/bin/arm-oe-linux-gnueabi/arm-oe-linux-gnueabi-ar qc libcmTC_bab32.a  CMakeFiles/cmTC_bab32.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/home/ktw/Documents/tm2sdk-master/sysroots/x86_64-oesdk-linux/usr/bin/arm-oe-linux-gnueabi/arm-oe-linux-gnueabi-ranlib libcmTC_bab32.a]
+  ignore line: [make[1]: Leaving directory '/home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles/CMakeTmp']
+  ignore line: []
+  ignore line: []
+  implicit libs: []
+  implicit dirs: []
+  implicit fwks: []
+
+
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_dc2aa/fast && /usr/bin/make -f CMakeFiles/cmTC_dc2aa.dir/build.make CMakeFiles/cmTC_dc2aa.dir/build
+make[1]: Entering directory '/home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_dc2aa.dir/CheckIncludeFile.c.o
+/home/ktw/Documents/tm2sdk-master/sysroots/x86_64-oesdk-linux/usr/bin/arm-oe-linux-gnueabi/arm-oe-linux-gnueabi-gcc --sysroot=/home/ktw/Documents/tm2sdk-master/sysroots/armv7a-vfp-neon-oe-linux-gnueabi   -march=armv7-a -mfloat-abi=softfp -mfpu=neon --sysroot=/home/ktw/Documents/tm2sdk-master/sysroots/armv7a-vfp-neon-oe-linux-gnueabi --sysroot=/home/ktw/Documents/tm2sdk-master/sysroots/armv7a-vfp-neon-oe-linux-gnueabi   -march=armv7-a -mfloat-abi=softfp -mfpu=neon --sysroot=/home/ktw/Documents/tm2sdk-master/sysroots/armv7a-vfp-neon-oe-linux-gnueabi --sysroot=/home/ktw/Documents/tm2sdk-master/sysroots/armv7a-vfp-neon-oe-linux-gnueabi    -o CMakeFiles/cmTC_dc2aa.dir/CheckIncludeFile.c.o   -c /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C static library libcmTC_dc2aa.a
+/usr/bin/cmake -P CMakeFiles/cmTC_dc2aa.dir/cmake_clean_target.cmake
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dc2aa.dir/link.txt --verbose=1
+/home/ktw/Documents/tm2sdk-master/sysroots/x86_64-oesdk-linux/usr/bin/arm-oe-linux-gnueabi/arm-oe-linux-gnueabi-ar qc libcmTC_dc2aa.a  CMakeFiles/cmTC_dc2aa.dir/CheckIncludeFile.c.o
+/home/ktw/Documents/tm2sdk-master/sysroots/x86_64-oesdk-linux/usr/bin/arm-oe-linux-gnueabi/arm-oe-linux-gnueabi-ranlib libcmTC_dc2aa.a
+make[1]: Leaving directory '/home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles/CMakeTmp'
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD succeeded with the following output:
+Change Dir: /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_b5569/fast && /usr/bin/make -f CMakeFiles/cmTC_b5569.dir/build.make CMakeFiles/cmTC_b5569.dir/build
+make[1]: Entering directory '/home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b5569.dir/src.c.o
+/home/ktw/Documents/tm2sdk-master/sysroots/x86_64-oesdk-linux/usr/bin/arm-oe-linux-gnueabi/arm-oe-linux-gnueabi-gcc --sysroot=/home/ktw/Documents/tm2sdk-master/sysroots/armv7a-vfp-neon-oe-linux-gnueabi   -march=armv7-a -mfloat-abi=softfp -mfpu=neon --sysroot=/home/ktw/Documents/tm2sdk-master/sysroots/armv7a-vfp-neon-oe-linux-gnueabi --sysroot=/home/ktw/Documents/tm2sdk-master/sysroots/armv7a-vfp-neon-oe-linux-gnueabi   -march=armv7-a -mfloat-abi=softfp -mfpu=neon --sysroot=/home/ktw/Documents/tm2sdk-master/sysroots/armv7a-vfp-neon-oe-linux-gnueabi --sysroot=/home/ktw/Documents/tm2sdk-master/sysroots/armv7a-vfp-neon-oe-linux-gnueabi -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_b5569.dir/src.c.o   -c /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles/CMakeTmp/src.c
+Linking C static library libcmTC_b5569.a
+/usr/bin/cmake -P CMakeFiles/cmTC_b5569.dir/cmake_clean_target.cmake
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b5569.dir/link.txt --verbose=1
+/home/ktw/Documents/tm2sdk-master/sysroots/x86_64-oesdk-linux/usr/bin/arm-oe-linux-gnueabi/arm-oe-linux-gnueabi-ar qc libcmTC_b5569.a  CMakeFiles/cmTC_b5569.dir/src.c.o
+/home/ktw/Documents/tm2sdk-master/sysroots/x86_64-oesdk-linux/usr/bin/arm-oe-linux-gnueabi/arm-oe-linux-gnueabi-ranlib libcmTC_b5569.a
+make[1]: Leaving directory '/home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+

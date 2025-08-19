@@ -1,0 +1,30 @@
+kernel/crypto/ansi_cprng.ko:
+kernel/block/test-iosched.ko:
+kernel/drivers/misc/eeprom/at24.ko:
+kernel/drivers/misc/bosch/bstclass.ko:
+kernel/drivers/misc/bosch/bosch-bhi160-i2c.ko: kernel/drivers/misc/bosch/bstclass.ko
+kernel/drivers/spi/spidev.ko:
+kernel/drivers/net/phy/at803x.ko:
+kernel/drivers/net/phy/qca8337.ko:
+kernel/drivers/net/can/spi/mcp25625.ko:
+kernel/drivers/net/ethernet/qualcomm/emac/qcom_emac.ko: kernel/drivers/net/phy/qca8337.ko
+kernel/drivers/input/misc/gpio_event.ko:
+kernel/drivers/input/misc/gpio_matrix.ko:
+kernel/drivers/input/misc/gpio_input.ko:
+kernel/drivers/input/misc/gpio_output.ko:
+kernel/drivers/input/misc/gpio_axis.ko:
+kernel/drivers/power/smb23x-charger.ko:
+kernel/drivers/mmc/card/mmc_test.ko:
+kernel/drivers/mmc/card/mmc_block_test.ko: kernel/block/test-iosched.ko
+kernel/drivers/iio/imu/bmi160/qcom-bmi160-i2c.ko:
+kernel/drivers/iio/industrialio-triggered-buffer.ko:
+kernel/drivers/bosch/bosch-bmi160-i2c.ko:
+kernel/net/netfilter/xt_physdev.ko:
+extra/embms_kernel.ko:
+extra/shortcut-fe-cm.ko: extra/shortcut-fe-ipv6.ko extra/shortcut-fe.ko
+extra/smsc9500.ko: extra/smscusbnet.ko
+kernel/drivers/net/nf_conntrack_rtsp.ko:
+extra/shortcut-fe.ko:
+extra/shortcut-fe-ipv6.ko:
+extra/smscusbnet.ko:
+kernel/drivers/net/nf_nat_rtsp.ko: kernel/drivers/net/nf_conntrack_rtsp.ko

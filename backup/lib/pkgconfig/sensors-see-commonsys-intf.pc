@@ -1,0 +1,10 @@
+prefix=/usr
+exec_prefix=/usr
+libdir=/usr/lib
+includedir=/usr/include
+
+Name: sensors-see-commonsys-intf
+Description: sensors-see common system interface library
+Version: 1.0.0
+Libs: -L${libdir} -lsensors-see-commonsys-intf
+Cflags: -I${includedir}/sensors-see-commonsys-intf

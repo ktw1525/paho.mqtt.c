@@ -1,0 +1,11 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/paho_c_pub_static.dir/paho_c_pub.c.o"
+  "CMakeFiles/paho_c_pub_static.dir/pubsub_opts.c.o"
+  "paho_c_pub_static"
+  "paho_c_pub_static.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/paho_c_pub_static.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()
