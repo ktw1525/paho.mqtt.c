@@ -13,20 +13,19 @@ set(CMAKE_CXX_FLAGS             "${CMAKE_CXX_FLAGS} $ENV{EXTRA_CXX_FLAGS} --sysr
 set(CMAKE_EXE_LINKER_FLAGS      "${CMAKE_EXE_LINKER_FLAGS} --sysroot=$ENV{SDKTARGETSYSROOT}")
 set(CMAKE_SHARED_LINKER_FLAGS   "${CMAKE_SHARED_LINKER_FLAGS} --sysroot=$ENV{SDKTARGETSYSROOT}")
 
-# 정적 라이브러리만 찾도록
-set(BUILD_SHARED_LIBS OFF CACHE BOOL "Build shared libs" FORCE)
-set(CMAKE_TRY_COMPILE_TARGET_TYPE STATIC_LIBRARY)
-set(OPENSSL_USE_STATIC_LIBS ON)
+# shared 빌드
+set(BUILD_SHARED_LIBS ON CACHE BOOL "Build shared libs" FORCE)
 
-# .a 우선
-set(CMAKE_FIND_LIBRARY_SUFFIXES ".a")
+# .so 우선
+set(CMAKE_FIND_LIBRARY_SUFFIXES ".so" ".a")
+
 set(CMAKE_FIND_ROOT_PATH "$ENV{SDKTARGETSYSROOT}" "$ENV{OPENSSL_ROOT_DIR}")
 set(CMAKE_FIND_ROOT_PATH_MODE_PROGRAM NEVER)
 set(CMAKE_FIND_ROOT_PATH_MODE_LIBRARY ONLY)
 set(CMAKE_FIND_ROOT_PATH_MODE_INCLUDE ONLY)
 set(CMAKE_FIND_ROOT_PATH_MODE_PACKAGE ONLY)
 
-# MagicCrypto/기본 정적 의존성 추가
-# (bindMagicCryptoEngine() 심볼을 직접 링크하려면 -lMagicCrypto -lmc 필요)
-# 정적 링크 특성상 pthread, dl, z, rt 등을 미리 지정
+# MagicCrypto/의존성
+# DSO(.so)로 링크하면 보통 -lMagicCrypto만으로 충분하지만,
+# 환경에 따라 -lmc, -ldl, -lpthread, -lrt 등이 필요할 수 있음
 set(CMAKE_C_STANDARD_LIBRARIES "${CMAKE_C_STANDARD_LIBRARIES} -lMagicCrypto -lmc -ldl -lpthread -lz -lrt")

@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
-# Cross-build Eclipse Paho MQTT C (static) for ARMv7 (Yocto SDK + OpenSSL 1.1.1g no-shared)
+# Cross-build Eclipse Paho MQTT C (shared) for ARMv7 (Yocto SDK + OpenSSL 1.1.1g shared)
 # 산출물은 DESTDIR 스테이징에 모음
 set -Ee -o pipefail
 
 ### 0) 절대경로 (환경에 맞게 점검)
 YOCTO_ENV="/home/ktw/Documents/tm2sdk-master/environment-setup-armv7a-vfp-neon-oe-linux-gnueabi"
 PAHO_SRC="/home/ktw/Documents/GitHub/paho.mqtt.c"
-OPENSSL_STAGE="/home/ktw/Documents/GitHub/openssl/output"   # no-shared로 빌드/설치된 OpenSSL의 DESTDIR 루트
+OPENSSL_STAGE="/home/ktw/Documents/GitHub/openssl/output"   # shared로 빌드/설치된 OpenSSL의 DESTDIR 루트
 BUILD_DIR="$PAHO_SRC/build-cross"
 DESTDIR_STAGE="$PAHO_SRC/output"
 INSTALL_PREFIX="/usr"
@@ -15,10 +15,6 @@ INSTALL_PREFIX="/usr"
 [[ -f "$YOCTO_ENV" ]] || { echo "Yocto SDK env 없음: $YOCTO_ENV"; exit 1; }
 # shellcheck disable=SC1090
 source "$YOCTO_ENV"
-
-# 타깃 OpenSSL 정적 라이브러리 확인
-[[ -f "$OPENSSL_STAGE/usr/lib/libssl.a" ]] || { echo "정적 libssl.a 없음: $OPENSSL_STAGE/usr/lib/libssl.a"; exit 1; }
-[[ -f "$OPENSSL_STAGE/usr/lib/libcrypto.a" ]] || { echo "정적 libcrypto.a 없음: $OPENSSL_STAGE/usr/lib/libcrypto.a"; exit 1; }
 
 command -v cmake >/dev/null || { echo "cmake 필요"; exit 1; }
 command -v ninja >/dev/null || echo "(참고) ninja가 있으면 더 빠릅니다."
@@ -48,18 +44,35 @@ export CXX_CMAKE="$CXX_BIN_PATH"
 export EXTRA_C_FLAGS="$CC_FLAGS"
 export EXTRA_CXX_FLAGS="$CXX_FLAGS"
 
-### 4) OpenSSL 힌트 (정적만 사용)
+### 4) OpenSSL 힌트 (shared 사용)
 export OPENSSL_ROOT_DIR="$OPENSSL_STAGE/usr"
 export OPENSSL_INCLUDE_DIR="$OPENSSL_ROOT_DIR/include"
-export OPENSSL_CRYPTO_LIBRARY="$OPENSSL_ROOT_DIR/lib/libcrypto.a"
-export OPENSSL_SSL_LIBRARY="$OPENSSL_ROOT_DIR/lib/libssl.a"
 
-# pkg-config도 타깃 쪽 먼저 보게 (정적 .pc가 있으면 사용)
+# shared lib 확인 (DESTDIR 루트 기준)
+[[ -f "$OPENSSL_STAGE/usr/lib/libssl.so.1.1" || -f "$OPENSSL_STAGE/usr/lib/libssl.so" ]] \
+  || { echo "shared libssl.so(.1.1) 없음: $OPENSSL_STAGE/usr/lib"; exit 1; }
+[[ -f "$OPENSSL_STAGE/usr/lib/libcrypto.so.1.1" || -f "$OPENSSL_STAGE/usr/lib/libcrypto.so" ]] \
+  || { echo "shared libcrypto.so(.1.1) 없음: $OPENSSL_STAGE/usr/lib"; exit 1; }
+
+# CMake FindOpenSSL에 힌트 제공 (가능하면 .so.1.1을 지정)
+if [[ -f "$OPENSSL_STAGE/usr/lib/libssl.so.1.1" ]]; then
+  export OPENSSL_SSL_LIBRARY="$OPENSSL_ROOT_DIR/lib/libssl.so.1.1"
+else
+  export OPENSSL_SSL_LIBRARY="$OPENSSL_ROOT_DIR/lib/libssl.so"
+fi
+
+if [[ -f "$OPENSSL_STAGE/usr/lib/libcrypto.so.1.1" ]]; then
+  export OPENSSL_CRYPTO_LIBRARY="$OPENSSL_ROOT_DIR/lib/libcrypto.so.1.1"
+else
+  export OPENSSL_CRYPTO_LIBRARY="$OPENSSL_ROOT_DIR/lib/libcrypto.so"
+fi
+
+# pkg-config도 타깃 쪽 먼저 보게
 export PKG_CONFIG_SYSROOT_DIR="$SDKTARGETSYSROOT"
 export PKG_CONFIG_LIBDIR="$OPENSSL_ROOT_DIR/lib/pkgconfig:$SDKTARGETSYSROOT/usr/lib/pkgconfig:$SDKTARGETSYSROOT/usr/share/pkgconfig"
 export PKG_CONFIG_PATH="$PKG_CONFIG_LIBDIR"
 
-### 5) CMake 툴체인 파일 (정적 링크 강제)
+### 5) CMake 툴체인 파일 (shared 링크)
 TOOLCHAIN_FILE="$BUILD_DIR/toolchain.cmake"
 cat > "$TOOLCHAIN_FILE" <<'EOF'
 set(CMAKE_SYSTEM_NAME Linux)
@@ -77,26 +90,25 @@ set(CMAKE_CXX_FLAGS             "${CMAKE_CXX_FLAGS} $ENV{EXTRA_CXX_FLAGS} --sysr
 set(CMAKE_EXE_LINKER_FLAGS      "${CMAKE_EXE_LINKER_FLAGS} --sysroot=$ENV{SDKTARGETSYSROOT}")
 set(CMAKE_SHARED_LINKER_FLAGS   "${CMAKE_SHARED_LINKER_FLAGS} --sysroot=$ENV{SDKTARGETSYSROOT}")
 
-# 정적 라이브러리만 찾도록
-set(BUILD_SHARED_LIBS OFF CACHE BOOL "Build shared libs" FORCE)
-set(CMAKE_TRY_COMPILE_TARGET_TYPE STATIC_LIBRARY)
-set(OPENSSL_USE_STATIC_LIBS ON)
+# shared 빌드
+set(BUILD_SHARED_LIBS ON CACHE BOOL "Build shared libs" FORCE)
 
-# .a 우선
-set(CMAKE_FIND_LIBRARY_SUFFIXES ".a")
+# .so 우선
+set(CMAKE_FIND_LIBRARY_SUFFIXES ".so" ".a")
+
 set(CMAKE_FIND_ROOT_PATH "$ENV{SDKTARGETSYSROOT}" "$ENV{OPENSSL_ROOT_DIR}")
 set(CMAKE_FIND_ROOT_PATH_MODE_PROGRAM NEVER)
 set(CMAKE_FIND_ROOT_PATH_MODE_LIBRARY ONLY)
 set(CMAKE_FIND_ROOT_PATH_MODE_INCLUDE ONLY)
 set(CMAKE_FIND_ROOT_PATH_MODE_PACKAGE ONLY)
 
-# MagicCrypto/기본 정적 의존성 추가
-# (bindMagicCryptoEngine() 심볼을 직접 링크하려면 -lMagicCrypto -lmc 필요)
-# 정적 링크 특성상 pthread, dl, z, rt 등을 미리 지정
+# MagicCrypto/의존성
+# DSO(.so)로 링크하면 보통 -lMagicCrypto만으로 충분하지만,
+# 환경에 따라 -lmc, -ldl, -lpthread, -lrt 등이 필요할 수 있음
 set(CMAKE_C_STANDARD_LIBRARIES "${CMAKE_C_STANDARD_LIBRARIES} -lMagicCrypto -lmc -ldl -lpthread -lz -lrt")
 EOF
 
-### 6) CMake 설정 (정적 Paho + SSL ON)
+### 6) CMake 설정 (shared Paho + SSL ON)
 CMAKE_GEN="-G Ninja"
 command -v ninja >/dev/null || CMAKE_GEN=""
 
@@ -104,16 +116,16 @@ cmake -S . -B "$BUILD_DIR" $CMAKE_GEN \
   -DCMAKE_TOOLCHAIN_FILE="$TOOLCHAIN_FILE" \
   -DCMAKE_INSTALL_PREFIX="$INSTALL_PREFIX" \
   -DPAHO_WITH_SSL=ON \
-  -DPAHO_BUILD_SHARED=OFF \
-  -DPAHO_BUILD_STATIC=ON \
   -DPAHO_BUILD_SAMPLES=ON \
   -DPAHO_ENABLE_TESTING=OFF \
   -DOPENSSL_ROOT_DIR="$OPENSSL_ROOT_DIR" \
   -DOPENSSL_INCLUDE_DIR="$OPENSSL_INCLUDE_DIR" \
   -DOPENSSL_CRYPTO_LIBRARY="$OPENSSL_CRYPTO_LIBRARY" \
   -DOPENSSL_SSL_LIBRARY="$OPENSSL_SSL_LIBRARY" \
-  -DOPENSSL_USE_STATIC_LIBS=ON \
-  -DBUILD_SHARED_LIBS=OFF
+  -DOPENSSL_USE_STATIC_LIBS=OFF \
+  -DBUILD_SHARED_LIBS=ON \
+  -DPAHO_BUILD_SHARED=ON \
+  -DPAHO_BUILD_STATIC=OFF
 
 ### 7) 빌드 & 설치(스테이징)
 if command -v ninja >/dev/null; then
@@ -132,22 +144,21 @@ echo "  inc : $DESTDIR_STAGE$INSTALL_PREFIX/include"
 echo "  bin : $DESTDIR_STAGE$INSTALL_PREFIX/bin"
 echo
 
-# 정적 라이브러리 산출 확인
 ls -l "$DESTDIR_STAGE$INSTALL_PREFIX/lib" || true
 
-# 샘플 바이너리의 NEEDED 항목(정적이면 거의 없음) 확인
+# 샘플 바이너리의 NEEDED 항목 확인 (shared이면 libssl/libcrypto 등이 보여야 함)
 if command -v "${CROSS_COMPILE:-arm-oe-linux-gnueabi-}readelf" >/dev/null 2>&1; then
   for f in "$DESTDIR_STAGE$INSTALL_PREFIX/bin/"*; do
     echo "---- readelf -d $(basename "$f")"
-    "${CROSS_COMPILE:-arm-oe-linux-gnueabi-}readelf" -d "$f" 2>/dev/null | egrep 'NEEDED|RPATH' || true
+    "${CROSS_COMPILE:-arm-oe-linux-gnueabi-}readelf" -d "$f" 2>/dev/null | egrep 'NEEDED|RPATH|RUNPATH' || true
   done
 fi
 
 echo "완료. 이 스테이징 트리를 타깃 / 에 복사하면 됩니다."
-echo "런타임: MagicCrypto가 DSO(.so) 형태라면 타깃 /usr/lib에 libMagicCrypto.so가 있어야 하며, bindMagicCryptoEngine() 호출이 필요합니다."
+echo "런타임 주의:"
+echo "  - 타깃에 /usr/lib/libssl.so.1.1, /usr/lib/libcrypto.so.1.1 이 있어야 합니다."
+echo "  - MagicCrypto가 DSO(.so)라면 타깃 /usr/lib에 libMagicCrypto.so 가 있어야 합니다."
 
-#Debugging
+# Debugging
 # export MQTT_C_CLIENT_TRACE=ON
-# export MQTT_C_CLIENT_TRACE_LEVEL=MAXIMUM 
-# export MQTT_C_CLIENT_TRACE_DEST=/data/paho_trace.log 
-# export MQTT_C_CLIENT_TRACE_MAX_LINES=100000 
+# export MQTT_C_CLIENT_TRACE_LEVEL=PROTOCOL

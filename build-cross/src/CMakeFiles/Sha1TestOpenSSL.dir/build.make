@@ -79,8 +79,8 @@ Sha1TestOpenSSL_EXTERNAL_OBJECTS =
 
 src/Sha1TestOpenSSL: src/CMakeFiles/Sha1TestOpenSSL.dir/SHA1.c.o
 src/Sha1TestOpenSSL: src/CMakeFiles/Sha1TestOpenSSL.dir/build.make
-src/Sha1TestOpenSSL: /home/ktw/Documents/GitHub/openssl/output/usr/lib/libssl.a
-src/Sha1TestOpenSSL: /home/ktw/Documents/GitHub/openssl/output/usr/lib/libcrypto.a
+src/Sha1TestOpenSSL: /home/ktw/Documents/GitHub/openssl/output/usr/lib/libssl.so.1.1
+src/Sha1TestOpenSSL: /home/ktw/Documents/GitHub/openssl/output/usr/lib/libcrypto.so.1.1
 src/Sha1TestOpenSSL: src/CMakeFiles/Sha1TestOpenSSL.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable Sha1TestOpenSSL"
 	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Sha1TestOpenSSL.dir/link.txt --verbose=$(VERBOSE)

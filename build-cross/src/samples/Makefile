@@ -80,16 +80,6 @@ install/local/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
-
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
@@ -102,16 +92,15 @@ install/fast: preinstall/fast
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
-# Special rule for the target package_source
-package_source:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CPackSourceConfig.cmake
-.PHONY : package_source
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
 
-# Special rule for the target package_source
-package_source/fast: package_source
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
 
-.PHONY : package_source/fast
+.PHONY : list_install_components/fast
 
 # Special rule for the target package
 package: preinstall
@@ -123,6 +112,17 @@ package: preinstall
 package/fast: package
 
 .PHONY : package/fast
+
+# Special rule for the target package_source
+package_source:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CPackSourceConfig.cmake
+.PHONY : package_source
+
+# Special rule for the target package_source
+package_source/fast: package_source
+
+.PHONY : package_source/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
@@ -179,154 +179,154 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-src/samples/CMakeFiles/paho_c_pub_static.dir/rule:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f CMakeFiles/Makefile2 src/samples/CMakeFiles/paho_c_pub_static.dir/rule
-.PHONY : src/samples/CMakeFiles/paho_c_pub_static.dir/rule
+src/samples/CMakeFiles/paho_c_pub.dir/rule:
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f CMakeFiles/Makefile2 src/samples/CMakeFiles/paho_c_pub.dir/rule
+.PHONY : src/samples/CMakeFiles/paho_c_pub.dir/rule
 
 # Convenience name for target.
-paho_c_pub_static: src/samples/CMakeFiles/paho_c_pub_static.dir/rule
+paho_c_pub: src/samples/CMakeFiles/paho_c_pub.dir/rule
 
-.PHONY : paho_c_pub_static
+.PHONY : paho_c_pub
 
 # fast build rule for target.
-paho_c_pub_static/fast:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/paho_c_pub_static.dir/build.make src/samples/CMakeFiles/paho_c_pub_static.dir/build
-.PHONY : paho_c_pub_static/fast
+paho_c_pub/fast:
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/paho_c_pub.dir/build.make src/samples/CMakeFiles/paho_c_pub.dir/build
+.PHONY : paho_c_pub/fast
 
 # Convenience name for target.
-src/samples/CMakeFiles/paho_c_sub_static.dir/rule:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f CMakeFiles/Makefile2 src/samples/CMakeFiles/paho_c_sub_static.dir/rule
-.PHONY : src/samples/CMakeFiles/paho_c_sub_static.dir/rule
+src/samples/CMakeFiles/paho_cs_pub.dir/rule:
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f CMakeFiles/Makefile2 src/samples/CMakeFiles/paho_cs_pub.dir/rule
+.PHONY : src/samples/CMakeFiles/paho_cs_pub.dir/rule
 
 # Convenience name for target.
-paho_c_sub_static: src/samples/CMakeFiles/paho_c_sub_static.dir/rule
+paho_cs_pub: src/samples/CMakeFiles/paho_cs_pub.dir/rule
 
-.PHONY : paho_c_sub_static
+.PHONY : paho_cs_pub
 
 # fast build rule for target.
-paho_c_sub_static/fast:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/paho_c_sub_static.dir/build.make src/samples/CMakeFiles/paho_c_sub_static.dir/build
-.PHONY : paho_c_sub_static/fast
+paho_cs_pub/fast:
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/paho_cs_pub.dir/build.make src/samples/CMakeFiles/paho_cs_pub.dir/build
+.PHONY : paho_cs_pub/fast
 
 # Convenience name for target.
-src/samples/CMakeFiles/paho_cs_pub_static.dir/rule:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f CMakeFiles/Makefile2 src/samples/CMakeFiles/paho_cs_pub_static.dir/rule
-.PHONY : src/samples/CMakeFiles/paho_cs_pub_static.dir/rule
+src/samples/CMakeFiles/paho_c_sub.dir/rule:
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f CMakeFiles/Makefile2 src/samples/CMakeFiles/paho_c_sub.dir/rule
+.PHONY : src/samples/CMakeFiles/paho_c_sub.dir/rule
 
 # Convenience name for target.
-paho_cs_pub_static: src/samples/CMakeFiles/paho_cs_pub_static.dir/rule
+paho_c_sub: src/samples/CMakeFiles/paho_c_sub.dir/rule
 
-.PHONY : paho_cs_pub_static
+.PHONY : paho_c_sub
 
 # fast build rule for target.
-paho_cs_pub_static/fast:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/paho_cs_pub_static.dir/build.make src/samples/CMakeFiles/paho_cs_pub_static.dir/build
-.PHONY : paho_cs_pub_static/fast
+paho_c_sub/fast:
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/paho_c_sub.dir/build.make src/samples/CMakeFiles/paho_c_sub.dir/build
+.PHONY : paho_c_sub/fast
 
 # Convenience name for target.
-src/samples/CMakeFiles/paho_cs_sub_static.dir/rule:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f CMakeFiles/Makefile2 src/samples/CMakeFiles/paho_cs_sub_static.dir/rule
-.PHONY : src/samples/CMakeFiles/paho_cs_sub_static.dir/rule
+src/samples/CMakeFiles/MQTTAsync_subscribe.dir/rule:
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f CMakeFiles/Makefile2 src/samples/CMakeFiles/MQTTAsync_subscribe.dir/rule
+.PHONY : src/samples/CMakeFiles/MQTTAsync_subscribe.dir/rule
 
 # Convenience name for target.
-paho_cs_sub_static: src/samples/CMakeFiles/paho_cs_sub_static.dir/rule
+MQTTAsync_subscribe: src/samples/CMakeFiles/MQTTAsync_subscribe.dir/rule
 
-.PHONY : paho_cs_sub_static
+.PHONY : MQTTAsync_subscribe
 
 # fast build rule for target.
-paho_cs_sub_static/fast:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/paho_cs_sub_static.dir/build.make src/samples/CMakeFiles/paho_cs_sub_static.dir/build
-.PHONY : paho_cs_sub_static/fast
+MQTTAsync_subscribe/fast:
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/MQTTAsync_subscribe.dir/build.make src/samples/CMakeFiles/MQTTAsync_subscribe.dir/build
+.PHONY : MQTTAsync_subscribe/fast
 
 # Convenience name for target.
-src/samples/CMakeFiles/MQTTAsync_subscribe_static.dir/rule:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f CMakeFiles/Makefile2 src/samples/CMakeFiles/MQTTAsync_subscribe_static.dir/rule
-.PHONY : src/samples/CMakeFiles/MQTTAsync_subscribe_static.dir/rule
+src/samples/CMakeFiles/MQTTAsync_publish.dir/rule:
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f CMakeFiles/Makefile2 src/samples/CMakeFiles/MQTTAsync_publish.dir/rule
+.PHONY : src/samples/CMakeFiles/MQTTAsync_publish.dir/rule
 
 # Convenience name for target.
-MQTTAsync_subscribe_static: src/samples/CMakeFiles/MQTTAsync_subscribe_static.dir/rule
+MQTTAsync_publish: src/samples/CMakeFiles/MQTTAsync_publish.dir/rule
 
-.PHONY : MQTTAsync_subscribe_static
+.PHONY : MQTTAsync_publish
 
 # fast build rule for target.
-MQTTAsync_subscribe_static/fast:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/MQTTAsync_subscribe_static.dir/build.make src/samples/CMakeFiles/MQTTAsync_subscribe_static.dir/build
-.PHONY : MQTTAsync_subscribe_static/fast
+MQTTAsync_publish/fast:
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/MQTTAsync_publish.dir/build.make src/samples/CMakeFiles/MQTTAsync_publish.dir/build
+.PHONY : MQTTAsync_publish/fast
 
 # Convenience name for target.
-src/samples/CMakeFiles/MQTTAsync_publish_static.dir/rule:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f CMakeFiles/Makefile2 src/samples/CMakeFiles/MQTTAsync_publish_static.dir/rule
-.PHONY : src/samples/CMakeFiles/MQTTAsync_publish_static.dir/rule
+src/samples/CMakeFiles/MQTTClient_subscribe.dir/rule:
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f CMakeFiles/Makefile2 src/samples/CMakeFiles/MQTTClient_subscribe.dir/rule
+.PHONY : src/samples/CMakeFiles/MQTTClient_subscribe.dir/rule
 
 # Convenience name for target.
-MQTTAsync_publish_static: src/samples/CMakeFiles/MQTTAsync_publish_static.dir/rule
+MQTTClient_subscribe: src/samples/CMakeFiles/MQTTClient_subscribe.dir/rule
 
-.PHONY : MQTTAsync_publish_static
+.PHONY : MQTTClient_subscribe
 
 # fast build rule for target.
-MQTTAsync_publish_static/fast:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/MQTTAsync_publish_static.dir/build.make src/samples/CMakeFiles/MQTTAsync_publish_static.dir/build
-.PHONY : MQTTAsync_publish_static/fast
+MQTTClient_subscribe/fast:
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/MQTTClient_subscribe.dir/build.make src/samples/CMakeFiles/MQTTClient_subscribe.dir/build
+.PHONY : MQTTClient_subscribe/fast
 
 # Convenience name for target.
-src/samples/CMakeFiles/MQTTClient_subscribe_static.dir/rule:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f CMakeFiles/Makefile2 src/samples/CMakeFiles/MQTTClient_subscribe_static.dir/rule
-.PHONY : src/samples/CMakeFiles/MQTTClient_subscribe_static.dir/rule
+src/samples/CMakeFiles/MQTTClient_publish.dir/rule:
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f CMakeFiles/Makefile2 src/samples/CMakeFiles/MQTTClient_publish.dir/rule
+.PHONY : src/samples/CMakeFiles/MQTTClient_publish.dir/rule
 
 # Convenience name for target.
-MQTTClient_subscribe_static: src/samples/CMakeFiles/MQTTClient_subscribe_static.dir/rule
+MQTTClient_publish: src/samples/CMakeFiles/MQTTClient_publish.dir/rule
 
-.PHONY : MQTTClient_subscribe_static
+.PHONY : MQTTClient_publish
 
 # fast build rule for target.
-MQTTClient_subscribe_static/fast:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/MQTTClient_subscribe_static.dir/build.make src/samples/CMakeFiles/MQTTClient_subscribe_static.dir/build
-.PHONY : MQTTClient_subscribe_static/fast
+MQTTClient_publish/fast:
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/MQTTClient_publish.dir/build.make src/samples/CMakeFiles/MQTTClient_publish.dir/build
+.PHONY : MQTTClient_publish/fast
 
 # Convenience name for target.
-src/samples/CMakeFiles/MQTTAsync_publish_time_static.dir/rule:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f CMakeFiles/Makefile2 src/samples/CMakeFiles/MQTTAsync_publish_time_static.dir/rule
-.PHONY : src/samples/CMakeFiles/MQTTAsync_publish_time_static.dir/rule
+src/samples/CMakeFiles/paho_cs_sub.dir/rule:
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f CMakeFiles/Makefile2 src/samples/CMakeFiles/paho_cs_sub.dir/rule
+.PHONY : src/samples/CMakeFiles/paho_cs_sub.dir/rule
 
 # Convenience name for target.
-MQTTAsync_publish_time_static: src/samples/CMakeFiles/MQTTAsync_publish_time_static.dir/rule
+paho_cs_sub: src/samples/CMakeFiles/paho_cs_sub.dir/rule
 
-.PHONY : MQTTAsync_publish_time_static
+.PHONY : paho_cs_sub
 
 # fast build rule for target.
-MQTTAsync_publish_time_static/fast:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/MQTTAsync_publish_time_static.dir/build.make src/samples/CMakeFiles/MQTTAsync_publish_time_static.dir/build
-.PHONY : MQTTAsync_publish_time_static/fast
+paho_cs_sub/fast:
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/paho_cs_sub.dir/build.make src/samples/CMakeFiles/paho_cs_sub.dir/build
+.PHONY : paho_cs_sub/fast
 
 # Convenience name for target.
-src/samples/CMakeFiles/MQTTClient_publish_async_static.dir/rule:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f CMakeFiles/Makefile2 src/samples/CMakeFiles/MQTTClient_publish_async_static.dir/rule
-.PHONY : src/samples/CMakeFiles/MQTTClient_publish_async_static.dir/rule
+src/samples/CMakeFiles/MQTTAsync_publish_time.dir/rule:
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f CMakeFiles/Makefile2 src/samples/CMakeFiles/MQTTAsync_publish_time.dir/rule
+.PHONY : src/samples/CMakeFiles/MQTTAsync_publish_time.dir/rule
 
 # Convenience name for target.
-MQTTClient_publish_async_static: src/samples/CMakeFiles/MQTTClient_publish_async_static.dir/rule
+MQTTAsync_publish_time: src/samples/CMakeFiles/MQTTAsync_publish_time.dir/rule
 
-.PHONY : MQTTClient_publish_async_static
+.PHONY : MQTTAsync_publish_time
 
 # fast build rule for target.
-MQTTClient_publish_async_static/fast:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/MQTTClient_publish_async_static.dir/build.make src/samples/CMakeFiles/MQTTClient_publish_async_static.dir/build
-.PHONY : MQTTClient_publish_async_static/fast
+MQTTAsync_publish_time/fast:
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/MQTTAsync_publish_time.dir/build.make src/samples/CMakeFiles/MQTTAsync_publish_time.dir/build
+.PHONY : MQTTAsync_publish_time/fast
 
 # Convenience name for target.
-src/samples/CMakeFiles/MQTTClient_publish_static.dir/rule:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f CMakeFiles/Makefile2 src/samples/CMakeFiles/MQTTClient_publish_static.dir/rule
-.PHONY : src/samples/CMakeFiles/MQTTClient_publish_static.dir/rule
+src/samples/CMakeFiles/MQTTClient_publish_async.dir/rule:
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f CMakeFiles/Makefile2 src/samples/CMakeFiles/MQTTClient_publish_async.dir/rule
+.PHONY : src/samples/CMakeFiles/MQTTClient_publish_async.dir/rule
 
 # Convenience name for target.
-MQTTClient_publish_static: src/samples/CMakeFiles/MQTTClient_publish_static.dir/rule
+MQTTClient_publish_async: src/samples/CMakeFiles/MQTTClient_publish_async.dir/rule
 
-.PHONY : MQTTClient_publish_static
+.PHONY : MQTTClient_publish_async
 
 # fast build rule for target.
-MQTTClient_publish_static/fast:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/MQTTClient_publish_static.dir/build.make src/samples/CMakeFiles/MQTTClient_publish_static.dir/build
-.PHONY : MQTTClient_publish_static/fast
+MQTTClient_publish_async/fast:
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/MQTTClient_publish_async.dir/build.make src/samples/CMakeFiles/MQTTClient_publish_async.dir/build
+.PHONY : MQTTClient_publish_async/fast
 
 MQTTAsync_publish.o: MQTTAsync_publish.c.o
 
@@ -334,7 +334,7 @@ MQTTAsync_publish.o: MQTTAsync_publish.c.o
 
 # target to build an object file
 MQTTAsync_publish.c.o:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/MQTTAsync_publish_static.dir/build.make src/samples/CMakeFiles/MQTTAsync_publish_static.dir/MQTTAsync_publish.c.o
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/MQTTAsync_publish.dir/build.make src/samples/CMakeFiles/MQTTAsync_publish.dir/MQTTAsync_publish.c.o
 .PHONY : MQTTAsync_publish.c.o
 
 MQTTAsync_publish.i: MQTTAsync_publish.c.i
@@ -343,7 +343,7 @@ MQTTAsync_publish.i: MQTTAsync_publish.c.i
 
 # target to preprocess a source file
 MQTTAsync_publish.c.i:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/MQTTAsync_publish_static.dir/build.make src/samples/CMakeFiles/MQTTAsync_publish_static.dir/MQTTAsync_publish.c.i
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/MQTTAsync_publish.dir/build.make src/samples/CMakeFiles/MQTTAsync_publish.dir/MQTTAsync_publish.c.i
 .PHONY : MQTTAsync_publish.c.i
 
 MQTTAsync_publish.s: MQTTAsync_publish.c.s
@@ -352,7 +352,7 @@ MQTTAsync_publish.s: MQTTAsync_publish.c.s
 
 # target to generate assembly for a file
 MQTTAsync_publish.c.s:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/MQTTAsync_publish_static.dir/build.make src/samples/CMakeFiles/MQTTAsync_publish_static.dir/MQTTAsync_publish.c.s
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/MQTTAsync_publish.dir/build.make src/samples/CMakeFiles/MQTTAsync_publish.dir/MQTTAsync_publish.c.s
 .PHONY : MQTTAsync_publish.c.s
 
 MQTTAsync_publish_time.o: MQTTAsync_publish_time.c.o
@@ -361,7 +361,7 @@ MQTTAsync_publish_time.o: MQTTAsync_publish_time.c.o
 
 # target to build an object file
 MQTTAsync_publish_time.c.o:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/MQTTAsync_publish_time_static.dir/build.make src/samples/CMakeFiles/MQTTAsync_publish_time_static.dir/MQTTAsync_publish_time.c.o
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/MQTTAsync_publish_time.dir/build.make src/samples/CMakeFiles/MQTTAsync_publish_time.dir/MQTTAsync_publish_time.c.o
 .PHONY : MQTTAsync_publish_time.c.o
 
 MQTTAsync_publish_time.i: MQTTAsync_publish_time.c.i
@@ -370,7 +370,7 @@ MQTTAsync_publish_time.i: MQTTAsync_publish_time.c.i
 
 # target to preprocess a source file
 MQTTAsync_publish_time.c.i:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/MQTTAsync_publish_time_static.dir/build.make src/samples/CMakeFiles/MQTTAsync_publish_time_static.dir/MQTTAsync_publish_time.c.i
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/MQTTAsync_publish_time.dir/build.make src/samples/CMakeFiles/MQTTAsync_publish_time.dir/MQTTAsync_publish_time.c.i
 .PHONY : MQTTAsync_publish_time.c.i
 
 MQTTAsync_publish_time.s: MQTTAsync_publish_time.c.s
@@ -379,7 +379,7 @@ MQTTAsync_publish_time.s: MQTTAsync_publish_time.c.s
 
 # target to generate assembly for a file
 MQTTAsync_publish_time.c.s:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/MQTTAsync_publish_time_static.dir/build.make src/samples/CMakeFiles/MQTTAsync_publish_time_static.dir/MQTTAsync_publish_time.c.s
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/MQTTAsync_publish_time.dir/build.make src/samples/CMakeFiles/MQTTAsync_publish_time.dir/MQTTAsync_publish_time.c.s
 .PHONY : MQTTAsync_publish_time.c.s
 
 MQTTAsync_subscribe.o: MQTTAsync_subscribe.c.o
@@ -388,7 +388,7 @@ MQTTAsync_subscribe.o: MQTTAsync_subscribe.c.o
 
 # target to build an object file
 MQTTAsync_subscribe.c.o:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/MQTTAsync_subscribe_static.dir/build.make src/samples/CMakeFiles/MQTTAsync_subscribe_static.dir/MQTTAsync_subscribe.c.o
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/MQTTAsync_subscribe.dir/build.make src/samples/CMakeFiles/MQTTAsync_subscribe.dir/MQTTAsync_subscribe.c.o
 .PHONY : MQTTAsync_subscribe.c.o
 
 MQTTAsync_subscribe.i: MQTTAsync_subscribe.c.i
@@ -397,7 +397,7 @@ MQTTAsync_subscribe.i: MQTTAsync_subscribe.c.i
 
 # target to preprocess a source file
 MQTTAsync_subscribe.c.i:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/MQTTAsync_subscribe_static.dir/build.make src/samples/CMakeFiles/MQTTAsync_subscribe_static.dir/MQTTAsync_subscribe.c.i
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/MQTTAsync_subscribe.dir/build.make src/samples/CMakeFiles/MQTTAsync_subscribe.dir/MQTTAsync_subscribe.c.i
 .PHONY : MQTTAsync_subscribe.c.i
 
 MQTTAsync_subscribe.s: MQTTAsync_subscribe.c.s
@@ -406,7 +406,7 @@ MQTTAsync_subscribe.s: MQTTAsync_subscribe.c.s
 
 # target to generate assembly for a file
 MQTTAsync_subscribe.c.s:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/MQTTAsync_subscribe_static.dir/build.make src/samples/CMakeFiles/MQTTAsync_subscribe_static.dir/MQTTAsync_subscribe.c.s
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/MQTTAsync_subscribe.dir/build.make src/samples/CMakeFiles/MQTTAsync_subscribe.dir/MQTTAsync_subscribe.c.s
 .PHONY : MQTTAsync_subscribe.c.s
 
 MQTTClient_publish.o: MQTTClient_publish.c.o
@@ -415,7 +415,7 @@ MQTTClient_publish.o: MQTTClient_publish.c.o
 
 # target to build an object file
 MQTTClient_publish.c.o:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/MQTTClient_publish_static.dir/build.make src/samples/CMakeFiles/MQTTClient_publish_static.dir/MQTTClient_publish.c.o
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/MQTTClient_publish.dir/build.make src/samples/CMakeFiles/MQTTClient_publish.dir/MQTTClient_publish.c.o
 .PHONY : MQTTClient_publish.c.o
 
 MQTTClient_publish.i: MQTTClient_publish.c.i
@@ -424,7 +424,7 @@ MQTTClient_publish.i: MQTTClient_publish.c.i
 
 # target to preprocess a source file
 MQTTClient_publish.c.i:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/MQTTClient_publish_static.dir/build.make src/samples/CMakeFiles/MQTTClient_publish_static.dir/MQTTClient_publish.c.i
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/MQTTClient_publish.dir/build.make src/samples/CMakeFiles/MQTTClient_publish.dir/MQTTClient_publish.c.i
 .PHONY : MQTTClient_publish.c.i
 
 MQTTClient_publish.s: MQTTClient_publish.c.s
@@ -433,7 +433,7 @@ MQTTClient_publish.s: MQTTClient_publish.c.s
 
 # target to generate assembly for a file
 MQTTClient_publish.c.s:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/MQTTClient_publish_static.dir/build.make src/samples/CMakeFiles/MQTTClient_publish_static.dir/MQTTClient_publish.c.s
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/MQTTClient_publish.dir/build.make src/samples/CMakeFiles/MQTTClient_publish.dir/MQTTClient_publish.c.s
 .PHONY : MQTTClient_publish.c.s
 
 MQTTClient_publish_async.o: MQTTClient_publish_async.c.o
@@ -442,7 +442,7 @@ MQTTClient_publish_async.o: MQTTClient_publish_async.c.o
 
 # target to build an object file
 MQTTClient_publish_async.c.o:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/MQTTClient_publish_async_static.dir/build.make src/samples/CMakeFiles/MQTTClient_publish_async_static.dir/MQTTClient_publish_async.c.o
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/MQTTClient_publish_async.dir/build.make src/samples/CMakeFiles/MQTTClient_publish_async.dir/MQTTClient_publish_async.c.o
 .PHONY : MQTTClient_publish_async.c.o
 
 MQTTClient_publish_async.i: MQTTClient_publish_async.c.i
@@ -451,7 +451,7 @@ MQTTClient_publish_async.i: MQTTClient_publish_async.c.i
 
 # target to preprocess a source file
 MQTTClient_publish_async.c.i:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/MQTTClient_publish_async_static.dir/build.make src/samples/CMakeFiles/MQTTClient_publish_async_static.dir/MQTTClient_publish_async.c.i
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/MQTTClient_publish_async.dir/build.make src/samples/CMakeFiles/MQTTClient_publish_async.dir/MQTTClient_publish_async.c.i
 .PHONY : MQTTClient_publish_async.c.i
 
 MQTTClient_publish_async.s: MQTTClient_publish_async.c.s
@@ -460,7 +460,7 @@ MQTTClient_publish_async.s: MQTTClient_publish_async.c.s
 
 # target to generate assembly for a file
 MQTTClient_publish_async.c.s:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/MQTTClient_publish_async_static.dir/build.make src/samples/CMakeFiles/MQTTClient_publish_async_static.dir/MQTTClient_publish_async.c.s
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/MQTTClient_publish_async.dir/build.make src/samples/CMakeFiles/MQTTClient_publish_async.dir/MQTTClient_publish_async.c.s
 .PHONY : MQTTClient_publish_async.c.s
 
 MQTTClient_subscribe.o: MQTTClient_subscribe.c.o
@@ -469,7 +469,7 @@ MQTTClient_subscribe.o: MQTTClient_subscribe.c.o
 
 # target to build an object file
 MQTTClient_subscribe.c.o:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/MQTTClient_subscribe_static.dir/build.make src/samples/CMakeFiles/MQTTClient_subscribe_static.dir/MQTTClient_subscribe.c.o
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/MQTTClient_subscribe.dir/build.make src/samples/CMakeFiles/MQTTClient_subscribe.dir/MQTTClient_subscribe.c.o
 .PHONY : MQTTClient_subscribe.c.o
 
 MQTTClient_subscribe.i: MQTTClient_subscribe.c.i
@@ -478,7 +478,7 @@ MQTTClient_subscribe.i: MQTTClient_subscribe.c.i
 
 # target to preprocess a source file
 MQTTClient_subscribe.c.i:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/MQTTClient_subscribe_static.dir/build.make src/samples/CMakeFiles/MQTTClient_subscribe_static.dir/MQTTClient_subscribe.c.i
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/MQTTClient_subscribe.dir/build.make src/samples/CMakeFiles/MQTTClient_subscribe.dir/MQTTClient_subscribe.c.i
 .PHONY : MQTTClient_subscribe.c.i
 
 MQTTClient_subscribe.s: MQTTClient_subscribe.c.s
@@ -487,7 +487,7 @@ MQTTClient_subscribe.s: MQTTClient_subscribe.c.s
 
 # target to generate assembly for a file
 MQTTClient_subscribe.c.s:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/MQTTClient_subscribe_static.dir/build.make src/samples/CMakeFiles/MQTTClient_subscribe_static.dir/MQTTClient_subscribe.c.s
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/MQTTClient_subscribe.dir/build.make src/samples/CMakeFiles/MQTTClient_subscribe.dir/MQTTClient_subscribe.c.s
 .PHONY : MQTTClient_subscribe.c.s
 
 paho_c_pub.o: paho_c_pub.c.o
@@ -496,7 +496,7 @@ paho_c_pub.o: paho_c_pub.c.o
 
 # target to build an object file
 paho_c_pub.c.o:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/paho_c_pub_static.dir/build.make src/samples/CMakeFiles/paho_c_pub_static.dir/paho_c_pub.c.o
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/paho_c_pub.dir/build.make src/samples/CMakeFiles/paho_c_pub.dir/paho_c_pub.c.o
 .PHONY : paho_c_pub.c.o
 
 paho_c_pub.i: paho_c_pub.c.i
@@ -505,7 +505,7 @@ paho_c_pub.i: paho_c_pub.c.i
 
 # target to preprocess a source file
 paho_c_pub.c.i:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/paho_c_pub_static.dir/build.make src/samples/CMakeFiles/paho_c_pub_static.dir/paho_c_pub.c.i
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/paho_c_pub.dir/build.make src/samples/CMakeFiles/paho_c_pub.dir/paho_c_pub.c.i
 .PHONY : paho_c_pub.c.i
 
 paho_c_pub.s: paho_c_pub.c.s
@@ -514,7 +514,7 @@ paho_c_pub.s: paho_c_pub.c.s
 
 # target to generate assembly for a file
 paho_c_pub.c.s:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/paho_c_pub_static.dir/build.make src/samples/CMakeFiles/paho_c_pub_static.dir/paho_c_pub.c.s
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/paho_c_pub.dir/build.make src/samples/CMakeFiles/paho_c_pub.dir/paho_c_pub.c.s
 .PHONY : paho_c_pub.c.s
 
 paho_c_sub.o: paho_c_sub.c.o
@@ -523,7 +523,7 @@ paho_c_sub.o: paho_c_sub.c.o
 
 # target to build an object file
 paho_c_sub.c.o:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/paho_c_sub_static.dir/build.make src/samples/CMakeFiles/paho_c_sub_static.dir/paho_c_sub.c.o
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/paho_c_sub.dir/build.make src/samples/CMakeFiles/paho_c_sub.dir/paho_c_sub.c.o
 .PHONY : paho_c_sub.c.o
 
 paho_c_sub.i: paho_c_sub.c.i
@@ -532,7 +532,7 @@ paho_c_sub.i: paho_c_sub.c.i
 
 # target to preprocess a source file
 paho_c_sub.c.i:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/paho_c_sub_static.dir/build.make src/samples/CMakeFiles/paho_c_sub_static.dir/paho_c_sub.c.i
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/paho_c_sub.dir/build.make src/samples/CMakeFiles/paho_c_sub.dir/paho_c_sub.c.i
 .PHONY : paho_c_sub.c.i
 
 paho_c_sub.s: paho_c_sub.c.s
@@ -541,7 +541,7 @@ paho_c_sub.s: paho_c_sub.c.s
 
 # target to generate assembly for a file
 paho_c_sub.c.s:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/paho_c_sub_static.dir/build.make src/samples/CMakeFiles/paho_c_sub_static.dir/paho_c_sub.c.s
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/paho_c_sub.dir/build.make src/samples/CMakeFiles/paho_c_sub.dir/paho_c_sub.c.s
 .PHONY : paho_c_sub.c.s
 
 paho_cs_pub.o: paho_cs_pub.c.o
@@ -550,7 +550,7 @@ paho_cs_pub.o: paho_cs_pub.c.o
 
 # target to build an object file
 paho_cs_pub.c.o:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/paho_cs_pub_static.dir/build.make src/samples/CMakeFiles/paho_cs_pub_static.dir/paho_cs_pub.c.o
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/paho_cs_pub.dir/build.make src/samples/CMakeFiles/paho_cs_pub.dir/paho_cs_pub.c.o
 .PHONY : paho_cs_pub.c.o
 
 paho_cs_pub.i: paho_cs_pub.c.i
@@ -559,7 +559,7 @@ paho_cs_pub.i: paho_cs_pub.c.i
 
 # target to preprocess a source file
 paho_cs_pub.c.i:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/paho_cs_pub_static.dir/build.make src/samples/CMakeFiles/paho_cs_pub_static.dir/paho_cs_pub.c.i
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/paho_cs_pub.dir/build.make src/samples/CMakeFiles/paho_cs_pub.dir/paho_cs_pub.c.i
 .PHONY : paho_cs_pub.c.i
 
 paho_cs_pub.s: paho_cs_pub.c.s
@@ -568,7 +568,7 @@ paho_cs_pub.s: paho_cs_pub.c.s
 
 # target to generate assembly for a file
 paho_cs_pub.c.s:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/paho_cs_pub_static.dir/build.make src/samples/CMakeFiles/paho_cs_pub_static.dir/paho_cs_pub.c.s
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/paho_cs_pub.dir/build.make src/samples/CMakeFiles/paho_cs_pub.dir/paho_cs_pub.c.s
 .PHONY : paho_cs_pub.c.s
 
 paho_cs_sub.o: paho_cs_sub.c.o
@@ -577,7 +577,7 @@ paho_cs_sub.o: paho_cs_sub.c.o
 
 # target to build an object file
 paho_cs_sub.c.o:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/paho_cs_sub_static.dir/build.make src/samples/CMakeFiles/paho_cs_sub_static.dir/paho_cs_sub.c.o
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/paho_cs_sub.dir/build.make src/samples/CMakeFiles/paho_cs_sub.dir/paho_cs_sub.c.o
 .PHONY : paho_cs_sub.c.o
 
 paho_cs_sub.i: paho_cs_sub.c.i
@@ -586,7 +586,7 @@ paho_cs_sub.i: paho_cs_sub.c.i
 
 # target to preprocess a source file
 paho_cs_sub.c.i:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/paho_cs_sub_static.dir/build.make src/samples/CMakeFiles/paho_cs_sub_static.dir/paho_cs_sub.c.i
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/paho_cs_sub.dir/build.make src/samples/CMakeFiles/paho_cs_sub.dir/paho_cs_sub.c.i
 .PHONY : paho_cs_sub.c.i
 
 paho_cs_sub.s: paho_cs_sub.c.s
@@ -595,7 +595,7 @@ paho_cs_sub.s: paho_cs_sub.c.s
 
 # target to generate assembly for a file
 paho_cs_sub.c.s:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/paho_cs_sub_static.dir/build.make src/samples/CMakeFiles/paho_cs_sub_static.dir/paho_cs_sub.c.s
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/paho_cs_sub.dir/build.make src/samples/CMakeFiles/paho_cs_sub.dir/paho_cs_sub.c.s
 .PHONY : paho_cs_sub.c.s
 
 pubsub_opts.o: pubsub_opts.c.o
@@ -604,10 +604,10 @@ pubsub_opts.o: pubsub_opts.c.o
 
 # target to build an object file
 pubsub_opts.c.o:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/paho_c_pub_static.dir/build.make src/samples/CMakeFiles/paho_c_pub_static.dir/pubsub_opts.c.o
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/paho_c_sub_static.dir/build.make src/samples/CMakeFiles/paho_c_sub_static.dir/pubsub_opts.c.o
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/paho_cs_pub_static.dir/build.make src/samples/CMakeFiles/paho_cs_pub_static.dir/pubsub_opts.c.o
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/paho_cs_sub_static.dir/build.make src/samples/CMakeFiles/paho_cs_sub_static.dir/pubsub_opts.c.o
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/paho_c_pub.dir/build.make src/samples/CMakeFiles/paho_c_pub.dir/pubsub_opts.c.o
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/paho_cs_pub.dir/build.make src/samples/CMakeFiles/paho_cs_pub.dir/pubsub_opts.c.o
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/paho_c_sub.dir/build.make src/samples/CMakeFiles/paho_c_sub.dir/pubsub_opts.c.o
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/paho_cs_sub.dir/build.make src/samples/CMakeFiles/paho_cs_sub.dir/pubsub_opts.c.o
 .PHONY : pubsub_opts.c.o
 
 pubsub_opts.i: pubsub_opts.c.i
@@ -616,10 +616,10 @@ pubsub_opts.i: pubsub_opts.c.i
 
 # target to preprocess a source file
 pubsub_opts.c.i:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/paho_c_pub_static.dir/build.make src/samples/CMakeFiles/paho_c_pub_static.dir/pubsub_opts.c.i
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/paho_c_sub_static.dir/build.make src/samples/CMakeFiles/paho_c_sub_static.dir/pubsub_opts.c.i
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/paho_cs_pub_static.dir/build.make src/samples/CMakeFiles/paho_cs_pub_static.dir/pubsub_opts.c.i
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/paho_cs_sub_static.dir/build.make src/samples/CMakeFiles/paho_cs_sub_static.dir/pubsub_opts.c.i
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/paho_c_pub.dir/build.make src/samples/CMakeFiles/paho_c_pub.dir/pubsub_opts.c.i
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/paho_cs_pub.dir/build.make src/samples/CMakeFiles/paho_cs_pub.dir/pubsub_opts.c.i
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/paho_c_sub.dir/build.make src/samples/CMakeFiles/paho_c_sub.dir/pubsub_opts.c.i
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/paho_cs_sub.dir/build.make src/samples/CMakeFiles/paho_cs_sub.dir/pubsub_opts.c.i
 .PHONY : pubsub_opts.c.i
 
 pubsub_opts.s: pubsub_opts.c.s
@@ -628,10 +628,10 @@ pubsub_opts.s: pubsub_opts.c.s
 
 # target to generate assembly for a file
 pubsub_opts.c.s:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/paho_c_pub_static.dir/build.make src/samples/CMakeFiles/paho_c_pub_static.dir/pubsub_opts.c.s
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/paho_c_sub_static.dir/build.make src/samples/CMakeFiles/paho_c_sub_static.dir/pubsub_opts.c.s
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/paho_cs_pub_static.dir/build.make src/samples/CMakeFiles/paho_cs_pub_static.dir/pubsub_opts.c.s
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/paho_cs_sub_static.dir/build.make src/samples/CMakeFiles/paho_cs_sub_static.dir/pubsub_opts.c.s
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/paho_c_pub.dir/build.make src/samples/CMakeFiles/paho_c_pub.dir/pubsub_opts.c.s
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/paho_cs_pub.dir/build.make src/samples/CMakeFiles/paho_cs_pub.dir/pubsub_opts.c.s
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/paho_c_sub.dir/build.make src/samples/CMakeFiles/paho_c_sub.dir/pubsub_opts.c.s
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/samples/CMakeFiles/paho_cs_sub.dir/build.make src/samples/CMakeFiles/paho_cs_sub.dir/pubsub_opts.c.s
 .PHONY : pubsub_opts.c.s
 
 # Help Target
@@ -642,21 +642,21 @@ help:
 	@echo "... depend"
 	@echo "... install/strip"
 	@echo "... install/local"
-	@echo "... list_install_components"
-	@echo "... paho_c_pub_static"
-	@echo "... paho_c_sub_static"
-	@echo "... paho_cs_pub_static"
 	@echo "... install"
-	@echo "... paho_cs_sub_static"
-	@echo "... MQTTAsync_subscribe_static"
-	@echo "... MQTTAsync_publish_static"
-	@echo "... MQTTClient_subscribe_static"
-	@echo "... MQTTAsync_publish_time_static"
-	@echo "... package_source"
-	@echo "... MQTTClient_publish_async_static"
-	@echo "... MQTTClient_publish_static"
+	@echo "... paho_c_pub"
+	@echo "... paho_cs_pub"
+	@echo "... paho_c_sub"
+	@echo "... MQTTAsync_subscribe"
+	@echo "... MQTTAsync_publish"
+	@echo "... list_install_components"
+	@echo "... MQTTClient_subscribe"
+	@echo "... MQTTClient_publish"
 	@echo "... package"
+	@echo "... paho_cs_sub"
+	@echo "... MQTTAsync_publish_time"
+	@echo "... package_source"
 	@echo "... rebuild_cache"
+	@echo "... MQTTClient_publish_async"
 	@echo "... edit_cache"
 	@echo "... MQTTAsync_publish.o"
 	@echo "... MQTTAsync_publish.i"

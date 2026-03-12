@@ -16,7 +16,7 @@ set(CMAKE_IMPORT_FILE_VERSION 1)
 set(_targetsDefined)
 set(_targetsNotDefined)
 set(_expectedTargets)
-foreach(_expectedTarget eclipse-paho-mqtt-c::paho-mqtt3c-static eclipse-paho-mqtt-c::paho-mqtt3a-static eclipse-paho-mqtt-c::paho-mqtt3cs-static eclipse-paho-mqtt-c::paho-mqtt3as-static)
+foreach(_expectedTarget eclipse-paho-mqtt-c::paho-mqtt3c eclipse-paho-mqtt-c::paho-mqtt3a eclipse-paho-mqtt-c::paho-mqtt3cs eclipse-paho-mqtt-c::paho-mqtt3as)
   list(APPEND _expectedTargets ${_expectedTarget})
   if(NOT TARGET ${_expectedTarget})
     list(APPEND _targetsNotDefined ${_expectedTarget})
@@ -59,34 +59,34 @@ if(_IMPORT_PREFIX STREQUAL "/")
   set(_IMPORT_PREFIX "")
 endif()
 
-# Create imported target eclipse-paho-mqtt-c::paho-mqtt3c-static
-add_library(eclipse-paho-mqtt-c::paho-mqtt3c-static STATIC IMPORTED)
+# Create imported target eclipse-paho-mqtt-c::paho-mqtt3c
+add_library(eclipse-paho-mqtt-c::paho-mqtt3c SHARED IMPORTED)
 
-set_target_properties(eclipse-paho-mqtt-c::paho-mqtt3c-static PROPERTIES
+set_target_properties(eclipse-paho-mqtt-c::paho-mqtt3c PROPERTIES
   INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/include"
   INTERFACE_LINK_LIBRARIES "c;dl;pthread;rt;anl"
 )
 
-# Create imported target eclipse-paho-mqtt-c::paho-mqtt3a-static
-add_library(eclipse-paho-mqtt-c::paho-mqtt3a-static STATIC IMPORTED)
+# Create imported target eclipse-paho-mqtt-c::paho-mqtt3a
+add_library(eclipse-paho-mqtt-c::paho-mqtt3a SHARED IMPORTED)
 
-set_target_properties(eclipse-paho-mqtt-c::paho-mqtt3a-static PROPERTIES
+set_target_properties(eclipse-paho-mqtt-c::paho-mqtt3a PROPERTIES
   INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/include"
   INTERFACE_LINK_LIBRARIES "c;dl;pthread;rt;anl"
 )
 
-# Create imported target eclipse-paho-mqtt-c::paho-mqtt3cs-static
-add_library(eclipse-paho-mqtt-c::paho-mqtt3cs-static STATIC IMPORTED)
+# Create imported target eclipse-paho-mqtt-c::paho-mqtt3cs
+add_library(eclipse-paho-mqtt-c::paho-mqtt3cs SHARED IMPORTED)
 
-set_target_properties(eclipse-paho-mqtt-c::paho-mqtt3cs-static PROPERTIES
+set_target_properties(eclipse-paho-mqtt-c::paho-mqtt3cs PROPERTIES
   INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/include"
   INTERFACE_LINK_LIBRARIES "OpenSSL::SSL;OpenSSL::Crypto;c;dl;pthread;rt;anl"
 )
 
-# Create imported target eclipse-paho-mqtt-c::paho-mqtt3as-static
-add_library(eclipse-paho-mqtt-c::paho-mqtt3as-static STATIC IMPORTED)
+# Create imported target eclipse-paho-mqtt-c::paho-mqtt3as
+add_library(eclipse-paho-mqtt-c::paho-mqtt3as SHARED IMPORTED)
 
-set_target_properties(eclipse-paho-mqtt-c::paho-mqtt3as-static PROPERTIES
+set_target_properties(eclipse-paho-mqtt-c::paho-mqtt3as PROPERTIES
   INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/include"
   INTERFACE_LINK_LIBRARIES "OpenSSL::SSL;OpenSSL::Crypto;c;dl;pthread;rt;anl"
 )

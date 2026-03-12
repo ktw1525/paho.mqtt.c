@@ -15,7 +15,7 @@
 ########################
 
 //Build shared libs
-BUILD_SHARED_LIBS:BOOL=OFF
+BUILD_SHARED_LIBS:BOOL=ON
 
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=/home/ktw/Documents/tm2sdk-master/sysroots/x86_64-oesdk-linux/usr/bin/arm-oe-linux-gnueabi/arm-oe-linux-gnueabi-addr2line
@@ -277,7 +277,7 @@ Eclipse Paho C_SOURCE_DIR:STATIC=/home/ktw/Documents/GitHub/paho.mqtt.c
 LIB_ANL:FILEPATH=/home/ktw/Documents/tm2sdk-master/sysroots/armv7a-vfp-neon-oe-linux-gnueabi/usr/lib/libanl.so
 
 //Path to a library.
-OPENSSL_CRYPTO_LIBRARY:FILEPATH=/home/ktw/Documents/GitHub/openssl/output/usr/lib/libcrypto.a
+OPENSSL_CRYPTO_LIBRARY:FILEPATH=/home/ktw/Documents/GitHub/openssl/output/usr/lib/libcrypto.so.1.1
 
 //Path to a file.
 OPENSSL_INCLUDE_DIR:PATH=/home/ktw/Documents/GitHub/openssl/output/usr/include
@@ -286,10 +286,10 @@ OPENSSL_INCLUDE_DIR:PATH=/home/ktw/Documents/GitHub/openssl/output/usr/include
 OPENSSL_ROOT_DIR:UNINITIALIZED=/home/ktw/Documents/GitHub/openssl/output/usr
 
 //Path to a library.
-OPENSSL_SSL_LIBRARY:FILEPATH=/home/ktw/Documents/GitHub/openssl/output/usr/lib/libssl.a
+OPENSSL_SSL_LIBRARY:FILEPATH=/home/ktw/Documents/GitHub/openssl/output/usr/lib/libssl.so.1.1
 
 //No help, variable specified on the command line.
-OPENSSL_USE_STATIC_LIBS:UNINITIALIZED=ON
+OPENSSL_USE_STATIC_LIBS:UNINITIALIZED=OFF
 
 //Build debian package
 PAHO_BUILD_DEB_PACKAGE:BOOL=OFF
@@ -302,10 +302,10 @@ PAHO_BUILD_DOCUMENTATION:BOOL=OFF
 PAHO_BUILD_SAMPLES:BOOL=ON
 
 //Build shared library
-PAHO_BUILD_SHARED:BOOL=OFF
+PAHO_BUILD_SHARED:BOOL=ON
 
 //Build static library
-PAHO_BUILD_STATIC:BOOL=ON
+PAHO_BUILD_STATIC:BOOL=OFF
 
 //Enable CPack
 PAHO_ENABLE_CPACK:BOOL=ON
@@ -338,19 +338,19 @@ PAHO_WITH_UNIX_SOCKETS:BOOL=OFF
 PKG_CONFIG_EXECUTABLE:FILEPATH=/home/ktw/Documents/tm2sdk-master/sysroots/x86_64-oesdk-linux/usr/bin/pkg-config
 
 //Dependencies for the target
-paho-mqtt3a-static_LIB_DEPENDS:STATIC=general;c;general;dl;general;pthread;general;rt;general;anl;
+paho-mqtt3a_LIB_DEPENDS:STATIC=general;c;general;dl;general;pthread;general;rt;general;anl;
 
 //Dependencies for the target
-paho-mqtt3as-static_LIB_DEPENDS:STATIC=general;OpenSSL::SSL;general;OpenSSL::Crypto;general;c;general;dl;general;pthread;general;rt;general;anl;
+paho-mqtt3as_LIB_DEPENDS:STATIC=general;OpenSSL::SSL;general;OpenSSL::Crypto;general;c;general;dl;general;pthread;general;rt;general;anl;
 
 //Dependencies for the target
-paho-mqtt3c-static_LIB_DEPENDS:STATIC=general;c;general;dl;general;pthread;general;rt;general;anl;
+paho-mqtt3c_LIB_DEPENDS:STATIC=general;c;general;dl;general;pthread;general;rt;general;anl;
 
 //Dependencies for the target
-paho-mqtt3cs-static_LIB_DEPENDS:STATIC=general;OpenSSL::SSL;general;OpenSSL::Crypto;general;c;general;dl;general;pthread;general;rt;general;anl;
+paho-mqtt3cs_LIB_DEPENDS:STATIC=general;OpenSSL::SSL;general;OpenSSL::Crypto;general;c;general;dl;general;pthread;general;rt;general;anl;
 
 //Path to a library.
-pkgcfg_lib__OPENSSL_crypto:FILEPATH=/home/ktw/Documents/tm2sdk-master/sysroots/armv7a-vfp-neon-oe-linux-gnueabi/lib/libcrypto.so
+pkgcfg_lib__OPENSSL_crypto:FILEPATH=/home/ktw/Documents/tm2sdk-master/sysroots/armv7a-vfp-neon-oe-linux-gnueabi/usr/lib/libcrypto.so
 
 //Path to a library.
 pkgcfg_lib__OPENSSL_ssl:FILEPATH=/home/ktw/Documents/tm2sdk-master/sysroots/armv7a-vfp-neon-oe-linux-gnueabi/usr/lib/libssl.so
@@ -420,10 +420,6 @@ CMAKE_GENERATOR_INSTANCE:INTERNAL=
 CMAKE_GENERATOR_PLATFORM:INTERNAL=
 //Name of generator toolset.
 CMAKE_GENERATOR_TOOLSET:INTERNAL=
-//Test CMAKE_HAVE_LIBC_PTHREAD
-CMAKE_HAVE_LIBC_PTHREAD:INTERNAL=1
-//Have include pthread.h
-CMAKE_HAVE_PTHREAD_H:INTERNAL=1
 //Source directory with the top level CMakeLists.txt file for this
 // project
 CMAKE_HOME_DIRECTORY:INTERNAL=/home/ktw/Documents/GitHub/paho.mqtt.c
@@ -534,9 +530,7 @@ CPACK_SOURCE_TZ-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CPACK_SOURCE_ZIP
 CPACK_SOURCE_ZIP-ADVANCED:INTERNAL=1
 //Details about finding OpenSSL
-FIND_PACKAGE_MESSAGE_DETAILS_OpenSSL:INTERNAL=[/home/ktw/Documents/GitHub/openssl/output/usr/lib/libcrypto.a][/home/ktw/Documents/GitHub/openssl/output/usr/include][c ][v1.1.1g()]
-//Details about finding Threads
-FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
+FIND_PACKAGE_MESSAGE_DETAILS_OpenSSL:INTERNAL=[/home/ktw/Documents/GitHub/openssl/output/usr/lib/libcrypto.so.1.1][/home/ktw/Documents/GitHub/openssl/output/usr/include][c ][v1.1.1g()]
 //ADVANCED property for variable: OPENSSL_CRYPTO_LIBRARY
 OPENSSL_CRYPTO_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: OPENSSL_INCLUDE_DIR

@@ -179,49 +179,124 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-src/CMakeFiles/Base64TestOpenSSL.dir/rule:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/Base64TestOpenSSL.dir/rule
-.PHONY : src/CMakeFiles/Base64TestOpenSSL.dir/rule
+src/CMakeFiles/common_obj.dir/rule:
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/common_obj.dir/rule
+.PHONY : src/CMakeFiles/common_obj.dir/rule
 
 # Convenience name for target.
-Base64TestOpenSSL: src/CMakeFiles/Base64TestOpenSSL.dir/rule
+common_obj: src/CMakeFiles/common_obj.dir/rule
 
-.PHONY : Base64TestOpenSSL
+.PHONY : common_obj
 
 # fast build rule for target.
-Base64TestOpenSSL/fast:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/Base64TestOpenSSL.dir/build.make src/CMakeFiles/Base64TestOpenSSL.dir/build
-.PHONY : Base64TestOpenSSL/fast
+common_obj/fast:
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj.dir/build.make src/CMakeFiles/common_obj.dir/build
+.PHONY : common_obj/fast
 
 # Convenience name for target.
-src/CMakeFiles/common_obj_static.dir/rule:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/common_obj_static.dir/rule
-.PHONY : src/CMakeFiles/common_obj_static.dir/rule
+src/CMakeFiles/MQTTVersion.dir/rule:
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/MQTTVersion.dir/rule
+.PHONY : src/CMakeFiles/MQTTVersion.dir/rule
 
 # Convenience name for target.
-common_obj_static: src/CMakeFiles/common_obj_static.dir/rule
+MQTTVersion: src/CMakeFiles/MQTTVersion.dir/rule
 
-.PHONY : common_obj_static
+.PHONY : MQTTVersion
 
 # fast build rule for target.
-common_obj_static/fast:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj_static.dir/build.make src/CMakeFiles/common_obj_static.dir/build
-.PHONY : common_obj_static/fast
+MQTTVersion/fast:
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/MQTTVersion.dir/build.make src/CMakeFiles/MQTTVersion.dir/build
+.PHONY : MQTTVersion/fast
 
 # Convenience name for target.
-src/CMakeFiles/paho-mqtt3c-static.dir/rule:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/paho-mqtt3c-static.dir/rule
-.PHONY : src/CMakeFiles/paho-mqtt3c-static.dir/rule
+src/CMakeFiles/paho-mqtt3cs.dir/rule:
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/paho-mqtt3cs.dir/rule
+.PHONY : src/CMakeFiles/paho-mqtt3cs.dir/rule
 
 # Convenience name for target.
-paho-mqtt3c-static: src/CMakeFiles/paho-mqtt3c-static.dir/rule
+paho-mqtt3cs: src/CMakeFiles/paho-mqtt3cs.dir/rule
 
-.PHONY : paho-mqtt3c-static
+.PHONY : paho-mqtt3cs
 
 # fast build rule for target.
-paho-mqtt3c-static/fast:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/paho-mqtt3c-static.dir/build.make src/CMakeFiles/paho-mqtt3c-static.dir/build
-.PHONY : paho-mqtt3c-static/fast
+paho-mqtt3cs/fast:
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/paho-mqtt3cs.dir/build.make src/CMakeFiles/paho-mqtt3cs.dir/build
+.PHONY : paho-mqtt3cs/fast
+
+# Convenience name for target.
+src/CMakeFiles/paho-mqtt3c.dir/rule:
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/paho-mqtt3c.dir/rule
+.PHONY : src/CMakeFiles/paho-mqtt3c.dir/rule
+
+# Convenience name for target.
+paho-mqtt3c: src/CMakeFiles/paho-mqtt3c.dir/rule
+
+.PHONY : paho-mqtt3c
+
+# fast build rule for target.
+paho-mqtt3c/fast:
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/paho-mqtt3c.dir/build.make src/CMakeFiles/paho-mqtt3c.dir/build
+.PHONY : paho-mqtt3c/fast
+
+# Convenience name for target.
+src/CMakeFiles/paho-mqtt3a.dir/rule:
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/paho-mqtt3a.dir/rule
+.PHONY : src/CMakeFiles/paho-mqtt3a.dir/rule
+
+# Convenience name for target.
+paho-mqtt3a: src/CMakeFiles/paho-mqtt3a.dir/rule
+
+.PHONY : paho-mqtt3a
+
+# fast build rule for target.
+paho-mqtt3a/fast:
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/paho-mqtt3a.dir/build.make src/CMakeFiles/paho-mqtt3a.dir/build
+.PHONY : paho-mqtt3a/fast
+
+# Convenience name for target.
+src/CMakeFiles/common_ssl_obj.dir/rule:
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/common_ssl_obj.dir/rule
+.PHONY : src/CMakeFiles/common_ssl_obj.dir/rule
+
+# Convenience name for target.
+common_ssl_obj: src/CMakeFiles/common_ssl_obj.dir/rule
+
+.PHONY : common_ssl_obj
+
+# fast build rule for target.
+common_ssl_obj/fast:
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj.dir/build.make src/CMakeFiles/common_ssl_obj.dir/build
+.PHONY : common_ssl_obj/fast
+
+# Convenience name for target.
+src/CMakeFiles/Base64Test.dir/rule:
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/Base64Test.dir/rule
+.PHONY : src/CMakeFiles/Base64Test.dir/rule
+
+# Convenience name for target.
+Base64Test: src/CMakeFiles/Base64Test.dir/rule
+
+.PHONY : Base64Test
+
+# fast build rule for target.
+Base64Test/fast:
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/Base64Test.dir/build.make src/CMakeFiles/Base64Test.dir/build
+.PHONY : Base64Test/fast
+
+# Convenience name for target.
+src/CMakeFiles/paho-mqtt3as.dir/rule:
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/paho-mqtt3as.dir/rule
+.PHONY : src/CMakeFiles/paho-mqtt3as.dir/rule
+
+# Convenience name for target.
+paho-mqtt3as: src/CMakeFiles/paho-mqtt3as.dir/rule
+
+.PHONY : paho-mqtt3as
+
+# fast build rule for target.
+paho-mqtt3as/fast:
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/paho-mqtt3as.dir/build.make src/CMakeFiles/paho-mqtt3as.dir/build
+.PHONY : paho-mqtt3as/fast
 
 # Convenience name for target.
 src/CMakeFiles/Sha1Test.dir/rule:
@@ -254,79 +329,19 @@ Sha1TestOpenSSL/fast:
 .PHONY : Sha1TestOpenSSL/fast
 
 # Convenience name for target.
-src/CMakeFiles/paho-mqtt3a-static.dir/rule:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/paho-mqtt3a-static.dir/rule
-.PHONY : src/CMakeFiles/paho-mqtt3a-static.dir/rule
+src/CMakeFiles/Base64TestOpenSSL.dir/rule:
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/Base64TestOpenSSL.dir/rule
+.PHONY : src/CMakeFiles/Base64TestOpenSSL.dir/rule
 
 # Convenience name for target.
-paho-mqtt3a-static: src/CMakeFiles/paho-mqtt3a-static.dir/rule
+Base64TestOpenSSL: src/CMakeFiles/Base64TestOpenSSL.dir/rule
 
-.PHONY : paho-mqtt3a-static
+.PHONY : Base64TestOpenSSL
 
 # fast build rule for target.
-paho-mqtt3a-static/fast:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/paho-mqtt3a-static.dir/build.make src/CMakeFiles/paho-mqtt3a-static.dir/build
-.PHONY : paho-mqtt3a-static/fast
-
-# Convenience name for target.
-src/CMakeFiles/paho-mqtt3as-static.dir/rule:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/paho-mqtt3as-static.dir/rule
-.PHONY : src/CMakeFiles/paho-mqtt3as-static.dir/rule
-
-# Convenience name for target.
-paho-mqtt3as-static: src/CMakeFiles/paho-mqtt3as-static.dir/rule
-
-.PHONY : paho-mqtt3as-static
-
-# fast build rule for target.
-paho-mqtt3as-static/fast:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/paho-mqtt3as-static.dir/build.make src/CMakeFiles/paho-mqtt3as-static.dir/build
-.PHONY : paho-mqtt3as-static/fast
-
-# Convenience name for target.
-src/CMakeFiles/common_ssl_obj_static.dir/rule:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/common_ssl_obj_static.dir/rule
-.PHONY : src/CMakeFiles/common_ssl_obj_static.dir/rule
-
-# Convenience name for target.
-common_ssl_obj_static: src/CMakeFiles/common_ssl_obj_static.dir/rule
-
-.PHONY : common_ssl_obj_static
-
-# fast build rule for target.
-common_ssl_obj_static/fast:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj_static.dir/build.make src/CMakeFiles/common_ssl_obj_static.dir/build
-.PHONY : common_ssl_obj_static/fast
-
-# Convenience name for target.
-src/CMakeFiles/paho-mqtt3cs-static.dir/rule:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/paho-mqtt3cs-static.dir/rule
-.PHONY : src/CMakeFiles/paho-mqtt3cs-static.dir/rule
-
-# Convenience name for target.
-paho-mqtt3cs-static: src/CMakeFiles/paho-mqtt3cs-static.dir/rule
-
-.PHONY : paho-mqtt3cs-static
-
-# fast build rule for target.
-paho-mqtt3cs-static/fast:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/paho-mqtt3cs-static.dir/build.make src/CMakeFiles/paho-mqtt3cs-static.dir/build
-.PHONY : paho-mqtt3cs-static/fast
-
-# Convenience name for target.
-src/CMakeFiles/Base64Test.dir/rule:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/Base64Test.dir/rule
-.PHONY : src/CMakeFiles/Base64Test.dir/rule
-
-# Convenience name for target.
-Base64Test: src/CMakeFiles/Base64Test.dir/rule
-
-.PHONY : Base64Test
-
-# fast build rule for target.
-Base64Test/fast:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/Base64Test.dir/build.make src/CMakeFiles/Base64Test.dir/build
-.PHONY : Base64Test/fast
+Base64TestOpenSSL/fast:
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/Base64TestOpenSSL.dir/build.make src/CMakeFiles/Base64TestOpenSSL.dir/build
+.PHONY : Base64TestOpenSSL/fast
 
 Base64.o: Base64.c.o
 
@@ -334,10 +349,10 @@ Base64.o: Base64.c.o
 
 # target to build an object file
 Base64.c.o:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/Base64TestOpenSSL.dir/build.make src/CMakeFiles/Base64TestOpenSSL.dir/Base64.c.o
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj_static.dir/build.make src/CMakeFiles/common_obj_static.dir/Base64.c.o
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj_static.dir/build.make src/CMakeFiles/common_ssl_obj_static.dir/Base64.c.o
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj.dir/build.make src/CMakeFiles/common_obj.dir/Base64.c.o
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj.dir/build.make src/CMakeFiles/common_ssl_obj.dir/Base64.c.o
 	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/Base64Test.dir/build.make src/CMakeFiles/Base64Test.dir/Base64.c.o
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/Base64TestOpenSSL.dir/build.make src/CMakeFiles/Base64TestOpenSSL.dir/Base64.c.o
 .PHONY : Base64.c.o
 
 Base64.i: Base64.c.i
@@ -346,10 +361,10 @@ Base64.i: Base64.c.i
 
 # target to preprocess a source file
 Base64.c.i:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/Base64TestOpenSSL.dir/build.make src/CMakeFiles/Base64TestOpenSSL.dir/Base64.c.i
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj_static.dir/build.make src/CMakeFiles/common_obj_static.dir/Base64.c.i
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj_static.dir/build.make src/CMakeFiles/common_ssl_obj_static.dir/Base64.c.i
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj.dir/build.make src/CMakeFiles/common_obj.dir/Base64.c.i
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj.dir/build.make src/CMakeFiles/common_ssl_obj.dir/Base64.c.i
 	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/Base64Test.dir/build.make src/CMakeFiles/Base64Test.dir/Base64.c.i
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/Base64TestOpenSSL.dir/build.make src/CMakeFiles/Base64TestOpenSSL.dir/Base64.c.i
 .PHONY : Base64.c.i
 
 Base64.s: Base64.c.s
@@ -358,10 +373,10 @@ Base64.s: Base64.c.s
 
 # target to generate assembly for a file
 Base64.c.s:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/Base64TestOpenSSL.dir/build.make src/CMakeFiles/Base64TestOpenSSL.dir/Base64.c.s
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj_static.dir/build.make src/CMakeFiles/common_obj_static.dir/Base64.c.s
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj_static.dir/build.make src/CMakeFiles/common_ssl_obj_static.dir/Base64.c.s
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj.dir/build.make src/CMakeFiles/common_obj.dir/Base64.c.s
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj.dir/build.make src/CMakeFiles/common_ssl_obj.dir/Base64.c.s
 	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/Base64Test.dir/build.make src/CMakeFiles/Base64Test.dir/Base64.c.s
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/Base64TestOpenSSL.dir/build.make src/CMakeFiles/Base64TestOpenSSL.dir/Base64.c.s
 .PHONY : Base64.c.s
 
 Clients.o: Clients.c.o
@@ -370,8 +385,8 @@ Clients.o: Clients.c.o
 
 # target to build an object file
 Clients.c.o:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj_static.dir/build.make src/CMakeFiles/common_obj_static.dir/Clients.c.o
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj_static.dir/build.make src/CMakeFiles/common_ssl_obj_static.dir/Clients.c.o
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj.dir/build.make src/CMakeFiles/common_obj.dir/Clients.c.o
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj.dir/build.make src/CMakeFiles/common_ssl_obj.dir/Clients.c.o
 .PHONY : Clients.c.o
 
 Clients.i: Clients.c.i
@@ -380,8 +395,8 @@ Clients.i: Clients.c.i
 
 # target to preprocess a source file
 Clients.c.i:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj_static.dir/build.make src/CMakeFiles/common_obj_static.dir/Clients.c.i
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj_static.dir/build.make src/CMakeFiles/common_ssl_obj_static.dir/Clients.c.i
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj.dir/build.make src/CMakeFiles/common_obj.dir/Clients.c.i
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj.dir/build.make src/CMakeFiles/common_ssl_obj.dir/Clients.c.i
 .PHONY : Clients.c.i
 
 Clients.s: Clients.c.s
@@ -390,8 +405,8 @@ Clients.s: Clients.c.s
 
 # target to generate assembly for a file
 Clients.c.s:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj_static.dir/build.make src/CMakeFiles/common_obj_static.dir/Clients.c.s
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj_static.dir/build.make src/CMakeFiles/common_ssl_obj_static.dir/Clients.c.s
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj.dir/build.make src/CMakeFiles/common_obj.dir/Clients.c.s
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj.dir/build.make src/CMakeFiles/common_ssl_obj.dir/Clients.c.s
 .PHONY : Clients.c.s
 
 Heap.o: Heap.c.o
@@ -400,8 +415,8 @@ Heap.o: Heap.c.o
 
 # target to build an object file
 Heap.c.o:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj_static.dir/build.make src/CMakeFiles/common_obj_static.dir/Heap.c.o
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj_static.dir/build.make src/CMakeFiles/common_ssl_obj_static.dir/Heap.c.o
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj.dir/build.make src/CMakeFiles/common_obj.dir/Heap.c.o
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj.dir/build.make src/CMakeFiles/common_ssl_obj.dir/Heap.c.o
 .PHONY : Heap.c.o
 
 Heap.i: Heap.c.i
@@ -410,8 +425,8 @@ Heap.i: Heap.c.i
 
 # target to preprocess a source file
 Heap.c.i:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj_static.dir/build.make src/CMakeFiles/common_obj_static.dir/Heap.c.i
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj_static.dir/build.make src/CMakeFiles/common_ssl_obj_static.dir/Heap.c.i
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj.dir/build.make src/CMakeFiles/common_obj.dir/Heap.c.i
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj.dir/build.make src/CMakeFiles/common_ssl_obj.dir/Heap.c.i
 .PHONY : Heap.c.i
 
 Heap.s: Heap.c.s
@@ -420,8 +435,8 @@ Heap.s: Heap.c.s
 
 # target to generate assembly for a file
 Heap.c.s:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj_static.dir/build.make src/CMakeFiles/common_obj_static.dir/Heap.c.s
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj_static.dir/build.make src/CMakeFiles/common_ssl_obj_static.dir/Heap.c.s
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj.dir/build.make src/CMakeFiles/common_obj.dir/Heap.c.s
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj.dir/build.make src/CMakeFiles/common_ssl_obj.dir/Heap.c.s
 .PHONY : Heap.c.s
 
 LinkedList.o: LinkedList.c.o
@@ -430,8 +445,8 @@ LinkedList.o: LinkedList.c.o
 
 # target to build an object file
 LinkedList.c.o:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj_static.dir/build.make src/CMakeFiles/common_obj_static.dir/LinkedList.c.o
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj_static.dir/build.make src/CMakeFiles/common_ssl_obj_static.dir/LinkedList.c.o
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj.dir/build.make src/CMakeFiles/common_obj.dir/LinkedList.c.o
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj.dir/build.make src/CMakeFiles/common_ssl_obj.dir/LinkedList.c.o
 .PHONY : LinkedList.c.o
 
 LinkedList.i: LinkedList.c.i
@@ -440,8 +455,8 @@ LinkedList.i: LinkedList.c.i
 
 # target to preprocess a source file
 LinkedList.c.i:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj_static.dir/build.make src/CMakeFiles/common_obj_static.dir/LinkedList.c.i
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj_static.dir/build.make src/CMakeFiles/common_ssl_obj_static.dir/LinkedList.c.i
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj.dir/build.make src/CMakeFiles/common_obj.dir/LinkedList.c.i
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj.dir/build.make src/CMakeFiles/common_ssl_obj.dir/LinkedList.c.i
 .PHONY : LinkedList.c.i
 
 LinkedList.s: LinkedList.c.s
@@ -450,8 +465,8 @@ LinkedList.s: LinkedList.c.s
 
 # target to generate assembly for a file
 LinkedList.c.s:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj_static.dir/build.make src/CMakeFiles/common_obj_static.dir/LinkedList.c.s
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj_static.dir/build.make src/CMakeFiles/common_ssl_obj_static.dir/LinkedList.c.s
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj.dir/build.make src/CMakeFiles/common_obj.dir/LinkedList.c.s
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj.dir/build.make src/CMakeFiles/common_ssl_obj.dir/LinkedList.c.s
 .PHONY : LinkedList.c.s
 
 Log.o: Log.c.o
@@ -460,8 +475,8 @@ Log.o: Log.c.o
 
 # target to build an object file
 Log.c.o:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj_static.dir/build.make src/CMakeFiles/common_obj_static.dir/Log.c.o
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj_static.dir/build.make src/CMakeFiles/common_ssl_obj_static.dir/Log.c.o
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj.dir/build.make src/CMakeFiles/common_obj.dir/Log.c.o
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj.dir/build.make src/CMakeFiles/common_ssl_obj.dir/Log.c.o
 .PHONY : Log.c.o
 
 Log.i: Log.c.i
@@ -470,8 +485,8 @@ Log.i: Log.c.i
 
 # target to preprocess a source file
 Log.c.i:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj_static.dir/build.make src/CMakeFiles/common_obj_static.dir/Log.c.i
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj_static.dir/build.make src/CMakeFiles/common_ssl_obj_static.dir/Log.c.i
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj.dir/build.make src/CMakeFiles/common_obj.dir/Log.c.i
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj.dir/build.make src/CMakeFiles/common_ssl_obj.dir/Log.c.i
 .PHONY : Log.c.i
 
 Log.s: Log.c.s
@@ -480,8 +495,8 @@ Log.s: Log.c.s
 
 # target to generate assembly for a file
 Log.c.s:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj_static.dir/build.make src/CMakeFiles/common_obj_static.dir/Log.c.s
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj_static.dir/build.make src/CMakeFiles/common_ssl_obj_static.dir/Log.c.s
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj.dir/build.make src/CMakeFiles/common_obj.dir/Log.c.s
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj.dir/build.make src/CMakeFiles/common_ssl_obj.dir/Log.c.s
 .PHONY : Log.c.s
 
 MQTTAsync.o: MQTTAsync.c.o
@@ -490,8 +505,8 @@ MQTTAsync.o: MQTTAsync.c.o
 
 # target to build an object file
 MQTTAsync.c.o:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/paho-mqtt3a-static.dir/build.make src/CMakeFiles/paho-mqtt3a-static.dir/MQTTAsync.c.o
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/paho-mqtt3as-static.dir/build.make src/CMakeFiles/paho-mqtt3as-static.dir/MQTTAsync.c.o
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/paho-mqtt3a.dir/build.make src/CMakeFiles/paho-mqtt3a.dir/MQTTAsync.c.o
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/paho-mqtt3as.dir/build.make src/CMakeFiles/paho-mqtt3as.dir/MQTTAsync.c.o
 .PHONY : MQTTAsync.c.o
 
 MQTTAsync.i: MQTTAsync.c.i
@@ -500,8 +515,8 @@ MQTTAsync.i: MQTTAsync.c.i
 
 # target to preprocess a source file
 MQTTAsync.c.i:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/paho-mqtt3a-static.dir/build.make src/CMakeFiles/paho-mqtt3a-static.dir/MQTTAsync.c.i
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/paho-mqtt3as-static.dir/build.make src/CMakeFiles/paho-mqtt3as-static.dir/MQTTAsync.c.i
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/paho-mqtt3a.dir/build.make src/CMakeFiles/paho-mqtt3a.dir/MQTTAsync.c.i
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/paho-mqtt3as.dir/build.make src/CMakeFiles/paho-mqtt3as.dir/MQTTAsync.c.i
 .PHONY : MQTTAsync.c.i
 
 MQTTAsync.s: MQTTAsync.c.s
@@ -510,8 +525,8 @@ MQTTAsync.s: MQTTAsync.c.s
 
 # target to generate assembly for a file
 MQTTAsync.c.s:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/paho-mqtt3a-static.dir/build.make src/CMakeFiles/paho-mqtt3a-static.dir/MQTTAsync.c.s
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/paho-mqtt3as-static.dir/build.make src/CMakeFiles/paho-mqtt3as-static.dir/MQTTAsync.c.s
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/paho-mqtt3a.dir/build.make src/CMakeFiles/paho-mqtt3a.dir/MQTTAsync.c.s
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/paho-mqtt3as.dir/build.make src/CMakeFiles/paho-mqtt3as.dir/MQTTAsync.c.s
 .PHONY : MQTTAsync.c.s
 
 MQTTAsyncUtils.o: MQTTAsyncUtils.c.o
@@ -520,8 +535,8 @@ MQTTAsyncUtils.o: MQTTAsyncUtils.c.o
 
 # target to build an object file
 MQTTAsyncUtils.c.o:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/paho-mqtt3a-static.dir/build.make src/CMakeFiles/paho-mqtt3a-static.dir/MQTTAsyncUtils.c.o
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/paho-mqtt3as-static.dir/build.make src/CMakeFiles/paho-mqtt3as-static.dir/MQTTAsyncUtils.c.o
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/paho-mqtt3a.dir/build.make src/CMakeFiles/paho-mqtt3a.dir/MQTTAsyncUtils.c.o
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/paho-mqtt3as.dir/build.make src/CMakeFiles/paho-mqtt3as.dir/MQTTAsyncUtils.c.o
 .PHONY : MQTTAsyncUtils.c.o
 
 MQTTAsyncUtils.i: MQTTAsyncUtils.c.i
@@ -530,8 +545,8 @@ MQTTAsyncUtils.i: MQTTAsyncUtils.c.i
 
 # target to preprocess a source file
 MQTTAsyncUtils.c.i:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/paho-mqtt3a-static.dir/build.make src/CMakeFiles/paho-mqtt3a-static.dir/MQTTAsyncUtils.c.i
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/paho-mqtt3as-static.dir/build.make src/CMakeFiles/paho-mqtt3as-static.dir/MQTTAsyncUtils.c.i
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/paho-mqtt3a.dir/build.make src/CMakeFiles/paho-mqtt3a.dir/MQTTAsyncUtils.c.i
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/paho-mqtt3as.dir/build.make src/CMakeFiles/paho-mqtt3as.dir/MQTTAsyncUtils.c.i
 .PHONY : MQTTAsyncUtils.c.i
 
 MQTTAsyncUtils.s: MQTTAsyncUtils.c.s
@@ -540,8 +555,8 @@ MQTTAsyncUtils.s: MQTTAsyncUtils.c.s
 
 # target to generate assembly for a file
 MQTTAsyncUtils.c.s:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/paho-mqtt3a-static.dir/build.make src/CMakeFiles/paho-mqtt3a-static.dir/MQTTAsyncUtils.c.s
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/paho-mqtt3as-static.dir/build.make src/CMakeFiles/paho-mqtt3as-static.dir/MQTTAsyncUtils.c.s
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/paho-mqtt3a.dir/build.make src/CMakeFiles/paho-mqtt3a.dir/MQTTAsyncUtils.c.s
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/paho-mqtt3as.dir/build.make src/CMakeFiles/paho-mqtt3as.dir/MQTTAsyncUtils.c.s
 .PHONY : MQTTAsyncUtils.c.s
 
 MQTTClient.o: MQTTClient.c.o
@@ -550,8 +565,8 @@ MQTTClient.o: MQTTClient.c.o
 
 # target to build an object file
 MQTTClient.c.o:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/paho-mqtt3c-static.dir/build.make src/CMakeFiles/paho-mqtt3c-static.dir/MQTTClient.c.o
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/paho-mqtt3cs-static.dir/build.make src/CMakeFiles/paho-mqtt3cs-static.dir/MQTTClient.c.o
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/paho-mqtt3cs.dir/build.make src/CMakeFiles/paho-mqtt3cs.dir/MQTTClient.c.o
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/paho-mqtt3c.dir/build.make src/CMakeFiles/paho-mqtt3c.dir/MQTTClient.c.o
 .PHONY : MQTTClient.c.o
 
 MQTTClient.i: MQTTClient.c.i
@@ -560,8 +575,8 @@ MQTTClient.i: MQTTClient.c.i
 
 # target to preprocess a source file
 MQTTClient.c.i:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/paho-mqtt3c-static.dir/build.make src/CMakeFiles/paho-mqtt3c-static.dir/MQTTClient.c.i
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/paho-mqtt3cs-static.dir/build.make src/CMakeFiles/paho-mqtt3cs-static.dir/MQTTClient.c.i
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/paho-mqtt3cs.dir/build.make src/CMakeFiles/paho-mqtt3cs.dir/MQTTClient.c.i
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/paho-mqtt3c.dir/build.make src/CMakeFiles/paho-mqtt3c.dir/MQTTClient.c.i
 .PHONY : MQTTClient.c.i
 
 MQTTClient.s: MQTTClient.c.s
@@ -570,8 +585,8 @@ MQTTClient.s: MQTTClient.c.s
 
 # target to generate assembly for a file
 MQTTClient.c.s:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/paho-mqtt3c-static.dir/build.make src/CMakeFiles/paho-mqtt3c-static.dir/MQTTClient.c.s
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/paho-mqtt3cs-static.dir/build.make src/CMakeFiles/paho-mqtt3cs-static.dir/MQTTClient.c.s
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/paho-mqtt3cs.dir/build.make src/CMakeFiles/paho-mqtt3cs.dir/MQTTClient.c.s
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/paho-mqtt3c.dir/build.make src/CMakeFiles/paho-mqtt3c.dir/MQTTClient.c.s
 .PHONY : MQTTClient.c.s
 
 MQTTPacket.o: MQTTPacket.c.o
@@ -580,8 +595,8 @@ MQTTPacket.o: MQTTPacket.c.o
 
 # target to build an object file
 MQTTPacket.c.o:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj_static.dir/build.make src/CMakeFiles/common_obj_static.dir/MQTTPacket.c.o
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj_static.dir/build.make src/CMakeFiles/common_ssl_obj_static.dir/MQTTPacket.c.o
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj.dir/build.make src/CMakeFiles/common_obj.dir/MQTTPacket.c.o
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj.dir/build.make src/CMakeFiles/common_ssl_obj.dir/MQTTPacket.c.o
 .PHONY : MQTTPacket.c.o
 
 MQTTPacket.i: MQTTPacket.c.i
@@ -590,8 +605,8 @@ MQTTPacket.i: MQTTPacket.c.i
 
 # target to preprocess a source file
 MQTTPacket.c.i:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj_static.dir/build.make src/CMakeFiles/common_obj_static.dir/MQTTPacket.c.i
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj_static.dir/build.make src/CMakeFiles/common_ssl_obj_static.dir/MQTTPacket.c.i
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj.dir/build.make src/CMakeFiles/common_obj.dir/MQTTPacket.c.i
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj.dir/build.make src/CMakeFiles/common_ssl_obj.dir/MQTTPacket.c.i
 .PHONY : MQTTPacket.c.i
 
 MQTTPacket.s: MQTTPacket.c.s
@@ -600,8 +615,8 @@ MQTTPacket.s: MQTTPacket.c.s
 
 # target to generate assembly for a file
 MQTTPacket.c.s:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj_static.dir/build.make src/CMakeFiles/common_obj_static.dir/MQTTPacket.c.s
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj_static.dir/build.make src/CMakeFiles/common_ssl_obj_static.dir/MQTTPacket.c.s
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj.dir/build.make src/CMakeFiles/common_obj.dir/MQTTPacket.c.s
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj.dir/build.make src/CMakeFiles/common_ssl_obj.dir/MQTTPacket.c.s
 .PHONY : MQTTPacket.c.s
 
 MQTTPacketOut.o: MQTTPacketOut.c.o
@@ -610,8 +625,8 @@ MQTTPacketOut.o: MQTTPacketOut.c.o
 
 # target to build an object file
 MQTTPacketOut.c.o:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj_static.dir/build.make src/CMakeFiles/common_obj_static.dir/MQTTPacketOut.c.o
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj_static.dir/build.make src/CMakeFiles/common_ssl_obj_static.dir/MQTTPacketOut.c.o
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj.dir/build.make src/CMakeFiles/common_obj.dir/MQTTPacketOut.c.o
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj.dir/build.make src/CMakeFiles/common_ssl_obj.dir/MQTTPacketOut.c.o
 .PHONY : MQTTPacketOut.c.o
 
 MQTTPacketOut.i: MQTTPacketOut.c.i
@@ -620,8 +635,8 @@ MQTTPacketOut.i: MQTTPacketOut.c.i
 
 # target to preprocess a source file
 MQTTPacketOut.c.i:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj_static.dir/build.make src/CMakeFiles/common_obj_static.dir/MQTTPacketOut.c.i
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj_static.dir/build.make src/CMakeFiles/common_ssl_obj_static.dir/MQTTPacketOut.c.i
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj.dir/build.make src/CMakeFiles/common_obj.dir/MQTTPacketOut.c.i
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj.dir/build.make src/CMakeFiles/common_ssl_obj.dir/MQTTPacketOut.c.i
 .PHONY : MQTTPacketOut.c.i
 
 MQTTPacketOut.s: MQTTPacketOut.c.s
@@ -630,8 +645,8 @@ MQTTPacketOut.s: MQTTPacketOut.c.s
 
 # target to generate assembly for a file
 MQTTPacketOut.c.s:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj_static.dir/build.make src/CMakeFiles/common_obj_static.dir/MQTTPacketOut.c.s
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj_static.dir/build.make src/CMakeFiles/common_ssl_obj_static.dir/MQTTPacketOut.c.s
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj.dir/build.make src/CMakeFiles/common_obj.dir/MQTTPacketOut.c.s
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj.dir/build.make src/CMakeFiles/common_ssl_obj.dir/MQTTPacketOut.c.s
 .PHONY : MQTTPacketOut.c.s
 
 MQTTPersistence.o: MQTTPersistence.c.o
@@ -640,8 +655,8 @@ MQTTPersistence.o: MQTTPersistence.c.o
 
 # target to build an object file
 MQTTPersistence.c.o:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj_static.dir/build.make src/CMakeFiles/common_obj_static.dir/MQTTPersistence.c.o
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj_static.dir/build.make src/CMakeFiles/common_ssl_obj_static.dir/MQTTPersistence.c.o
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj.dir/build.make src/CMakeFiles/common_obj.dir/MQTTPersistence.c.o
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj.dir/build.make src/CMakeFiles/common_ssl_obj.dir/MQTTPersistence.c.o
 .PHONY : MQTTPersistence.c.o
 
 MQTTPersistence.i: MQTTPersistence.c.i
@@ -650,8 +665,8 @@ MQTTPersistence.i: MQTTPersistence.c.i
 
 # target to preprocess a source file
 MQTTPersistence.c.i:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj_static.dir/build.make src/CMakeFiles/common_obj_static.dir/MQTTPersistence.c.i
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj_static.dir/build.make src/CMakeFiles/common_ssl_obj_static.dir/MQTTPersistence.c.i
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj.dir/build.make src/CMakeFiles/common_obj.dir/MQTTPersistence.c.i
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj.dir/build.make src/CMakeFiles/common_ssl_obj.dir/MQTTPersistence.c.i
 .PHONY : MQTTPersistence.c.i
 
 MQTTPersistence.s: MQTTPersistence.c.s
@@ -660,8 +675,8 @@ MQTTPersistence.s: MQTTPersistence.c.s
 
 # target to generate assembly for a file
 MQTTPersistence.c.s:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj_static.dir/build.make src/CMakeFiles/common_obj_static.dir/MQTTPersistence.c.s
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj_static.dir/build.make src/CMakeFiles/common_ssl_obj_static.dir/MQTTPersistence.c.s
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj.dir/build.make src/CMakeFiles/common_obj.dir/MQTTPersistence.c.s
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj.dir/build.make src/CMakeFiles/common_ssl_obj.dir/MQTTPersistence.c.s
 .PHONY : MQTTPersistence.c.s
 
 MQTTPersistenceDefault.o: MQTTPersistenceDefault.c.o
@@ -670,8 +685,8 @@ MQTTPersistenceDefault.o: MQTTPersistenceDefault.c.o
 
 # target to build an object file
 MQTTPersistenceDefault.c.o:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj_static.dir/build.make src/CMakeFiles/common_obj_static.dir/MQTTPersistenceDefault.c.o
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj_static.dir/build.make src/CMakeFiles/common_ssl_obj_static.dir/MQTTPersistenceDefault.c.o
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj.dir/build.make src/CMakeFiles/common_obj.dir/MQTTPersistenceDefault.c.o
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj.dir/build.make src/CMakeFiles/common_ssl_obj.dir/MQTTPersistenceDefault.c.o
 .PHONY : MQTTPersistenceDefault.c.o
 
 MQTTPersistenceDefault.i: MQTTPersistenceDefault.c.i
@@ -680,8 +695,8 @@ MQTTPersistenceDefault.i: MQTTPersistenceDefault.c.i
 
 # target to preprocess a source file
 MQTTPersistenceDefault.c.i:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj_static.dir/build.make src/CMakeFiles/common_obj_static.dir/MQTTPersistenceDefault.c.i
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj_static.dir/build.make src/CMakeFiles/common_ssl_obj_static.dir/MQTTPersistenceDefault.c.i
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj.dir/build.make src/CMakeFiles/common_obj.dir/MQTTPersistenceDefault.c.i
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj.dir/build.make src/CMakeFiles/common_ssl_obj.dir/MQTTPersistenceDefault.c.i
 .PHONY : MQTTPersistenceDefault.c.i
 
 MQTTPersistenceDefault.s: MQTTPersistenceDefault.c.s
@@ -690,8 +705,8 @@ MQTTPersistenceDefault.s: MQTTPersistenceDefault.c.s
 
 # target to generate assembly for a file
 MQTTPersistenceDefault.c.s:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj_static.dir/build.make src/CMakeFiles/common_obj_static.dir/MQTTPersistenceDefault.c.s
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj_static.dir/build.make src/CMakeFiles/common_ssl_obj_static.dir/MQTTPersistenceDefault.c.s
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj.dir/build.make src/CMakeFiles/common_obj.dir/MQTTPersistenceDefault.c.s
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj.dir/build.make src/CMakeFiles/common_ssl_obj.dir/MQTTPersistenceDefault.c.s
 .PHONY : MQTTPersistenceDefault.c.s
 
 MQTTProperties.o: MQTTProperties.c.o
@@ -700,8 +715,8 @@ MQTTProperties.o: MQTTProperties.c.o
 
 # target to build an object file
 MQTTProperties.c.o:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj_static.dir/build.make src/CMakeFiles/common_obj_static.dir/MQTTProperties.c.o
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj_static.dir/build.make src/CMakeFiles/common_ssl_obj_static.dir/MQTTProperties.c.o
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj.dir/build.make src/CMakeFiles/common_obj.dir/MQTTProperties.c.o
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj.dir/build.make src/CMakeFiles/common_ssl_obj.dir/MQTTProperties.c.o
 .PHONY : MQTTProperties.c.o
 
 MQTTProperties.i: MQTTProperties.c.i
@@ -710,8 +725,8 @@ MQTTProperties.i: MQTTProperties.c.i
 
 # target to preprocess a source file
 MQTTProperties.c.i:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj_static.dir/build.make src/CMakeFiles/common_obj_static.dir/MQTTProperties.c.i
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj_static.dir/build.make src/CMakeFiles/common_ssl_obj_static.dir/MQTTProperties.c.i
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj.dir/build.make src/CMakeFiles/common_obj.dir/MQTTProperties.c.i
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj.dir/build.make src/CMakeFiles/common_ssl_obj.dir/MQTTProperties.c.i
 .PHONY : MQTTProperties.c.i
 
 MQTTProperties.s: MQTTProperties.c.s
@@ -720,8 +735,8 @@ MQTTProperties.s: MQTTProperties.c.s
 
 # target to generate assembly for a file
 MQTTProperties.c.s:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj_static.dir/build.make src/CMakeFiles/common_obj_static.dir/MQTTProperties.c.s
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj_static.dir/build.make src/CMakeFiles/common_ssl_obj_static.dir/MQTTProperties.c.s
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj.dir/build.make src/CMakeFiles/common_obj.dir/MQTTProperties.c.s
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj.dir/build.make src/CMakeFiles/common_ssl_obj.dir/MQTTProperties.c.s
 .PHONY : MQTTProperties.c.s
 
 MQTTProtocolClient.o: MQTTProtocolClient.c.o
@@ -730,8 +745,8 @@ MQTTProtocolClient.o: MQTTProtocolClient.c.o
 
 # target to build an object file
 MQTTProtocolClient.c.o:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj_static.dir/build.make src/CMakeFiles/common_obj_static.dir/MQTTProtocolClient.c.o
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj_static.dir/build.make src/CMakeFiles/common_ssl_obj_static.dir/MQTTProtocolClient.c.o
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj.dir/build.make src/CMakeFiles/common_obj.dir/MQTTProtocolClient.c.o
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj.dir/build.make src/CMakeFiles/common_ssl_obj.dir/MQTTProtocolClient.c.o
 .PHONY : MQTTProtocolClient.c.o
 
 MQTTProtocolClient.i: MQTTProtocolClient.c.i
@@ -740,8 +755,8 @@ MQTTProtocolClient.i: MQTTProtocolClient.c.i
 
 # target to preprocess a source file
 MQTTProtocolClient.c.i:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj_static.dir/build.make src/CMakeFiles/common_obj_static.dir/MQTTProtocolClient.c.i
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj_static.dir/build.make src/CMakeFiles/common_ssl_obj_static.dir/MQTTProtocolClient.c.i
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj.dir/build.make src/CMakeFiles/common_obj.dir/MQTTProtocolClient.c.i
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj.dir/build.make src/CMakeFiles/common_ssl_obj.dir/MQTTProtocolClient.c.i
 .PHONY : MQTTProtocolClient.c.i
 
 MQTTProtocolClient.s: MQTTProtocolClient.c.s
@@ -750,8 +765,8 @@ MQTTProtocolClient.s: MQTTProtocolClient.c.s
 
 # target to generate assembly for a file
 MQTTProtocolClient.c.s:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj_static.dir/build.make src/CMakeFiles/common_obj_static.dir/MQTTProtocolClient.c.s
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj_static.dir/build.make src/CMakeFiles/common_ssl_obj_static.dir/MQTTProtocolClient.c.s
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj.dir/build.make src/CMakeFiles/common_obj.dir/MQTTProtocolClient.c.s
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj.dir/build.make src/CMakeFiles/common_ssl_obj.dir/MQTTProtocolClient.c.s
 .PHONY : MQTTProtocolClient.c.s
 
 MQTTProtocolOut.o: MQTTProtocolOut.c.o
@@ -760,8 +775,8 @@ MQTTProtocolOut.o: MQTTProtocolOut.c.o
 
 # target to build an object file
 MQTTProtocolOut.c.o:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj_static.dir/build.make src/CMakeFiles/common_obj_static.dir/MQTTProtocolOut.c.o
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj_static.dir/build.make src/CMakeFiles/common_ssl_obj_static.dir/MQTTProtocolOut.c.o
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj.dir/build.make src/CMakeFiles/common_obj.dir/MQTTProtocolOut.c.o
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj.dir/build.make src/CMakeFiles/common_ssl_obj.dir/MQTTProtocolOut.c.o
 .PHONY : MQTTProtocolOut.c.o
 
 MQTTProtocolOut.i: MQTTProtocolOut.c.i
@@ -770,8 +785,8 @@ MQTTProtocolOut.i: MQTTProtocolOut.c.i
 
 # target to preprocess a source file
 MQTTProtocolOut.c.i:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj_static.dir/build.make src/CMakeFiles/common_obj_static.dir/MQTTProtocolOut.c.i
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj_static.dir/build.make src/CMakeFiles/common_ssl_obj_static.dir/MQTTProtocolOut.c.i
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj.dir/build.make src/CMakeFiles/common_obj.dir/MQTTProtocolOut.c.i
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj.dir/build.make src/CMakeFiles/common_ssl_obj.dir/MQTTProtocolOut.c.i
 .PHONY : MQTTProtocolOut.c.i
 
 MQTTProtocolOut.s: MQTTProtocolOut.c.s
@@ -780,8 +795,8 @@ MQTTProtocolOut.s: MQTTProtocolOut.c.s
 
 # target to generate assembly for a file
 MQTTProtocolOut.c.s:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj_static.dir/build.make src/CMakeFiles/common_obj_static.dir/MQTTProtocolOut.c.s
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj_static.dir/build.make src/CMakeFiles/common_ssl_obj_static.dir/MQTTProtocolOut.c.s
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj.dir/build.make src/CMakeFiles/common_obj.dir/MQTTProtocolOut.c.s
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj.dir/build.make src/CMakeFiles/common_ssl_obj.dir/MQTTProtocolOut.c.s
 .PHONY : MQTTProtocolOut.c.s
 
 MQTTReasonCodes.o: MQTTReasonCodes.c.o
@@ -790,8 +805,8 @@ MQTTReasonCodes.o: MQTTReasonCodes.c.o
 
 # target to build an object file
 MQTTReasonCodes.c.o:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj_static.dir/build.make src/CMakeFiles/common_obj_static.dir/MQTTReasonCodes.c.o
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj_static.dir/build.make src/CMakeFiles/common_ssl_obj_static.dir/MQTTReasonCodes.c.o
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj.dir/build.make src/CMakeFiles/common_obj.dir/MQTTReasonCodes.c.o
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj.dir/build.make src/CMakeFiles/common_ssl_obj.dir/MQTTReasonCodes.c.o
 .PHONY : MQTTReasonCodes.c.o
 
 MQTTReasonCodes.i: MQTTReasonCodes.c.i
@@ -800,8 +815,8 @@ MQTTReasonCodes.i: MQTTReasonCodes.c.i
 
 # target to preprocess a source file
 MQTTReasonCodes.c.i:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj_static.dir/build.make src/CMakeFiles/common_obj_static.dir/MQTTReasonCodes.c.i
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj_static.dir/build.make src/CMakeFiles/common_ssl_obj_static.dir/MQTTReasonCodes.c.i
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj.dir/build.make src/CMakeFiles/common_obj.dir/MQTTReasonCodes.c.i
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj.dir/build.make src/CMakeFiles/common_ssl_obj.dir/MQTTReasonCodes.c.i
 .PHONY : MQTTReasonCodes.c.i
 
 MQTTReasonCodes.s: MQTTReasonCodes.c.s
@@ -810,8 +825,8 @@ MQTTReasonCodes.s: MQTTReasonCodes.c.s
 
 # target to generate assembly for a file
 MQTTReasonCodes.c.s:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj_static.dir/build.make src/CMakeFiles/common_obj_static.dir/MQTTReasonCodes.c.s
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj_static.dir/build.make src/CMakeFiles/common_ssl_obj_static.dir/MQTTReasonCodes.c.s
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj.dir/build.make src/CMakeFiles/common_obj.dir/MQTTReasonCodes.c.s
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj.dir/build.make src/CMakeFiles/common_ssl_obj.dir/MQTTReasonCodes.c.s
 .PHONY : MQTTReasonCodes.c.s
 
 MQTTTime.o: MQTTTime.c.o
@@ -820,8 +835,8 @@ MQTTTime.o: MQTTTime.c.o
 
 # target to build an object file
 MQTTTime.c.o:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj_static.dir/build.make src/CMakeFiles/common_obj_static.dir/MQTTTime.c.o
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj_static.dir/build.make src/CMakeFiles/common_ssl_obj_static.dir/MQTTTime.c.o
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj.dir/build.make src/CMakeFiles/common_obj.dir/MQTTTime.c.o
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj.dir/build.make src/CMakeFiles/common_ssl_obj.dir/MQTTTime.c.o
 .PHONY : MQTTTime.c.o
 
 MQTTTime.i: MQTTTime.c.i
@@ -830,8 +845,8 @@ MQTTTime.i: MQTTTime.c.i
 
 # target to preprocess a source file
 MQTTTime.c.i:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj_static.dir/build.make src/CMakeFiles/common_obj_static.dir/MQTTTime.c.i
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj_static.dir/build.make src/CMakeFiles/common_ssl_obj_static.dir/MQTTTime.c.i
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj.dir/build.make src/CMakeFiles/common_obj.dir/MQTTTime.c.i
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj.dir/build.make src/CMakeFiles/common_ssl_obj.dir/MQTTTime.c.i
 .PHONY : MQTTTime.c.i
 
 MQTTTime.s: MQTTTime.c.s
@@ -840,9 +855,36 @@ MQTTTime.s: MQTTTime.c.s
 
 # target to generate assembly for a file
 MQTTTime.c.s:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj_static.dir/build.make src/CMakeFiles/common_obj_static.dir/MQTTTime.c.s
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj_static.dir/build.make src/CMakeFiles/common_ssl_obj_static.dir/MQTTTime.c.s
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj.dir/build.make src/CMakeFiles/common_obj.dir/MQTTTime.c.s
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj.dir/build.make src/CMakeFiles/common_ssl_obj.dir/MQTTTime.c.s
 .PHONY : MQTTTime.c.s
+
+MQTTVersion.o: MQTTVersion.c.o
+
+.PHONY : MQTTVersion.o
+
+# target to build an object file
+MQTTVersion.c.o:
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/MQTTVersion.dir/build.make src/CMakeFiles/MQTTVersion.dir/MQTTVersion.c.o
+.PHONY : MQTTVersion.c.o
+
+MQTTVersion.i: MQTTVersion.c.i
+
+.PHONY : MQTTVersion.i
+
+# target to preprocess a source file
+MQTTVersion.c.i:
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/MQTTVersion.dir/build.make src/CMakeFiles/MQTTVersion.dir/MQTTVersion.c.i
+.PHONY : MQTTVersion.c.i
+
+MQTTVersion.s: MQTTVersion.c.s
+
+.PHONY : MQTTVersion.s
+
+# target to generate assembly for a file
+MQTTVersion.c.s:
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/MQTTVersion.dir/build.make src/CMakeFiles/MQTTVersion.dir/MQTTVersion.c.s
+.PHONY : MQTTVersion.c.s
 
 Messages.o: Messages.c.o
 
@@ -850,8 +892,8 @@ Messages.o: Messages.c.o
 
 # target to build an object file
 Messages.c.o:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj_static.dir/build.make src/CMakeFiles/common_obj_static.dir/Messages.c.o
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj_static.dir/build.make src/CMakeFiles/common_ssl_obj_static.dir/Messages.c.o
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj.dir/build.make src/CMakeFiles/common_obj.dir/Messages.c.o
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj.dir/build.make src/CMakeFiles/common_ssl_obj.dir/Messages.c.o
 .PHONY : Messages.c.o
 
 Messages.i: Messages.c.i
@@ -860,8 +902,8 @@ Messages.i: Messages.c.i
 
 # target to preprocess a source file
 Messages.c.i:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj_static.dir/build.make src/CMakeFiles/common_obj_static.dir/Messages.c.i
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj_static.dir/build.make src/CMakeFiles/common_ssl_obj_static.dir/Messages.c.i
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj.dir/build.make src/CMakeFiles/common_obj.dir/Messages.c.i
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj.dir/build.make src/CMakeFiles/common_ssl_obj.dir/Messages.c.i
 .PHONY : Messages.c.i
 
 Messages.s: Messages.c.s
@@ -870,8 +912,8 @@ Messages.s: Messages.c.s
 
 # target to generate assembly for a file
 Messages.c.s:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj_static.dir/build.make src/CMakeFiles/common_obj_static.dir/Messages.c.s
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj_static.dir/build.make src/CMakeFiles/common_ssl_obj_static.dir/Messages.c.s
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj.dir/build.make src/CMakeFiles/common_obj.dir/Messages.c.s
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj.dir/build.make src/CMakeFiles/common_ssl_obj.dir/Messages.c.s
 .PHONY : Messages.c.s
 
 Proxy.o: Proxy.c.o
@@ -880,8 +922,8 @@ Proxy.o: Proxy.c.o
 
 # target to build an object file
 Proxy.c.o:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj_static.dir/build.make src/CMakeFiles/common_obj_static.dir/Proxy.c.o
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj_static.dir/build.make src/CMakeFiles/common_ssl_obj_static.dir/Proxy.c.o
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj.dir/build.make src/CMakeFiles/common_obj.dir/Proxy.c.o
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj.dir/build.make src/CMakeFiles/common_ssl_obj.dir/Proxy.c.o
 .PHONY : Proxy.c.o
 
 Proxy.i: Proxy.c.i
@@ -890,8 +932,8 @@ Proxy.i: Proxy.c.i
 
 # target to preprocess a source file
 Proxy.c.i:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj_static.dir/build.make src/CMakeFiles/common_obj_static.dir/Proxy.c.i
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj_static.dir/build.make src/CMakeFiles/common_ssl_obj_static.dir/Proxy.c.i
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj.dir/build.make src/CMakeFiles/common_obj.dir/Proxy.c.i
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj.dir/build.make src/CMakeFiles/common_ssl_obj.dir/Proxy.c.i
 .PHONY : Proxy.c.i
 
 Proxy.s: Proxy.c.s
@@ -900,8 +942,8 @@ Proxy.s: Proxy.c.s
 
 # target to generate assembly for a file
 Proxy.c.s:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj_static.dir/build.make src/CMakeFiles/common_obj_static.dir/Proxy.c.s
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj_static.dir/build.make src/CMakeFiles/common_ssl_obj_static.dir/Proxy.c.s
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj.dir/build.make src/CMakeFiles/common_obj.dir/Proxy.c.s
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj.dir/build.make src/CMakeFiles/common_ssl_obj.dir/Proxy.c.s
 .PHONY : Proxy.c.s
 
 SHA1.o: SHA1.c.o
@@ -910,10 +952,10 @@ SHA1.o: SHA1.c.o
 
 # target to build an object file
 SHA1.c.o:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj_static.dir/build.make src/CMakeFiles/common_obj_static.dir/SHA1.c.o
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj.dir/build.make src/CMakeFiles/common_obj.dir/SHA1.c.o
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj.dir/build.make src/CMakeFiles/common_ssl_obj.dir/SHA1.c.o
 	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/Sha1Test.dir/build.make src/CMakeFiles/Sha1Test.dir/SHA1.c.o
 	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/Sha1TestOpenSSL.dir/build.make src/CMakeFiles/Sha1TestOpenSSL.dir/SHA1.c.o
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj_static.dir/build.make src/CMakeFiles/common_ssl_obj_static.dir/SHA1.c.o
 .PHONY : SHA1.c.o
 
 SHA1.i: SHA1.c.i
@@ -922,10 +964,10 @@ SHA1.i: SHA1.c.i
 
 # target to preprocess a source file
 SHA1.c.i:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj_static.dir/build.make src/CMakeFiles/common_obj_static.dir/SHA1.c.i
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj.dir/build.make src/CMakeFiles/common_obj.dir/SHA1.c.i
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj.dir/build.make src/CMakeFiles/common_ssl_obj.dir/SHA1.c.i
 	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/Sha1Test.dir/build.make src/CMakeFiles/Sha1Test.dir/SHA1.c.i
 	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/Sha1TestOpenSSL.dir/build.make src/CMakeFiles/Sha1TestOpenSSL.dir/SHA1.c.i
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj_static.dir/build.make src/CMakeFiles/common_ssl_obj_static.dir/SHA1.c.i
 .PHONY : SHA1.c.i
 
 SHA1.s: SHA1.c.s
@@ -934,10 +976,10 @@ SHA1.s: SHA1.c.s
 
 # target to generate assembly for a file
 SHA1.c.s:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj_static.dir/build.make src/CMakeFiles/common_obj_static.dir/SHA1.c.s
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj.dir/build.make src/CMakeFiles/common_obj.dir/SHA1.c.s
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj.dir/build.make src/CMakeFiles/common_ssl_obj.dir/SHA1.c.s
 	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/Sha1Test.dir/build.make src/CMakeFiles/Sha1Test.dir/SHA1.c.s
 	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/Sha1TestOpenSSL.dir/build.make src/CMakeFiles/Sha1TestOpenSSL.dir/SHA1.c.s
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj_static.dir/build.make src/CMakeFiles/common_ssl_obj_static.dir/SHA1.c.s
 .PHONY : SHA1.c.s
 
 SSLSocket.o: SSLSocket.c.o
@@ -946,8 +988,8 @@ SSLSocket.o: SSLSocket.c.o
 
 # target to build an object file
 SSLSocket.c.o:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/paho-mqtt3as-static.dir/build.make src/CMakeFiles/paho-mqtt3as-static.dir/SSLSocket.c.o
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/paho-mqtt3cs-static.dir/build.make src/CMakeFiles/paho-mqtt3cs-static.dir/SSLSocket.c.o
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/paho-mqtt3cs.dir/build.make src/CMakeFiles/paho-mqtt3cs.dir/SSLSocket.c.o
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/paho-mqtt3as.dir/build.make src/CMakeFiles/paho-mqtt3as.dir/SSLSocket.c.o
 .PHONY : SSLSocket.c.o
 
 SSLSocket.i: SSLSocket.c.i
@@ -956,8 +998,8 @@ SSLSocket.i: SSLSocket.c.i
 
 # target to preprocess a source file
 SSLSocket.c.i:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/paho-mqtt3as-static.dir/build.make src/CMakeFiles/paho-mqtt3as-static.dir/SSLSocket.c.i
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/paho-mqtt3cs-static.dir/build.make src/CMakeFiles/paho-mqtt3cs-static.dir/SSLSocket.c.i
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/paho-mqtt3cs.dir/build.make src/CMakeFiles/paho-mqtt3cs.dir/SSLSocket.c.i
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/paho-mqtt3as.dir/build.make src/CMakeFiles/paho-mqtt3as.dir/SSLSocket.c.i
 .PHONY : SSLSocket.c.i
 
 SSLSocket.s: SSLSocket.c.s
@@ -966,8 +1008,8 @@ SSLSocket.s: SSLSocket.c.s
 
 # target to generate assembly for a file
 SSLSocket.c.s:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/paho-mqtt3as-static.dir/build.make src/CMakeFiles/paho-mqtt3as-static.dir/SSLSocket.c.s
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/paho-mqtt3cs-static.dir/build.make src/CMakeFiles/paho-mqtt3cs-static.dir/SSLSocket.c.s
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/paho-mqtt3cs.dir/build.make src/CMakeFiles/paho-mqtt3cs.dir/SSLSocket.c.s
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/paho-mqtt3as.dir/build.make src/CMakeFiles/paho-mqtt3as.dir/SSLSocket.c.s
 .PHONY : SSLSocket.c.s
 
 Socket.o: Socket.c.o
@@ -976,8 +1018,8 @@ Socket.o: Socket.c.o
 
 # target to build an object file
 Socket.c.o:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj_static.dir/build.make src/CMakeFiles/common_obj_static.dir/Socket.c.o
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj_static.dir/build.make src/CMakeFiles/common_ssl_obj_static.dir/Socket.c.o
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj.dir/build.make src/CMakeFiles/common_obj.dir/Socket.c.o
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj.dir/build.make src/CMakeFiles/common_ssl_obj.dir/Socket.c.o
 .PHONY : Socket.c.o
 
 Socket.i: Socket.c.i
@@ -986,8 +1028,8 @@ Socket.i: Socket.c.i
 
 # target to preprocess a source file
 Socket.c.i:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj_static.dir/build.make src/CMakeFiles/common_obj_static.dir/Socket.c.i
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj_static.dir/build.make src/CMakeFiles/common_ssl_obj_static.dir/Socket.c.i
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj.dir/build.make src/CMakeFiles/common_obj.dir/Socket.c.i
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj.dir/build.make src/CMakeFiles/common_ssl_obj.dir/Socket.c.i
 .PHONY : Socket.c.i
 
 Socket.s: Socket.c.s
@@ -996,8 +1038,8 @@ Socket.s: Socket.c.s
 
 # target to generate assembly for a file
 Socket.c.s:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj_static.dir/build.make src/CMakeFiles/common_obj_static.dir/Socket.c.s
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj_static.dir/build.make src/CMakeFiles/common_ssl_obj_static.dir/Socket.c.s
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj.dir/build.make src/CMakeFiles/common_obj.dir/Socket.c.s
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj.dir/build.make src/CMakeFiles/common_ssl_obj.dir/Socket.c.s
 .PHONY : Socket.c.s
 
 SocketBuffer.o: SocketBuffer.c.o
@@ -1006,8 +1048,8 @@ SocketBuffer.o: SocketBuffer.c.o
 
 # target to build an object file
 SocketBuffer.c.o:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj_static.dir/build.make src/CMakeFiles/common_obj_static.dir/SocketBuffer.c.o
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj_static.dir/build.make src/CMakeFiles/common_ssl_obj_static.dir/SocketBuffer.c.o
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj.dir/build.make src/CMakeFiles/common_obj.dir/SocketBuffer.c.o
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj.dir/build.make src/CMakeFiles/common_ssl_obj.dir/SocketBuffer.c.o
 .PHONY : SocketBuffer.c.o
 
 SocketBuffer.i: SocketBuffer.c.i
@@ -1016,8 +1058,8 @@ SocketBuffer.i: SocketBuffer.c.i
 
 # target to preprocess a source file
 SocketBuffer.c.i:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj_static.dir/build.make src/CMakeFiles/common_obj_static.dir/SocketBuffer.c.i
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj_static.dir/build.make src/CMakeFiles/common_ssl_obj_static.dir/SocketBuffer.c.i
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj.dir/build.make src/CMakeFiles/common_obj.dir/SocketBuffer.c.i
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj.dir/build.make src/CMakeFiles/common_ssl_obj.dir/SocketBuffer.c.i
 .PHONY : SocketBuffer.c.i
 
 SocketBuffer.s: SocketBuffer.c.s
@@ -1026,8 +1068,8 @@ SocketBuffer.s: SocketBuffer.c.s
 
 # target to generate assembly for a file
 SocketBuffer.c.s:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj_static.dir/build.make src/CMakeFiles/common_obj_static.dir/SocketBuffer.c.s
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj_static.dir/build.make src/CMakeFiles/common_ssl_obj_static.dir/SocketBuffer.c.s
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj.dir/build.make src/CMakeFiles/common_obj.dir/SocketBuffer.c.s
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj.dir/build.make src/CMakeFiles/common_ssl_obj.dir/SocketBuffer.c.s
 .PHONY : SocketBuffer.c.s
 
 StackTrace.o: StackTrace.c.o
@@ -1036,8 +1078,8 @@ StackTrace.o: StackTrace.c.o
 
 # target to build an object file
 StackTrace.c.o:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj_static.dir/build.make src/CMakeFiles/common_obj_static.dir/StackTrace.c.o
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj_static.dir/build.make src/CMakeFiles/common_ssl_obj_static.dir/StackTrace.c.o
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj.dir/build.make src/CMakeFiles/common_obj.dir/StackTrace.c.o
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj.dir/build.make src/CMakeFiles/common_ssl_obj.dir/StackTrace.c.o
 .PHONY : StackTrace.c.o
 
 StackTrace.i: StackTrace.c.i
@@ -1046,8 +1088,8 @@ StackTrace.i: StackTrace.c.i
 
 # target to preprocess a source file
 StackTrace.c.i:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj_static.dir/build.make src/CMakeFiles/common_obj_static.dir/StackTrace.c.i
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj_static.dir/build.make src/CMakeFiles/common_ssl_obj_static.dir/StackTrace.c.i
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj.dir/build.make src/CMakeFiles/common_obj.dir/StackTrace.c.i
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj.dir/build.make src/CMakeFiles/common_ssl_obj.dir/StackTrace.c.i
 .PHONY : StackTrace.c.i
 
 StackTrace.s: StackTrace.c.s
@@ -1056,8 +1098,8 @@ StackTrace.s: StackTrace.c.s
 
 # target to generate assembly for a file
 StackTrace.c.s:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj_static.dir/build.make src/CMakeFiles/common_obj_static.dir/StackTrace.c.s
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj_static.dir/build.make src/CMakeFiles/common_ssl_obj_static.dir/StackTrace.c.s
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj.dir/build.make src/CMakeFiles/common_obj.dir/StackTrace.c.s
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj.dir/build.make src/CMakeFiles/common_ssl_obj.dir/StackTrace.c.s
 .PHONY : StackTrace.c.s
 
 Thread.o: Thread.c.o
@@ -1066,8 +1108,8 @@ Thread.o: Thread.c.o
 
 # target to build an object file
 Thread.c.o:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj_static.dir/build.make src/CMakeFiles/common_obj_static.dir/Thread.c.o
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj_static.dir/build.make src/CMakeFiles/common_ssl_obj_static.dir/Thread.c.o
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj.dir/build.make src/CMakeFiles/common_obj.dir/Thread.c.o
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj.dir/build.make src/CMakeFiles/common_ssl_obj.dir/Thread.c.o
 .PHONY : Thread.c.o
 
 Thread.i: Thread.c.i
@@ -1076,8 +1118,8 @@ Thread.i: Thread.c.i
 
 # target to preprocess a source file
 Thread.c.i:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj_static.dir/build.make src/CMakeFiles/common_obj_static.dir/Thread.c.i
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj_static.dir/build.make src/CMakeFiles/common_ssl_obj_static.dir/Thread.c.i
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj.dir/build.make src/CMakeFiles/common_obj.dir/Thread.c.i
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj.dir/build.make src/CMakeFiles/common_ssl_obj.dir/Thread.c.i
 .PHONY : Thread.c.i
 
 Thread.s: Thread.c.s
@@ -1086,8 +1128,8 @@ Thread.s: Thread.c.s
 
 # target to generate assembly for a file
 Thread.c.s:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj_static.dir/build.make src/CMakeFiles/common_obj_static.dir/Thread.c.s
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj_static.dir/build.make src/CMakeFiles/common_ssl_obj_static.dir/Thread.c.s
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj.dir/build.make src/CMakeFiles/common_obj.dir/Thread.c.s
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj.dir/build.make src/CMakeFiles/common_ssl_obj.dir/Thread.c.s
 .PHONY : Thread.c.s
 
 Tree.o: Tree.c.o
@@ -1096,8 +1138,8 @@ Tree.o: Tree.c.o
 
 # target to build an object file
 Tree.c.o:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj_static.dir/build.make src/CMakeFiles/common_obj_static.dir/Tree.c.o
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj_static.dir/build.make src/CMakeFiles/common_ssl_obj_static.dir/Tree.c.o
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj.dir/build.make src/CMakeFiles/common_obj.dir/Tree.c.o
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj.dir/build.make src/CMakeFiles/common_ssl_obj.dir/Tree.c.o
 .PHONY : Tree.c.o
 
 Tree.i: Tree.c.i
@@ -1106,8 +1148,8 @@ Tree.i: Tree.c.i
 
 # target to preprocess a source file
 Tree.c.i:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj_static.dir/build.make src/CMakeFiles/common_obj_static.dir/Tree.c.i
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj_static.dir/build.make src/CMakeFiles/common_ssl_obj_static.dir/Tree.c.i
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj.dir/build.make src/CMakeFiles/common_obj.dir/Tree.c.i
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj.dir/build.make src/CMakeFiles/common_ssl_obj.dir/Tree.c.i
 .PHONY : Tree.c.i
 
 Tree.s: Tree.c.s
@@ -1116,8 +1158,8 @@ Tree.s: Tree.c.s
 
 # target to generate assembly for a file
 Tree.c.s:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj_static.dir/build.make src/CMakeFiles/common_obj_static.dir/Tree.c.s
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj_static.dir/build.make src/CMakeFiles/common_ssl_obj_static.dir/Tree.c.s
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj.dir/build.make src/CMakeFiles/common_obj.dir/Tree.c.s
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj.dir/build.make src/CMakeFiles/common_ssl_obj.dir/Tree.c.s
 .PHONY : Tree.c.s
 
 WebSocket.o: WebSocket.c.o
@@ -1126,8 +1168,8 @@ WebSocket.o: WebSocket.c.o
 
 # target to build an object file
 WebSocket.c.o:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj_static.dir/build.make src/CMakeFiles/common_obj_static.dir/WebSocket.c.o
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj_static.dir/build.make src/CMakeFiles/common_ssl_obj_static.dir/WebSocket.c.o
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj.dir/build.make src/CMakeFiles/common_obj.dir/WebSocket.c.o
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj.dir/build.make src/CMakeFiles/common_ssl_obj.dir/WebSocket.c.o
 .PHONY : WebSocket.c.o
 
 WebSocket.i: WebSocket.c.i
@@ -1136,8 +1178,8 @@ WebSocket.i: WebSocket.c.i
 
 # target to preprocess a source file
 WebSocket.c.i:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj_static.dir/build.make src/CMakeFiles/common_obj_static.dir/WebSocket.c.i
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj_static.dir/build.make src/CMakeFiles/common_ssl_obj_static.dir/WebSocket.c.i
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj.dir/build.make src/CMakeFiles/common_obj.dir/WebSocket.c.i
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj.dir/build.make src/CMakeFiles/common_ssl_obj.dir/WebSocket.c.i
 .PHONY : WebSocket.c.i
 
 WebSocket.s: WebSocket.c.s
@@ -1146,8 +1188,8 @@ WebSocket.s: WebSocket.c.s
 
 # target to generate assembly for a file
 WebSocket.c.s:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj_static.dir/build.make src/CMakeFiles/common_obj_static.dir/WebSocket.c.s
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj_static.dir/build.make src/CMakeFiles/common_ssl_obj_static.dir/WebSocket.c.s
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj.dir/build.make src/CMakeFiles/common_obj.dir/WebSocket.c.s
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj.dir/build.make src/CMakeFiles/common_ssl_obj.dir/WebSocket.c.s
 .PHONY : WebSocket.c.s
 
 utf-8.o: utf-8.c.o
@@ -1156,8 +1198,8 @@ utf-8.o: utf-8.c.o
 
 # target to build an object file
 utf-8.c.o:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj_static.dir/build.make src/CMakeFiles/common_obj_static.dir/utf-8.c.o
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj_static.dir/build.make src/CMakeFiles/common_ssl_obj_static.dir/utf-8.c.o
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj.dir/build.make src/CMakeFiles/common_obj.dir/utf-8.c.o
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj.dir/build.make src/CMakeFiles/common_ssl_obj.dir/utf-8.c.o
 .PHONY : utf-8.c.o
 
 utf-8.i: utf-8.c.i
@@ -1166,8 +1208,8 @@ utf-8.i: utf-8.c.i
 
 # target to preprocess a source file
 utf-8.c.i:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj_static.dir/build.make src/CMakeFiles/common_obj_static.dir/utf-8.c.i
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj_static.dir/build.make src/CMakeFiles/common_ssl_obj_static.dir/utf-8.c.i
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj.dir/build.make src/CMakeFiles/common_obj.dir/utf-8.c.i
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj.dir/build.make src/CMakeFiles/common_ssl_obj.dir/utf-8.c.i
 .PHONY : utf-8.c.i
 
 utf-8.s: utf-8.c.s
@@ -1176,8 +1218,8 @@ utf-8.s: utf-8.c.s
 
 # target to generate assembly for a file
 utf-8.c.s:
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj_static.dir/build.make src/CMakeFiles/common_obj_static.dir/utf-8.c.s
-	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj_static.dir/build.make src/CMakeFiles/common_ssl_obj_static.dir/utf-8.c.s
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_obj.dir/build.make src/CMakeFiles/common_obj.dir/utf-8.c.s
+	cd /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross && $(MAKE) -f src/CMakeFiles/common_ssl_obj.dir/build.make src/CMakeFiles/common_ssl_obj.dir/utf-8.c.s
 .PHONY : utf-8.c.s
 
 # Help Target
@@ -1190,19 +1232,20 @@ help:
 	@echo "... install/local"
 	@echo "... install"
 	@echo "... list_install_components"
-	@echo "... Base64TestOpenSSL"
+	@echo "... common_obj"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... common_obj_static"
-	@echo "... paho-mqtt3c-static"
-	@echo "... Sha1Test"
-	@echo "... package_source"
-	@echo "... Sha1TestOpenSSL"
-	@echo "... paho-mqtt3a-static"
-	@echo "... paho-mqtt3as-static"
-	@echo "... common_ssl_obj_static"
-	@echo "... paho-mqtt3cs-static"
+	@echo "... MQTTVersion"
+	@echo "... paho-mqtt3cs"
+	@echo "... paho-mqtt3c"
+	@echo "... paho-mqtt3a"
+	@echo "... common_ssl_obj"
 	@echo "... Base64Test"
+	@echo "... paho-mqtt3as"
+	@echo "... Sha1Test"
+	@echo "... Sha1TestOpenSSL"
+	@echo "... package_source"
+	@echo "... Base64TestOpenSSL"
 	@echo "... package"
 	@echo "... Base64.o"
 	@echo "... Base64.i"
@@ -1255,6 +1298,9 @@ help:
 	@echo "... MQTTTime.o"
 	@echo "... MQTTTime.i"
 	@echo "... MQTTTime.s"
+	@echo "... MQTTVersion.o"
+	@echo "... MQTTVersion.i"
+	@echo "... MQTTVersion.s"
 	@echo "... Messages.o"
 	@echo "... Messages.i"
 	@echo "... Messages.s"

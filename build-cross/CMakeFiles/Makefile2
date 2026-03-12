@@ -74,12 +74,13 @@ clean: src/samples/clean
 # Directory level rules for directory src
 
 # Recursive "all" directory target.
-src/all: src/CMakeFiles/common_obj_static.dir/all
-src/all: src/CMakeFiles/paho-mqtt3c-static.dir/all
-src/all: src/CMakeFiles/paho-mqtt3a-static.dir/all
-src/all: src/CMakeFiles/paho-mqtt3as-static.dir/all
-src/all: src/CMakeFiles/common_ssl_obj_static.dir/all
-src/all: src/CMakeFiles/paho-mqtt3cs-static.dir/all
+src/all: src/CMakeFiles/common_obj.dir/all
+src/all: src/CMakeFiles/MQTTVersion.dir/all
+src/all: src/CMakeFiles/paho-mqtt3cs.dir/all
+src/all: src/CMakeFiles/paho-mqtt3c.dir/all
+src/all: src/CMakeFiles/paho-mqtt3a.dir/all
+src/all: src/CMakeFiles/common_ssl_obj.dir/all
+src/all: src/CMakeFiles/paho-mqtt3as.dir/all
 
 .PHONY : src/all
 
@@ -89,16 +90,17 @@ src/preinstall:
 .PHONY : src/preinstall
 
 # Recursive "clean" directory target.
-src/clean: src/CMakeFiles/Base64TestOpenSSL.dir/clean
-src/clean: src/CMakeFiles/common_obj_static.dir/clean
-src/clean: src/CMakeFiles/paho-mqtt3c-static.dir/clean
+src/clean: src/CMakeFiles/common_obj.dir/clean
+src/clean: src/CMakeFiles/MQTTVersion.dir/clean
+src/clean: src/CMakeFiles/paho-mqtt3cs.dir/clean
+src/clean: src/CMakeFiles/paho-mqtt3c.dir/clean
+src/clean: src/CMakeFiles/paho-mqtt3a.dir/clean
+src/clean: src/CMakeFiles/common_ssl_obj.dir/clean
+src/clean: src/CMakeFiles/Base64Test.dir/clean
+src/clean: src/CMakeFiles/paho-mqtt3as.dir/clean
 src/clean: src/CMakeFiles/Sha1Test.dir/clean
 src/clean: src/CMakeFiles/Sha1TestOpenSSL.dir/clean
-src/clean: src/CMakeFiles/paho-mqtt3a-static.dir/clean
-src/clean: src/CMakeFiles/paho-mqtt3as-static.dir/clean
-src/clean: src/CMakeFiles/common_ssl_obj_static.dir/clean
-src/clean: src/CMakeFiles/paho-mqtt3cs-static.dir/clean
-src/clean: src/CMakeFiles/Base64Test.dir/clean
+src/clean: src/CMakeFiles/Base64TestOpenSSL.dir/clean
 
 .PHONY : src/clean
 
@@ -106,16 +108,16 @@ src/clean: src/CMakeFiles/Base64Test.dir/clean
 # Directory level rules for directory src/samples
 
 # Recursive "all" directory target.
-src/samples/all: src/samples/CMakeFiles/paho_c_pub_static.dir/all
-src/samples/all: src/samples/CMakeFiles/paho_c_sub_static.dir/all
-src/samples/all: src/samples/CMakeFiles/paho_cs_pub_static.dir/all
-src/samples/all: src/samples/CMakeFiles/paho_cs_sub_static.dir/all
-src/samples/all: src/samples/CMakeFiles/MQTTAsync_subscribe_static.dir/all
-src/samples/all: src/samples/CMakeFiles/MQTTAsync_publish_static.dir/all
-src/samples/all: src/samples/CMakeFiles/MQTTClient_subscribe_static.dir/all
-src/samples/all: src/samples/CMakeFiles/MQTTAsync_publish_time_static.dir/all
-src/samples/all: src/samples/CMakeFiles/MQTTClient_publish_async_static.dir/all
-src/samples/all: src/samples/CMakeFiles/MQTTClient_publish_static.dir/all
+src/samples/all: src/samples/CMakeFiles/paho_c_pub.dir/all
+src/samples/all: src/samples/CMakeFiles/paho_cs_pub.dir/all
+src/samples/all: src/samples/CMakeFiles/paho_c_sub.dir/all
+src/samples/all: src/samples/CMakeFiles/MQTTAsync_subscribe.dir/all
+src/samples/all: src/samples/CMakeFiles/MQTTAsync_publish.dir/all
+src/samples/all: src/samples/CMakeFiles/MQTTClient_subscribe.dir/all
+src/samples/all: src/samples/CMakeFiles/MQTTClient_publish.dir/all
+src/samples/all: src/samples/CMakeFiles/paho_cs_sub.dir/all
+src/samples/all: src/samples/CMakeFiles/MQTTAsync_publish_time.dir/all
+src/samples/all: src/samples/CMakeFiles/MQTTClient_publish_async.dir/all
 
 .PHONY : src/samples/all
 
@@ -125,261 +127,181 @@ src/samples/preinstall:
 .PHONY : src/samples/preinstall
 
 # Recursive "clean" directory target.
-src/samples/clean: src/samples/CMakeFiles/paho_c_pub_static.dir/clean
-src/samples/clean: src/samples/CMakeFiles/paho_c_sub_static.dir/clean
-src/samples/clean: src/samples/CMakeFiles/paho_cs_pub_static.dir/clean
-src/samples/clean: src/samples/CMakeFiles/paho_cs_sub_static.dir/clean
-src/samples/clean: src/samples/CMakeFiles/MQTTAsync_subscribe_static.dir/clean
-src/samples/clean: src/samples/CMakeFiles/MQTTAsync_publish_static.dir/clean
-src/samples/clean: src/samples/CMakeFiles/MQTTClient_subscribe_static.dir/clean
-src/samples/clean: src/samples/CMakeFiles/MQTTAsync_publish_time_static.dir/clean
-src/samples/clean: src/samples/CMakeFiles/MQTTClient_publish_async_static.dir/clean
-src/samples/clean: src/samples/CMakeFiles/MQTTClient_publish_static.dir/clean
+src/samples/clean: src/samples/CMakeFiles/paho_c_pub.dir/clean
+src/samples/clean: src/samples/CMakeFiles/paho_cs_pub.dir/clean
+src/samples/clean: src/samples/CMakeFiles/paho_c_sub.dir/clean
+src/samples/clean: src/samples/CMakeFiles/MQTTAsync_subscribe.dir/clean
+src/samples/clean: src/samples/CMakeFiles/MQTTAsync_publish.dir/clean
+src/samples/clean: src/samples/CMakeFiles/MQTTClient_subscribe.dir/clean
+src/samples/clean: src/samples/CMakeFiles/MQTTClient_publish.dir/clean
+src/samples/clean: src/samples/CMakeFiles/paho_cs_sub.dir/clean
+src/samples/clean: src/samples/CMakeFiles/MQTTAsync_publish_time.dir/clean
+src/samples/clean: src/samples/CMakeFiles/MQTTClient_publish_async.dir/clean
 
 .PHONY : src/samples/clean
 
 #=============================================================================
-# Target rules for target src/CMakeFiles/Base64TestOpenSSL.dir
+# Target rules for target src/CMakeFiles/common_obj.dir
 
 # All Build rule for target.
-src/CMakeFiles/Base64TestOpenSSL.dir/all:
-	$(MAKE) -f src/CMakeFiles/Base64TestOpenSSL.dir/build.make src/CMakeFiles/Base64TestOpenSSL.dir/depend
-	$(MAKE) -f src/CMakeFiles/Base64TestOpenSSL.dir/build.make src/CMakeFiles/Base64TestOpenSSL.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles --progress-num=3,4 "Built target Base64TestOpenSSL"
-.PHONY : src/CMakeFiles/Base64TestOpenSSL.dir/all
+src/CMakeFiles/common_obj.dir/all:
+	$(MAKE) -f src/CMakeFiles/common_obj.dir/build.make src/CMakeFiles/common_obj.dir/depend
+	$(MAKE) -f src/CMakeFiles/common_obj.dir/build.make src/CMakeFiles/common_obj.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles --progress-num=23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46 "Built target common_obj"
+.PHONY : src/CMakeFiles/common_obj.dir/all
 
 # Build rule for subdir invocation for target.
-src/CMakeFiles/Base64TestOpenSSL.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/Base64TestOpenSSL.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles 0
-.PHONY : src/CMakeFiles/Base64TestOpenSSL.dir/rule
-
-# Convenience name for target.
-Base64TestOpenSSL: src/CMakeFiles/Base64TestOpenSSL.dir/rule
-
-.PHONY : Base64TestOpenSSL
-
-# clean rule for target.
-src/CMakeFiles/Base64TestOpenSSL.dir/clean:
-	$(MAKE) -f src/CMakeFiles/Base64TestOpenSSL.dir/build.make src/CMakeFiles/Base64TestOpenSSL.dir/clean
-.PHONY : src/CMakeFiles/Base64TestOpenSSL.dir/clean
-
-#=============================================================================
-# Target rules for target src/CMakeFiles/common_obj_static.dir
-
-# All Build rule for target.
-src/CMakeFiles/common_obj_static.dir/all:
-	$(MAKE) -f src/CMakeFiles/common_obj_static.dir/build.make src/CMakeFiles/common_obj_static.dir/depend
-	$(MAKE) -f src/CMakeFiles/common_obj_static.dir/build.make src/CMakeFiles/common_obj_static.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles --progress-num=21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44 "Built target common_obj_static"
-.PHONY : src/CMakeFiles/common_obj_static.dir/all
-
-# Build rule for subdir invocation for target.
-src/CMakeFiles/common_obj_static.dir/rule: cmake_check_build_system
+src/CMakeFiles/common_obj.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles 24
-	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/common_obj_static.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/common_obj.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles 0
-.PHONY : src/CMakeFiles/common_obj_static.dir/rule
+.PHONY : src/CMakeFiles/common_obj.dir/rule
 
 # Convenience name for target.
-common_obj_static: src/CMakeFiles/common_obj_static.dir/rule
+common_obj: src/CMakeFiles/common_obj.dir/rule
 
-.PHONY : common_obj_static
+.PHONY : common_obj
 
 # clean rule for target.
-src/CMakeFiles/common_obj_static.dir/clean:
-	$(MAKE) -f src/CMakeFiles/common_obj_static.dir/build.make src/CMakeFiles/common_obj_static.dir/clean
-.PHONY : src/CMakeFiles/common_obj_static.dir/clean
+src/CMakeFiles/common_obj.dir/clean:
+	$(MAKE) -f src/CMakeFiles/common_obj.dir/build.make src/CMakeFiles/common_obj.dir/clean
+.PHONY : src/CMakeFiles/common_obj.dir/clean
 
 #=============================================================================
-# Target rules for target src/CMakeFiles/paho-mqtt3c-static.dir
+# Target rules for target src/CMakeFiles/MQTTVersion.dir
 
 # All Build rule for target.
-src/CMakeFiles/paho-mqtt3c-static.dir/all: src/CMakeFiles/common_obj_static.dir/all
-	$(MAKE) -f src/CMakeFiles/paho-mqtt3c-static.dir/build.make src/CMakeFiles/paho-mqtt3c-static.dir/depend
-	$(MAKE) -f src/CMakeFiles/paho-mqtt3c-static.dir/build.make src/CMakeFiles/paho-mqtt3c-static.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles --progress-num=76,77 "Built target paho-mqtt3c-static"
-.PHONY : src/CMakeFiles/paho-mqtt3c-static.dir/all
+src/CMakeFiles/MQTTVersion.dir/all: src/CMakeFiles/paho-mqtt3c.dir/all
+src/CMakeFiles/MQTTVersion.dir/all: src/CMakeFiles/paho-mqtt3a.dir/all
+	$(MAKE) -f src/CMakeFiles/MQTTVersion.dir/build.make src/CMakeFiles/MQTTVersion.dir/depend
+	$(MAKE) -f src/CMakeFiles/MQTTVersion.dir/build.make src/CMakeFiles/MQTTVersion.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles --progress-num=17,18 "Built target MQTTVersion"
+.PHONY : src/CMakeFiles/MQTTVersion.dir/all
 
 # Build rule for subdir invocation for target.
-src/CMakeFiles/paho-mqtt3c-static.dir/rule: cmake_check_build_system
+src/CMakeFiles/MQTTVersion.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles 31
+	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/MQTTVersion.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles 0
+.PHONY : src/CMakeFiles/MQTTVersion.dir/rule
+
+# Convenience name for target.
+MQTTVersion: src/CMakeFiles/MQTTVersion.dir/rule
+
+.PHONY : MQTTVersion
+
+# clean rule for target.
+src/CMakeFiles/MQTTVersion.dir/clean:
+	$(MAKE) -f src/CMakeFiles/MQTTVersion.dir/build.make src/CMakeFiles/MQTTVersion.dir/clean
+.PHONY : src/CMakeFiles/MQTTVersion.dir/clean
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/paho-mqtt3cs.dir
+
+# All Build rule for target.
+src/CMakeFiles/paho-mqtt3cs.dir/all: src/CMakeFiles/common_ssl_obj.dir/all
+	$(MAKE) -f src/CMakeFiles/paho-mqtt3cs.dir/build.make src/CMakeFiles/paho-mqtt3cs.dir/depend
+	$(MAKE) -f src/CMakeFiles/paho-mqtt3cs.dir/build.make src/CMakeFiles/paho-mqtt3cs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles --progress-num=80,81,82 "Built target paho-mqtt3cs"
+.PHONY : src/CMakeFiles/paho-mqtt3cs.dir/all
+
+# Build rule for subdir invocation for target.
+src/CMakeFiles/paho-mqtt3cs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles 27
+	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/paho-mqtt3cs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles 0
+.PHONY : src/CMakeFiles/paho-mqtt3cs.dir/rule
+
+# Convenience name for target.
+paho-mqtt3cs: src/CMakeFiles/paho-mqtt3cs.dir/rule
+
+.PHONY : paho-mqtt3cs
+
+# clean rule for target.
+src/CMakeFiles/paho-mqtt3cs.dir/clean:
+	$(MAKE) -f src/CMakeFiles/paho-mqtt3cs.dir/build.make src/CMakeFiles/paho-mqtt3cs.dir/clean
+.PHONY : src/CMakeFiles/paho-mqtt3cs.dir/clean
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/paho-mqtt3c.dir
+
+# All Build rule for target.
+src/CMakeFiles/paho-mqtt3c.dir/all: src/CMakeFiles/common_obj.dir/all
+	$(MAKE) -f src/CMakeFiles/paho-mqtt3c.dir/build.make src/CMakeFiles/paho-mqtt3c.dir/depend
+	$(MAKE) -f src/CMakeFiles/paho-mqtt3c.dir/build.make src/CMakeFiles/paho-mqtt3c.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles --progress-num=78,79 "Built target paho-mqtt3c"
+.PHONY : src/CMakeFiles/paho-mqtt3c.dir/all
+
+# Build rule for subdir invocation for target.
+src/CMakeFiles/paho-mqtt3c.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles 26
-	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/paho-mqtt3c-static.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/paho-mqtt3c.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles 0
-.PHONY : src/CMakeFiles/paho-mqtt3c-static.dir/rule
+.PHONY : src/CMakeFiles/paho-mqtt3c.dir/rule
 
 # Convenience name for target.
-paho-mqtt3c-static: src/CMakeFiles/paho-mqtt3c-static.dir/rule
+paho-mqtt3c: src/CMakeFiles/paho-mqtt3c.dir/rule
 
-.PHONY : paho-mqtt3c-static
-
-# clean rule for target.
-src/CMakeFiles/paho-mqtt3c-static.dir/clean:
-	$(MAKE) -f src/CMakeFiles/paho-mqtt3c-static.dir/build.make src/CMakeFiles/paho-mqtt3c-static.dir/clean
-.PHONY : src/CMakeFiles/paho-mqtt3c-static.dir/clean
-
-#=============================================================================
-# Target rules for target src/CMakeFiles/Sha1Test.dir
-
-# All Build rule for target.
-src/CMakeFiles/Sha1Test.dir/all:
-	$(MAKE) -f src/CMakeFiles/Sha1Test.dir/build.make src/CMakeFiles/Sha1Test.dir/depend
-	$(MAKE) -f src/CMakeFiles/Sha1Test.dir/build.make src/CMakeFiles/Sha1Test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles --progress-num=17,18 "Built target Sha1Test"
-.PHONY : src/CMakeFiles/Sha1Test.dir/all
-
-# Build rule for subdir invocation for target.
-src/CMakeFiles/Sha1Test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/Sha1Test.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles 0
-.PHONY : src/CMakeFiles/Sha1Test.dir/rule
-
-# Convenience name for target.
-Sha1Test: src/CMakeFiles/Sha1Test.dir/rule
-
-.PHONY : Sha1Test
+.PHONY : paho-mqtt3c
 
 # clean rule for target.
-src/CMakeFiles/Sha1Test.dir/clean:
-	$(MAKE) -f src/CMakeFiles/Sha1Test.dir/build.make src/CMakeFiles/Sha1Test.dir/clean
-.PHONY : src/CMakeFiles/Sha1Test.dir/clean
+src/CMakeFiles/paho-mqtt3c.dir/clean:
+	$(MAKE) -f src/CMakeFiles/paho-mqtt3c.dir/build.make src/CMakeFiles/paho-mqtt3c.dir/clean
+.PHONY : src/CMakeFiles/paho-mqtt3c.dir/clean
 
 #=============================================================================
-# Target rules for target src/CMakeFiles/Sha1TestOpenSSL.dir
+# Target rules for target src/CMakeFiles/paho-mqtt3a.dir
 
 # All Build rule for target.
-src/CMakeFiles/Sha1TestOpenSSL.dir/all:
-	$(MAKE) -f src/CMakeFiles/Sha1TestOpenSSL.dir/build.make src/CMakeFiles/Sha1TestOpenSSL.dir/depend
-	$(MAKE) -f src/CMakeFiles/Sha1TestOpenSSL.dir/build.make src/CMakeFiles/Sha1TestOpenSSL.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles --progress-num=19,20 "Built target Sha1TestOpenSSL"
-.PHONY : src/CMakeFiles/Sha1TestOpenSSL.dir/all
+src/CMakeFiles/paho-mqtt3a.dir/all: src/CMakeFiles/common_obj.dir/all
+	$(MAKE) -f src/CMakeFiles/paho-mqtt3a.dir/build.make src/CMakeFiles/paho-mqtt3a.dir/depend
+	$(MAKE) -f src/CMakeFiles/paho-mqtt3a.dir/build.make src/CMakeFiles/paho-mqtt3a.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles --progress-num=71,72,73 "Built target paho-mqtt3a"
+.PHONY : src/CMakeFiles/paho-mqtt3a.dir/all
 
 # Build rule for subdir invocation for target.
-src/CMakeFiles/Sha1TestOpenSSL.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/Sha1TestOpenSSL.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles 0
-.PHONY : src/CMakeFiles/Sha1TestOpenSSL.dir/rule
-
-# Convenience name for target.
-Sha1TestOpenSSL: src/CMakeFiles/Sha1TestOpenSSL.dir/rule
-
-.PHONY : Sha1TestOpenSSL
-
-# clean rule for target.
-src/CMakeFiles/Sha1TestOpenSSL.dir/clean:
-	$(MAKE) -f src/CMakeFiles/Sha1TestOpenSSL.dir/build.make src/CMakeFiles/Sha1TestOpenSSL.dir/clean
-.PHONY : src/CMakeFiles/Sha1TestOpenSSL.dir/clean
-
-#=============================================================================
-# Target rules for target src/CMakeFiles/paho-mqtt3a-static.dir
-
-# All Build rule for target.
-src/CMakeFiles/paho-mqtt3a-static.dir/all: src/CMakeFiles/common_obj_static.dir/all
-	$(MAKE) -f src/CMakeFiles/paho-mqtt3a-static.dir/build.make src/CMakeFiles/paho-mqtt3a-static.dir/depend
-	$(MAKE) -f src/CMakeFiles/paho-mqtt3a-static.dir/build.make src/CMakeFiles/paho-mqtt3a-static.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles --progress-num=69,70,71 "Built target paho-mqtt3a-static"
-.PHONY : src/CMakeFiles/paho-mqtt3a-static.dir/all
-
-# Build rule for subdir invocation for target.
-src/CMakeFiles/paho-mqtt3a-static.dir/rule: cmake_check_build_system
+src/CMakeFiles/paho-mqtt3a.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles 27
-	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/paho-mqtt3a-static.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/paho-mqtt3a.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles 0
-.PHONY : src/CMakeFiles/paho-mqtt3a-static.dir/rule
+.PHONY : src/CMakeFiles/paho-mqtt3a.dir/rule
 
 # Convenience name for target.
-paho-mqtt3a-static: src/CMakeFiles/paho-mqtt3a-static.dir/rule
+paho-mqtt3a: src/CMakeFiles/paho-mqtt3a.dir/rule
 
-.PHONY : paho-mqtt3a-static
-
-# clean rule for target.
-src/CMakeFiles/paho-mqtt3a-static.dir/clean:
-	$(MAKE) -f src/CMakeFiles/paho-mqtt3a-static.dir/build.make src/CMakeFiles/paho-mqtt3a-static.dir/clean
-.PHONY : src/CMakeFiles/paho-mqtt3a-static.dir/clean
-
-#=============================================================================
-# Target rules for target src/CMakeFiles/paho-mqtt3as-static.dir
-
-# All Build rule for target.
-src/CMakeFiles/paho-mqtt3as-static.dir/all: src/CMakeFiles/common_ssl_obj_static.dir/all
-	$(MAKE) -f src/CMakeFiles/paho-mqtt3as-static.dir/build.make src/CMakeFiles/paho-mqtt3as-static.dir/depend
-	$(MAKE) -f src/CMakeFiles/paho-mqtt3as-static.dir/build.make src/CMakeFiles/paho-mqtt3as-static.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles --progress-num=72,73,74,75 "Built target paho-mqtt3as-static"
-.PHONY : src/CMakeFiles/paho-mqtt3as-static.dir/all
-
-# Build rule for subdir invocation for target.
-src/CMakeFiles/paho-mqtt3as-static.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles 28
-	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/paho-mqtt3as-static.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles 0
-.PHONY : src/CMakeFiles/paho-mqtt3as-static.dir/rule
-
-# Convenience name for target.
-paho-mqtt3as-static: src/CMakeFiles/paho-mqtt3as-static.dir/rule
-
-.PHONY : paho-mqtt3as-static
+.PHONY : paho-mqtt3a
 
 # clean rule for target.
-src/CMakeFiles/paho-mqtt3as-static.dir/clean:
-	$(MAKE) -f src/CMakeFiles/paho-mqtt3as-static.dir/build.make src/CMakeFiles/paho-mqtt3as-static.dir/clean
-.PHONY : src/CMakeFiles/paho-mqtt3as-static.dir/clean
+src/CMakeFiles/paho-mqtt3a.dir/clean:
+	$(MAKE) -f src/CMakeFiles/paho-mqtt3a.dir/build.make src/CMakeFiles/paho-mqtt3a.dir/clean
+.PHONY : src/CMakeFiles/paho-mqtt3a.dir/clean
 
 #=============================================================================
-# Target rules for target src/CMakeFiles/common_ssl_obj_static.dir
+# Target rules for target src/CMakeFiles/common_ssl_obj.dir
 
 # All Build rule for target.
-src/CMakeFiles/common_ssl_obj_static.dir/all:
-	$(MAKE) -f src/CMakeFiles/common_ssl_obj_static.dir/build.make src/CMakeFiles/common_ssl_obj_static.dir/depend
-	$(MAKE) -f src/CMakeFiles/common_ssl_obj_static.dir/build.make src/CMakeFiles/common_ssl_obj_static.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles --progress-num=45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68 "Built target common_ssl_obj_static"
-.PHONY : src/CMakeFiles/common_ssl_obj_static.dir/all
+src/CMakeFiles/common_ssl_obj.dir/all:
+	$(MAKE) -f src/CMakeFiles/common_ssl_obj.dir/build.make src/CMakeFiles/common_ssl_obj.dir/depend
+	$(MAKE) -f src/CMakeFiles/common_ssl_obj.dir/build.make src/CMakeFiles/common_ssl_obj.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles --progress-num=47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70 "Built target common_ssl_obj"
+.PHONY : src/CMakeFiles/common_ssl_obj.dir/all
 
 # Build rule for subdir invocation for target.
-src/CMakeFiles/common_ssl_obj_static.dir/rule: cmake_check_build_system
+src/CMakeFiles/common_ssl_obj.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles 24
-	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/common_ssl_obj_static.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/common_ssl_obj.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles 0
-.PHONY : src/CMakeFiles/common_ssl_obj_static.dir/rule
+.PHONY : src/CMakeFiles/common_ssl_obj.dir/rule
 
 # Convenience name for target.
-common_ssl_obj_static: src/CMakeFiles/common_ssl_obj_static.dir/rule
+common_ssl_obj: src/CMakeFiles/common_ssl_obj.dir/rule
 
-.PHONY : common_ssl_obj_static
-
-# clean rule for target.
-src/CMakeFiles/common_ssl_obj_static.dir/clean:
-	$(MAKE) -f src/CMakeFiles/common_ssl_obj_static.dir/build.make src/CMakeFiles/common_ssl_obj_static.dir/clean
-.PHONY : src/CMakeFiles/common_ssl_obj_static.dir/clean
-
-#=============================================================================
-# Target rules for target src/CMakeFiles/paho-mqtt3cs-static.dir
-
-# All Build rule for target.
-src/CMakeFiles/paho-mqtt3cs-static.dir/all: src/CMakeFiles/common_ssl_obj_static.dir/all
-	$(MAKE) -f src/CMakeFiles/paho-mqtt3cs-static.dir/build.make src/CMakeFiles/paho-mqtt3cs-static.dir/depend
-	$(MAKE) -f src/CMakeFiles/paho-mqtt3cs-static.dir/build.make src/CMakeFiles/paho-mqtt3cs-static.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles --progress-num=78,79,80 "Built target paho-mqtt3cs-static"
-.PHONY : src/CMakeFiles/paho-mqtt3cs-static.dir/all
-
-# Build rule for subdir invocation for target.
-src/CMakeFiles/paho-mqtt3cs-static.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles 27
-	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/paho-mqtt3cs-static.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles 0
-.PHONY : src/CMakeFiles/paho-mqtt3cs-static.dir/rule
-
-# Convenience name for target.
-paho-mqtt3cs-static: src/CMakeFiles/paho-mqtt3cs-static.dir/rule
-
-.PHONY : paho-mqtt3cs-static
+.PHONY : common_ssl_obj
 
 # clean rule for target.
-src/CMakeFiles/paho-mqtt3cs-static.dir/clean:
-	$(MAKE) -f src/CMakeFiles/paho-mqtt3cs-static.dir/build.make src/CMakeFiles/paho-mqtt3cs-static.dir/clean
-.PHONY : src/CMakeFiles/paho-mqtt3cs-static.dir/clean
+src/CMakeFiles/common_ssl_obj.dir/clean:
+	$(MAKE) -f src/CMakeFiles/common_ssl_obj.dir/build.make src/CMakeFiles/common_ssl_obj.dir/clean
+.PHONY : src/CMakeFiles/common_ssl_obj.dir/clean
 
 #=============================================================================
 # Target rules for target src/CMakeFiles/Base64Test.dir
@@ -409,274 +331,382 @@ src/CMakeFiles/Base64Test.dir/clean:
 .PHONY : src/CMakeFiles/Base64Test.dir/clean
 
 #=============================================================================
-# Target rules for target src/samples/CMakeFiles/paho_c_pub_static.dir
+# Target rules for target src/CMakeFiles/paho-mqtt3as.dir
 
 # All Build rule for target.
-src/samples/CMakeFiles/paho_c_pub_static.dir/all: src/CMakeFiles/paho-mqtt3as-static.dir/all
-	$(MAKE) -f src/samples/CMakeFiles/paho_c_pub_static.dir/build.make src/samples/CMakeFiles/paho_c_pub_static.dir/depend
-	$(MAKE) -f src/samples/CMakeFiles/paho_c_pub_static.dir/build.make src/samples/CMakeFiles/paho_c_pub_static.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles --progress-num=81,82,83 "Built target paho_c_pub_static"
-.PHONY : src/samples/CMakeFiles/paho_c_pub_static.dir/all
+src/CMakeFiles/paho-mqtt3as.dir/all: src/CMakeFiles/common_ssl_obj.dir/all
+	$(MAKE) -f src/CMakeFiles/paho-mqtt3as.dir/build.make src/CMakeFiles/paho-mqtt3as.dir/depend
+	$(MAKE) -f src/CMakeFiles/paho-mqtt3as.dir/build.make src/CMakeFiles/paho-mqtt3as.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles --progress-num=74,75,76,77 "Built target paho-mqtt3as"
+.PHONY : src/CMakeFiles/paho-mqtt3as.dir/all
 
 # Build rule for subdir invocation for target.
-src/samples/CMakeFiles/paho_c_pub_static.dir/rule: cmake_check_build_system
+src/CMakeFiles/paho-mqtt3as.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles 28
+	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/paho-mqtt3as.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles 0
+.PHONY : src/CMakeFiles/paho-mqtt3as.dir/rule
+
+# Convenience name for target.
+paho-mqtt3as: src/CMakeFiles/paho-mqtt3as.dir/rule
+
+.PHONY : paho-mqtt3as
+
+# clean rule for target.
+src/CMakeFiles/paho-mqtt3as.dir/clean:
+	$(MAKE) -f src/CMakeFiles/paho-mqtt3as.dir/build.make src/CMakeFiles/paho-mqtt3as.dir/clean
+.PHONY : src/CMakeFiles/paho-mqtt3as.dir/clean
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/Sha1Test.dir
+
+# All Build rule for target.
+src/CMakeFiles/Sha1Test.dir/all:
+	$(MAKE) -f src/CMakeFiles/Sha1Test.dir/build.make src/CMakeFiles/Sha1Test.dir/depend
+	$(MAKE) -f src/CMakeFiles/Sha1Test.dir/build.make src/CMakeFiles/Sha1Test.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles --progress-num=19,20 "Built target Sha1Test"
+.PHONY : src/CMakeFiles/Sha1Test.dir/all
+
+# Build rule for subdir invocation for target.
+src/CMakeFiles/Sha1Test.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/Sha1Test.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles 0
+.PHONY : src/CMakeFiles/Sha1Test.dir/rule
+
+# Convenience name for target.
+Sha1Test: src/CMakeFiles/Sha1Test.dir/rule
+
+.PHONY : Sha1Test
+
+# clean rule for target.
+src/CMakeFiles/Sha1Test.dir/clean:
+	$(MAKE) -f src/CMakeFiles/Sha1Test.dir/build.make src/CMakeFiles/Sha1Test.dir/clean
+.PHONY : src/CMakeFiles/Sha1Test.dir/clean
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/Sha1TestOpenSSL.dir
+
+# All Build rule for target.
+src/CMakeFiles/Sha1TestOpenSSL.dir/all:
+	$(MAKE) -f src/CMakeFiles/Sha1TestOpenSSL.dir/build.make src/CMakeFiles/Sha1TestOpenSSL.dir/depend
+	$(MAKE) -f src/CMakeFiles/Sha1TestOpenSSL.dir/build.make src/CMakeFiles/Sha1TestOpenSSL.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles --progress-num=21,22 "Built target Sha1TestOpenSSL"
+.PHONY : src/CMakeFiles/Sha1TestOpenSSL.dir/all
+
+# Build rule for subdir invocation for target.
+src/CMakeFiles/Sha1TestOpenSSL.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/Sha1TestOpenSSL.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles 0
+.PHONY : src/CMakeFiles/Sha1TestOpenSSL.dir/rule
+
+# Convenience name for target.
+Sha1TestOpenSSL: src/CMakeFiles/Sha1TestOpenSSL.dir/rule
+
+.PHONY : Sha1TestOpenSSL
+
+# clean rule for target.
+src/CMakeFiles/Sha1TestOpenSSL.dir/clean:
+	$(MAKE) -f src/CMakeFiles/Sha1TestOpenSSL.dir/build.make src/CMakeFiles/Sha1TestOpenSSL.dir/clean
+.PHONY : src/CMakeFiles/Sha1TestOpenSSL.dir/clean
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/Base64TestOpenSSL.dir
+
+# All Build rule for target.
+src/CMakeFiles/Base64TestOpenSSL.dir/all:
+	$(MAKE) -f src/CMakeFiles/Base64TestOpenSSL.dir/build.make src/CMakeFiles/Base64TestOpenSSL.dir/depend
+	$(MAKE) -f src/CMakeFiles/Base64TestOpenSSL.dir/build.make src/CMakeFiles/Base64TestOpenSSL.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles --progress-num=3,4 "Built target Base64TestOpenSSL"
+.PHONY : src/CMakeFiles/Base64TestOpenSSL.dir/all
+
+# Build rule for subdir invocation for target.
+src/CMakeFiles/Base64TestOpenSSL.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/Base64TestOpenSSL.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles 0
+.PHONY : src/CMakeFiles/Base64TestOpenSSL.dir/rule
+
+# Convenience name for target.
+Base64TestOpenSSL: src/CMakeFiles/Base64TestOpenSSL.dir/rule
+
+.PHONY : Base64TestOpenSSL
+
+# clean rule for target.
+src/CMakeFiles/Base64TestOpenSSL.dir/clean:
+	$(MAKE) -f src/CMakeFiles/Base64TestOpenSSL.dir/build.make src/CMakeFiles/Base64TestOpenSSL.dir/clean
+.PHONY : src/CMakeFiles/Base64TestOpenSSL.dir/clean
+
+#=============================================================================
+# Target rules for target src/samples/CMakeFiles/paho_c_pub.dir
+
+# All Build rule for target.
+src/samples/CMakeFiles/paho_c_pub.dir/all: src/CMakeFiles/paho-mqtt3as.dir/all
+	$(MAKE) -f src/samples/CMakeFiles/paho_c_pub.dir/build.make src/samples/CMakeFiles/paho_c_pub.dir/depend
+	$(MAKE) -f src/samples/CMakeFiles/paho_c_pub.dir/build.make src/samples/CMakeFiles/paho_c_pub.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles --progress-num=83,84,85 "Built target paho_c_pub"
+.PHONY : src/samples/CMakeFiles/paho_c_pub.dir/all
+
+# Build rule for subdir invocation for target.
+src/samples/CMakeFiles/paho_c_pub.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles 31
-	$(MAKE) -f CMakeFiles/Makefile2 src/samples/CMakeFiles/paho_c_pub_static.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 src/samples/CMakeFiles/paho_c_pub.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles 0
-.PHONY : src/samples/CMakeFiles/paho_c_pub_static.dir/rule
+.PHONY : src/samples/CMakeFiles/paho_c_pub.dir/rule
 
 # Convenience name for target.
-paho_c_pub_static: src/samples/CMakeFiles/paho_c_pub_static.dir/rule
+paho_c_pub: src/samples/CMakeFiles/paho_c_pub.dir/rule
 
-.PHONY : paho_c_pub_static
+.PHONY : paho_c_pub
 
 # clean rule for target.
-src/samples/CMakeFiles/paho_c_pub_static.dir/clean:
-	$(MAKE) -f src/samples/CMakeFiles/paho_c_pub_static.dir/build.make src/samples/CMakeFiles/paho_c_pub_static.dir/clean
-.PHONY : src/samples/CMakeFiles/paho_c_pub_static.dir/clean
+src/samples/CMakeFiles/paho_c_pub.dir/clean:
+	$(MAKE) -f src/samples/CMakeFiles/paho_c_pub.dir/build.make src/samples/CMakeFiles/paho_c_pub.dir/clean
+.PHONY : src/samples/CMakeFiles/paho_c_pub.dir/clean
 
 #=============================================================================
-# Target rules for target src/samples/CMakeFiles/paho_c_sub_static.dir
+# Target rules for target src/samples/CMakeFiles/paho_cs_pub.dir
 
 # All Build rule for target.
-src/samples/CMakeFiles/paho_c_sub_static.dir/all: src/CMakeFiles/paho-mqtt3as-static.dir/all
-	$(MAKE) -f src/samples/CMakeFiles/paho_c_sub_static.dir/build.make src/samples/CMakeFiles/paho_c_sub_static.dir/depend
-	$(MAKE) -f src/samples/CMakeFiles/paho_c_sub_static.dir/build.make src/samples/CMakeFiles/paho_c_sub_static.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles --progress-num=84,85,86 "Built target paho_c_sub_static"
-.PHONY : src/samples/CMakeFiles/paho_c_sub_static.dir/all
+src/samples/CMakeFiles/paho_cs_pub.dir/all: src/CMakeFiles/paho-mqtt3cs.dir/all
+	$(MAKE) -f src/samples/CMakeFiles/paho_cs_pub.dir/build.make src/samples/CMakeFiles/paho_cs_pub.dir/depend
+	$(MAKE) -f src/samples/CMakeFiles/paho_cs_pub.dir/build.make src/samples/CMakeFiles/paho_cs_pub.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles --progress-num=89,90,91 "Built target paho_cs_pub"
+.PHONY : src/samples/CMakeFiles/paho_cs_pub.dir/all
 
 # Build rule for subdir invocation for target.
-src/samples/CMakeFiles/paho_c_sub_static.dir/rule: cmake_check_build_system
+src/samples/CMakeFiles/paho_cs_pub.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles 30
+	$(MAKE) -f CMakeFiles/Makefile2 src/samples/CMakeFiles/paho_cs_pub.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles 0
+.PHONY : src/samples/CMakeFiles/paho_cs_pub.dir/rule
+
+# Convenience name for target.
+paho_cs_pub: src/samples/CMakeFiles/paho_cs_pub.dir/rule
+
+.PHONY : paho_cs_pub
+
+# clean rule for target.
+src/samples/CMakeFiles/paho_cs_pub.dir/clean:
+	$(MAKE) -f src/samples/CMakeFiles/paho_cs_pub.dir/build.make src/samples/CMakeFiles/paho_cs_pub.dir/clean
+.PHONY : src/samples/CMakeFiles/paho_cs_pub.dir/clean
+
+#=============================================================================
+# Target rules for target src/samples/CMakeFiles/paho_c_sub.dir
+
+# All Build rule for target.
+src/samples/CMakeFiles/paho_c_sub.dir/all: src/CMakeFiles/paho-mqtt3as.dir/all
+	$(MAKE) -f src/samples/CMakeFiles/paho_c_sub.dir/build.make src/samples/CMakeFiles/paho_c_sub.dir/depend
+	$(MAKE) -f src/samples/CMakeFiles/paho_c_sub.dir/build.make src/samples/CMakeFiles/paho_c_sub.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles --progress-num=86,87,88 "Built target paho_c_sub"
+.PHONY : src/samples/CMakeFiles/paho_c_sub.dir/all
+
+# Build rule for subdir invocation for target.
+src/samples/CMakeFiles/paho_c_sub.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles 31
-	$(MAKE) -f CMakeFiles/Makefile2 src/samples/CMakeFiles/paho_c_sub_static.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 src/samples/CMakeFiles/paho_c_sub.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles 0
-.PHONY : src/samples/CMakeFiles/paho_c_sub_static.dir/rule
+.PHONY : src/samples/CMakeFiles/paho_c_sub.dir/rule
 
 # Convenience name for target.
-paho_c_sub_static: src/samples/CMakeFiles/paho_c_sub_static.dir/rule
+paho_c_sub: src/samples/CMakeFiles/paho_c_sub.dir/rule
 
-.PHONY : paho_c_sub_static
+.PHONY : paho_c_sub
 
 # clean rule for target.
-src/samples/CMakeFiles/paho_c_sub_static.dir/clean:
-	$(MAKE) -f src/samples/CMakeFiles/paho_c_sub_static.dir/build.make src/samples/CMakeFiles/paho_c_sub_static.dir/clean
-.PHONY : src/samples/CMakeFiles/paho_c_sub_static.dir/clean
+src/samples/CMakeFiles/paho_c_sub.dir/clean:
+	$(MAKE) -f src/samples/CMakeFiles/paho_c_sub.dir/build.make src/samples/CMakeFiles/paho_c_sub.dir/clean
+.PHONY : src/samples/CMakeFiles/paho_c_sub.dir/clean
 
 #=============================================================================
-# Target rules for target src/samples/CMakeFiles/paho_cs_pub_static.dir
+# Target rules for target src/samples/CMakeFiles/MQTTAsync_subscribe.dir
 
 # All Build rule for target.
-src/samples/CMakeFiles/paho_cs_pub_static.dir/all: src/CMakeFiles/paho-mqtt3cs-static.dir/all
-	$(MAKE) -f src/samples/CMakeFiles/paho_cs_pub_static.dir/build.make src/samples/CMakeFiles/paho_cs_pub_static.dir/depend
-	$(MAKE) -f src/samples/CMakeFiles/paho_cs_pub_static.dir/build.make src/samples/CMakeFiles/paho_cs_pub_static.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles --progress-num=87,88,89 "Built target paho_cs_pub_static"
-.PHONY : src/samples/CMakeFiles/paho_cs_pub_static.dir/all
+src/samples/CMakeFiles/MQTTAsync_subscribe.dir/all: src/CMakeFiles/paho-mqtt3a.dir/all
+	$(MAKE) -f src/samples/CMakeFiles/MQTTAsync_subscribe.dir/build.make src/samples/CMakeFiles/MQTTAsync_subscribe.dir/depend
+	$(MAKE) -f src/samples/CMakeFiles/MQTTAsync_subscribe.dir/build.make src/samples/CMakeFiles/MQTTAsync_subscribe.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles --progress-num=9,10 "Built target MQTTAsync_subscribe"
+.PHONY : src/samples/CMakeFiles/MQTTAsync_subscribe.dir/all
 
 # Build rule for subdir invocation for target.
-src/samples/CMakeFiles/paho_cs_pub_static.dir/rule: cmake_check_build_system
+src/samples/CMakeFiles/MQTTAsync_subscribe.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles 29
+	$(MAKE) -f CMakeFiles/Makefile2 src/samples/CMakeFiles/MQTTAsync_subscribe.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles 0
+.PHONY : src/samples/CMakeFiles/MQTTAsync_subscribe.dir/rule
+
+# Convenience name for target.
+MQTTAsync_subscribe: src/samples/CMakeFiles/MQTTAsync_subscribe.dir/rule
+
+.PHONY : MQTTAsync_subscribe
+
+# clean rule for target.
+src/samples/CMakeFiles/MQTTAsync_subscribe.dir/clean:
+	$(MAKE) -f src/samples/CMakeFiles/MQTTAsync_subscribe.dir/build.make src/samples/CMakeFiles/MQTTAsync_subscribe.dir/clean
+.PHONY : src/samples/CMakeFiles/MQTTAsync_subscribe.dir/clean
+
+#=============================================================================
+# Target rules for target src/samples/CMakeFiles/MQTTAsync_publish.dir
+
+# All Build rule for target.
+src/samples/CMakeFiles/MQTTAsync_publish.dir/all: src/CMakeFiles/paho-mqtt3a.dir/all
+	$(MAKE) -f src/samples/CMakeFiles/MQTTAsync_publish.dir/build.make src/samples/CMakeFiles/MQTTAsync_publish.dir/depend
+	$(MAKE) -f src/samples/CMakeFiles/MQTTAsync_publish.dir/build.make src/samples/CMakeFiles/MQTTAsync_publish.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles --progress-num=5,6 "Built target MQTTAsync_publish"
+.PHONY : src/samples/CMakeFiles/MQTTAsync_publish.dir/all
+
+# Build rule for subdir invocation for target.
+src/samples/CMakeFiles/MQTTAsync_publish.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles 29
+	$(MAKE) -f CMakeFiles/Makefile2 src/samples/CMakeFiles/MQTTAsync_publish.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles 0
+.PHONY : src/samples/CMakeFiles/MQTTAsync_publish.dir/rule
+
+# Convenience name for target.
+MQTTAsync_publish: src/samples/CMakeFiles/MQTTAsync_publish.dir/rule
+
+.PHONY : MQTTAsync_publish
+
+# clean rule for target.
+src/samples/CMakeFiles/MQTTAsync_publish.dir/clean:
+	$(MAKE) -f src/samples/CMakeFiles/MQTTAsync_publish.dir/build.make src/samples/CMakeFiles/MQTTAsync_publish.dir/clean
+.PHONY : src/samples/CMakeFiles/MQTTAsync_publish.dir/clean
+
+#=============================================================================
+# Target rules for target src/samples/CMakeFiles/MQTTClient_subscribe.dir
+
+# All Build rule for target.
+src/samples/CMakeFiles/MQTTClient_subscribe.dir/all: src/CMakeFiles/paho-mqtt3c.dir/all
+	$(MAKE) -f src/samples/CMakeFiles/MQTTClient_subscribe.dir/build.make src/samples/CMakeFiles/MQTTClient_subscribe.dir/depend
+	$(MAKE) -f src/samples/CMakeFiles/MQTTClient_subscribe.dir/build.make src/samples/CMakeFiles/MQTTClient_subscribe.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles --progress-num=15,16 "Built target MQTTClient_subscribe"
+.PHONY : src/samples/CMakeFiles/MQTTClient_subscribe.dir/all
+
+# Build rule for subdir invocation for target.
+src/samples/CMakeFiles/MQTTClient_subscribe.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles 28
+	$(MAKE) -f CMakeFiles/Makefile2 src/samples/CMakeFiles/MQTTClient_subscribe.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles 0
+.PHONY : src/samples/CMakeFiles/MQTTClient_subscribe.dir/rule
+
+# Convenience name for target.
+MQTTClient_subscribe: src/samples/CMakeFiles/MQTTClient_subscribe.dir/rule
+
+.PHONY : MQTTClient_subscribe
+
+# clean rule for target.
+src/samples/CMakeFiles/MQTTClient_subscribe.dir/clean:
+	$(MAKE) -f src/samples/CMakeFiles/MQTTClient_subscribe.dir/build.make src/samples/CMakeFiles/MQTTClient_subscribe.dir/clean
+.PHONY : src/samples/CMakeFiles/MQTTClient_subscribe.dir/clean
+
+#=============================================================================
+# Target rules for target src/samples/CMakeFiles/MQTTClient_publish.dir
+
+# All Build rule for target.
+src/samples/CMakeFiles/MQTTClient_publish.dir/all: src/CMakeFiles/paho-mqtt3c.dir/all
+	$(MAKE) -f src/samples/CMakeFiles/MQTTClient_publish.dir/build.make src/samples/CMakeFiles/MQTTClient_publish.dir/depend
+	$(MAKE) -f src/samples/CMakeFiles/MQTTClient_publish.dir/build.make src/samples/CMakeFiles/MQTTClient_publish.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles --progress-num=11,12 "Built target MQTTClient_publish"
+.PHONY : src/samples/CMakeFiles/MQTTClient_publish.dir/all
+
+# Build rule for subdir invocation for target.
+src/samples/CMakeFiles/MQTTClient_publish.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles 28
+	$(MAKE) -f CMakeFiles/Makefile2 src/samples/CMakeFiles/MQTTClient_publish.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles 0
+.PHONY : src/samples/CMakeFiles/MQTTClient_publish.dir/rule
+
+# Convenience name for target.
+MQTTClient_publish: src/samples/CMakeFiles/MQTTClient_publish.dir/rule
+
+.PHONY : MQTTClient_publish
+
+# clean rule for target.
+src/samples/CMakeFiles/MQTTClient_publish.dir/clean:
+	$(MAKE) -f src/samples/CMakeFiles/MQTTClient_publish.dir/build.make src/samples/CMakeFiles/MQTTClient_publish.dir/clean
+.PHONY : src/samples/CMakeFiles/MQTTClient_publish.dir/clean
+
+#=============================================================================
+# Target rules for target src/samples/CMakeFiles/paho_cs_sub.dir
+
+# All Build rule for target.
+src/samples/CMakeFiles/paho_cs_sub.dir/all: src/CMakeFiles/paho-mqtt3cs.dir/all
+	$(MAKE) -f src/samples/CMakeFiles/paho_cs_sub.dir/build.make src/samples/CMakeFiles/paho_cs_sub.dir/depend
+	$(MAKE) -f src/samples/CMakeFiles/paho_cs_sub.dir/build.make src/samples/CMakeFiles/paho_cs_sub.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles --progress-num=92,93,94 "Built target paho_cs_sub"
+.PHONY : src/samples/CMakeFiles/paho_cs_sub.dir/all
+
+# Build rule for subdir invocation for target.
+src/samples/CMakeFiles/paho_cs_sub.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles 30
-	$(MAKE) -f CMakeFiles/Makefile2 src/samples/CMakeFiles/paho_cs_pub_static.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 src/samples/CMakeFiles/paho_cs_sub.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles 0
-.PHONY : src/samples/CMakeFiles/paho_cs_pub_static.dir/rule
+.PHONY : src/samples/CMakeFiles/paho_cs_sub.dir/rule
 
 # Convenience name for target.
-paho_cs_pub_static: src/samples/CMakeFiles/paho_cs_pub_static.dir/rule
+paho_cs_sub: src/samples/CMakeFiles/paho_cs_sub.dir/rule
 
-.PHONY : paho_cs_pub_static
-
-# clean rule for target.
-src/samples/CMakeFiles/paho_cs_pub_static.dir/clean:
-	$(MAKE) -f src/samples/CMakeFiles/paho_cs_pub_static.dir/build.make src/samples/CMakeFiles/paho_cs_pub_static.dir/clean
-.PHONY : src/samples/CMakeFiles/paho_cs_pub_static.dir/clean
-
-#=============================================================================
-# Target rules for target src/samples/CMakeFiles/paho_cs_sub_static.dir
-
-# All Build rule for target.
-src/samples/CMakeFiles/paho_cs_sub_static.dir/all: src/CMakeFiles/paho-mqtt3cs-static.dir/all
-	$(MAKE) -f src/samples/CMakeFiles/paho_cs_sub_static.dir/build.make src/samples/CMakeFiles/paho_cs_sub_static.dir/depend
-	$(MAKE) -f src/samples/CMakeFiles/paho_cs_sub_static.dir/build.make src/samples/CMakeFiles/paho_cs_sub_static.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles --progress-num=90,91,92 "Built target paho_cs_sub_static"
-.PHONY : src/samples/CMakeFiles/paho_cs_sub_static.dir/all
-
-# Build rule for subdir invocation for target.
-src/samples/CMakeFiles/paho_cs_sub_static.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles 30
-	$(MAKE) -f CMakeFiles/Makefile2 src/samples/CMakeFiles/paho_cs_sub_static.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles 0
-.PHONY : src/samples/CMakeFiles/paho_cs_sub_static.dir/rule
-
-# Convenience name for target.
-paho_cs_sub_static: src/samples/CMakeFiles/paho_cs_sub_static.dir/rule
-
-.PHONY : paho_cs_sub_static
+.PHONY : paho_cs_sub
 
 # clean rule for target.
-src/samples/CMakeFiles/paho_cs_sub_static.dir/clean:
-	$(MAKE) -f src/samples/CMakeFiles/paho_cs_sub_static.dir/build.make src/samples/CMakeFiles/paho_cs_sub_static.dir/clean
-.PHONY : src/samples/CMakeFiles/paho_cs_sub_static.dir/clean
+src/samples/CMakeFiles/paho_cs_sub.dir/clean:
+	$(MAKE) -f src/samples/CMakeFiles/paho_cs_sub.dir/build.make src/samples/CMakeFiles/paho_cs_sub.dir/clean
+.PHONY : src/samples/CMakeFiles/paho_cs_sub.dir/clean
 
 #=============================================================================
-# Target rules for target src/samples/CMakeFiles/MQTTAsync_subscribe_static.dir
+# Target rules for target src/samples/CMakeFiles/MQTTAsync_publish_time.dir
 
 # All Build rule for target.
-src/samples/CMakeFiles/MQTTAsync_subscribe_static.dir/all: src/CMakeFiles/paho-mqtt3a-static.dir/all
-	$(MAKE) -f src/samples/CMakeFiles/MQTTAsync_subscribe_static.dir/build.make src/samples/CMakeFiles/MQTTAsync_subscribe_static.dir/depend
-	$(MAKE) -f src/samples/CMakeFiles/MQTTAsync_subscribe_static.dir/build.make src/samples/CMakeFiles/MQTTAsync_subscribe_static.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles --progress-num=9,10 "Built target MQTTAsync_subscribe_static"
-.PHONY : src/samples/CMakeFiles/MQTTAsync_subscribe_static.dir/all
+src/samples/CMakeFiles/MQTTAsync_publish_time.dir/all: src/CMakeFiles/paho-mqtt3a.dir/all
+	$(MAKE) -f src/samples/CMakeFiles/MQTTAsync_publish_time.dir/build.make src/samples/CMakeFiles/MQTTAsync_publish_time.dir/depend
+	$(MAKE) -f src/samples/CMakeFiles/MQTTAsync_publish_time.dir/build.make src/samples/CMakeFiles/MQTTAsync_publish_time.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles --progress-num=7,8 "Built target MQTTAsync_publish_time"
+.PHONY : src/samples/CMakeFiles/MQTTAsync_publish_time.dir/all
 
 # Build rule for subdir invocation for target.
-src/samples/CMakeFiles/MQTTAsync_subscribe_static.dir/rule: cmake_check_build_system
+src/samples/CMakeFiles/MQTTAsync_publish_time.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles 29
-	$(MAKE) -f CMakeFiles/Makefile2 src/samples/CMakeFiles/MQTTAsync_subscribe_static.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 src/samples/CMakeFiles/MQTTAsync_publish_time.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles 0
-.PHONY : src/samples/CMakeFiles/MQTTAsync_subscribe_static.dir/rule
+.PHONY : src/samples/CMakeFiles/MQTTAsync_publish_time.dir/rule
 
 # Convenience name for target.
-MQTTAsync_subscribe_static: src/samples/CMakeFiles/MQTTAsync_subscribe_static.dir/rule
+MQTTAsync_publish_time: src/samples/CMakeFiles/MQTTAsync_publish_time.dir/rule
 
-.PHONY : MQTTAsync_subscribe_static
-
-# clean rule for target.
-src/samples/CMakeFiles/MQTTAsync_subscribe_static.dir/clean:
-	$(MAKE) -f src/samples/CMakeFiles/MQTTAsync_subscribe_static.dir/build.make src/samples/CMakeFiles/MQTTAsync_subscribe_static.dir/clean
-.PHONY : src/samples/CMakeFiles/MQTTAsync_subscribe_static.dir/clean
-
-#=============================================================================
-# Target rules for target src/samples/CMakeFiles/MQTTAsync_publish_static.dir
-
-# All Build rule for target.
-src/samples/CMakeFiles/MQTTAsync_publish_static.dir/all: src/CMakeFiles/paho-mqtt3a-static.dir/all
-	$(MAKE) -f src/samples/CMakeFiles/MQTTAsync_publish_static.dir/build.make src/samples/CMakeFiles/MQTTAsync_publish_static.dir/depend
-	$(MAKE) -f src/samples/CMakeFiles/MQTTAsync_publish_static.dir/build.make src/samples/CMakeFiles/MQTTAsync_publish_static.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles --progress-num=5,6 "Built target MQTTAsync_publish_static"
-.PHONY : src/samples/CMakeFiles/MQTTAsync_publish_static.dir/all
-
-# Build rule for subdir invocation for target.
-src/samples/CMakeFiles/MQTTAsync_publish_static.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles 29
-	$(MAKE) -f CMakeFiles/Makefile2 src/samples/CMakeFiles/MQTTAsync_publish_static.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles 0
-.PHONY : src/samples/CMakeFiles/MQTTAsync_publish_static.dir/rule
-
-# Convenience name for target.
-MQTTAsync_publish_static: src/samples/CMakeFiles/MQTTAsync_publish_static.dir/rule
-
-.PHONY : MQTTAsync_publish_static
+.PHONY : MQTTAsync_publish_time
 
 # clean rule for target.
-src/samples/CMakeFiles/MQTTAsync_publish_static.dir/clean:
-	$(MAKE) -f src/samples/CMakeFiles/MQTTAsync_publish_static.dir/build.make src/samples/CMakeFiles/MQTTAsync_publish_static.dir/clean
-.PHONY : src/samples/CMakeFiles/MQTTAsync_publish_static.dir/clean
+src/samples/CMakeFiles/MQTTAsync_publish_time.dir/clean:
+	$(MAKE) -f src/samples/CMakeFiles/MQTTAsync_publish_time.dir/build.make src/samples/CMakeFiles/MQTTAsync_publish_time.dir/clean
+.PHONY : src/samples/CMakeFiles/MQTTAsync_publish_time.dir/clean
 
 #=============================================================================
-# Target rules for target src/samples/CMakeFiles/MQTTClient_subscribe_static.dir
+# Target rules for target src/samples/CMakeFiles/MQTTClient_publish_async.dir
 
 # All Build rule for target.
-src/samples/CMakeFiles/MQTTClient_subscribe_static.dir/all: src/CMakeFiles/paho-mqtt3c-static.dir/all
-	$(MAKE) -f src/samples/CMakeFiles/MQTTClient_subscribe_static.dir/build.make src/samples/CMakeFiles/MQTTClient_subscribe_static.dir/depend
-	$(MAKE) -f src/samples/CMakeFiles/MQTTClient_subscribe_static.dir/build.make src/samples/CMakeFiles/MQTTClient_subscribe_static.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles --progress-num=15,16 "Built target MQTTClient_subscribe_static"
-.PHONY : src/samples/CMakeFiles/MQTTClient_subscribe_static.dir/all
+src/samples/CMakeFiles/MQTTClient_publish_async.dir/all: src/CMakeFiles/paho-mqtt3c.dir/all
+	$(MAKE) -f src/samples/CMakeFiles/MQTTClient_publish_async.dir/build.make src/samples/CMakeFiles/MQTTClient_publish_async.dir/depend
+	$(MAKE) -f src/samples/CMakeFiles/MQTTClient_publish_async.dir/build.make src/samples/CMakeFiles/MQTTClient_publish_async.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles --progress-num=13,14 "Built target MQTTClient_publish_async"
+.PHONY : src/samples/CMakeFiles/MQTTClient_publish_async.dir/all
 
 # Build rule for subdir invocation for target.
-src/samples/CMakeFiles/MQTTClient_subscribe_static.dir/rule: cmake_check_build_system
+src/samples/CMakeFiles/MQTTClient_publish_async.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles 28
-	$(MAKE) -f CMakeFiles/Makefile2 src/samples/CMakeFiles/MQTTClient_subscribe_static.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 src/samples/CMakeFiles/MQTTClient_publish_async.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles 0
-.PHONY : src/samples/CMakeFiles/MQTTClient_subscribe_static.dir/rule
+.PHONY : src/samples/CMakeFiles/MQTTClient_publish_async.dir/rule
 
 # Convenience name for target.
-MQTTClient_subscribe_static: src/samples/CMakeFiles/MQTTClient_subscribe_static.dir/rule
+MQTTClient_publish_async: src/samples/CMakeFiles/MQTTClient_publish_async.dir/rule
 
-.PHONY : MQTTClient_subscribe_static
-
-# clean rule for target.
-src/samples/CMakeFiles/MQTTClient_subscribe_static.dir/clean:
-	$(MAKE) -f src/samples/CMakeFiles/MQTTClient_subscribe_static.dir/build.make src/samples/CMakeFiles/MQTTClient_subscribe_static.dir/clean
-.PHONY : src/samples/CMakeFiles/MQTTClient_subscribe_static.dir/clean
-
-#=============================================================================
-# Target rules for target src/samples/CMakeFiles/MQTTAsync_publish_time_static.dir
-
-# All Build rule for target.
-src/samples/CMakeFiles/MQTTAsync_publish_time_static.dir/all: src/CMakeFiles/paho-mqtt3a-static.dir/all
-	$(MAKE) -f src/samples/CMakeFiles/MQTTAsync_publish_time_static.dir/build.make src/samples/CMakeFiles/MQTTAsync_publish_time_static.dir/depend
-	$(MAKE) -f src/samples/CMakeFiles/MQTTAsync_publish_time_static.dir/build.make src/samples/CMakeFiles/MQTTAsync_publish_time_static.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles --progress-num=7,8 "Built target MQTTAsync_publish_time_static"
-.PHONY : src/samples/CMakeFiles/MQTTAsync_publish_time_static.dir/all
-
-# Build rule for subdir invocation for target.
-src/samples/CMakeFiles/MQTTAsync_publish_time_static.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles 29
-	$(MAKE) -f CMakeFiles/Makefile2 src/samples/CMakeFiles/MQTTAsync_publish_time_static.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles 0
-.PHONY : src/samples/CMakeFiles/MQTTAsync_publish_time_static.dir/rule
-
-# Convenience name for target.
-MQTTAsync_publish_time_static: src/samples/CMakeFiles/MQTTAsync_publish_time_static.dir/rule
-
-.PHONY : MQTTAsync_publish_time_static
+.PHONY : MQTTClient_publish_async
 
 # clean rule for target.
-src/samples/CMakeFiles/MQTTAsync_publish_time_static.dir/clean:
-	$(MAKE) -f src/samples/CMakeFiles/MQTTAsync_publish_time_static.dir/build.make src/samples/CMakeFiles/MQTTAsync_publish_time_static.dir/clean
-.PHONY : src/samples/CMakeFiles/MQTTAsync_publish_time_static.dir/clean
-
-#=============================================================================
-# Target rules for target src/samples/CMakeFiles/MQTTClient_publish_async_static.dir
-
-# All Build rule for target.
-src/samples/CMakeFiles/MQTTClient_publish_async_static.dir/all: src/CMakeFiles/paho-mqtt3c-static.dir/all
-	$(MAKE) -f src/samples/CMakeFiles/MQTTClient_publish_async_static.dir/build.make src/samples/CMakeFiles/MQTTClient_publish_async_static.dir/depend
-	$(MAKE) -f src/samples/CMakeFiles/MQTTClient_publish_async_static.dir/build.make src/samples/CMakeFiles/MQTTClient_publish_async_static.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles --progress-num=11,12 "Built target MQTTClient_publish_async_static"
-.PHONY : src/samples/CMakeFiles/MQTTClient_publish_async_static.dir/all
-
-# Build rule for subdir invocation for target.
-src/samples/CMakeFiles/MQTTClient_publish_async_static.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles 28
-	$(MAKE) -f CMakeFiles/Makefile2 src/samples/CMakeFiles/MQTTClient_publish_async_static.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles 0
-.PHONY : src/samples/CMakeFiles/MQTTClient_publish_async_static.dir/rule
-
-# Convenience name for target.
-MQTTClient_publish_async_static: src/samples/CMakeFiles/MQTTClient_publish_async_static.dir/rule
-
-.PHONY : MQTTClient_publish_async_static
-
-# clean rule for target.
-src/samples/CMakeFiles/MQTTClient_publish_async_static.dir/clean:
-	$(MAKE) -f src/samples/CMakeFiles/MQTTClient_publish_async_static.dir/build.make src/samples/CMakeFiles/MQTTClient_publish_async_static.dir/clean
-.PHONY : src/samples/CMakeFiles/MQTTClient_publish_async_static.dir/clean
-
-#=============================================================================
-# Target rules for target src/samples/CMakeFiles/MQTTClient_publish_static.dir
-
-# All Build rule for target.
-src/samples/CMakeFiles/MQTTClient_publish_static.dir/all: src/CMakeFiles/paho-mqtt3c-static.dir/all
-	$(MAKE) -f src/samples/CMakeFiles/MQTTClient_publish_static.dir/build.make src/samples/CMakeFiles/MQTTClient_publish_static.dir/depend
-	$(MAKE) -f src/samples/CMakeFiles/MQTTClient_publish_static.dir/build.make src/samples/CMakeFiles/MQTTClient_publish_static.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles --progress-num=13,14 "Built target MQTTClient_publish_static"
-.PHONY : src/samples/CMakeFiles/MQTTClient_publish_static.dir/all
-
-# Build rule for subdir invocation for target.
-src/samples/CMakeFiles/MQTTClient_publish_static.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles 28
-	$(MAKE) -f CMakeFiles/Makefile2 src/samples/CMakeFiles/MQTTClient_publish_static.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ktw/Documents/GitHub/paho.mqtt.c/build-cross/CMakeFiles 0
-.PHONY : src/samples/CMakeFiles/MQTTClient_publish_static.dir/rule
-
-# Convenience name for target.
-MQTTClient_publish_static: src/samples/CMakeFiles/MQTTClient_publish_static.dir/rule
-
-.PHONY : MQTTClient_publish_static
-
-# clean rule for target.
-src/samples/CMakeFiles/MQTTClient_publish_static.dir/clean:
-	$(MAKE) -f src/samples/CMakeFiles/MQTTClient_publish_static.dir/build.make src/samples/CMakeFiles/MQTTClient_publish_static.dir/clean
-.PHONY : src/samples/CMakeFiles/MQTTClient_publish_static.dir/clean
+src/samples/CMakeFiles/MQTTClient_publish_async.dir/clean:
+	$(MAKE) -f src/samples/CMakeFiles/MQTTClient_publish_async.dir/build.make src/samples/CMakeFiles/MQTTClient_publish_async.dir/clean
+.PHONY : src/samples/CMakeFiles/MQTTClient_publish_async.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

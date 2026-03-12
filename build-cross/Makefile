@@ -179,43 +179,108 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Base64TestOpenSSL
+# Target rules for targets named common_obj
 
 # Build rule for target.
-Base64TestOpenSSL: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Base64TestOpenSSL
-.PHONY : Base64TestOpenSSL
+common_obj: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 common_obj
+.PHONY : common_obj
 
 # fast build rule for target.
-Base64TestOpenSSL/fast:
-	$(MAKE) -f src/CMakeFiles/Base64TestOpenSSL.dir/build.make src/CMakeFiles/Base64TestOpenSSL.dir/build
-.PHONY : Base64TestOpenSSL/fast
+common_obj/fast:
+	$(MAKE) -f src/CMakeFiles/common_obj.dir/build.make src/CMakeFiles/common_obj.dir/build
+.PHONY : common_obj/fast
 
 #=============================================================================
-# Target rules for targets named common_obj_static
+# Target rules for targets named MQTTVersion
 
 # Build rule for target.
-common_obj_static: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 common_obj_static
-.PHONY : common_obj_static
+MQTTVersion: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 MQTTVersion
+.PHONY : MQTTVersion
 
 # fast build rule for target.
-common_obj_static/fast:
-	$(MAKE) -f src/CMakeFiles/common_obj_static.dir/build.make src/CMakeFiles/common_obj_static.dir/build
-.PHONY : common_obj_static/fast
+MQTTVersion/fast:
+	$(MAKE) -f src/CMakeFiles/MQTTVersion.dir/build.make src/CMakeFiles/MQTTVersion.dir/build
+.PHONY : MQTTVersion/fast
 
 #=============================================================================
-# Target rules for targets named paho-mqtt3c-static
+# Target rules for targets named paho-mqtt3cs
 
 # Build rule for target.
-paho-mqtt3c-static: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 paho-mqtt3c-static
-.PHONY : paho-mqtt3c-static
+paho-mqtt3cs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 paho-mqtt3cs
+.PHONY : paho-mqtt3cs
 
 # fast build rule for target.
-paho-mqtt3c-static/fast:
-	$(MAKE) -f src/CMakeFiles/paho-mqtt3c-static.dir/build.make src/CMakeFiles/paho-mqtt3c-static.dir/build
-.PHONY : paho-mqtt3c-static/fast
+paho-mqtt3cs/fast:
+	$(MAKE) -f src/CMakeFiles/paho-mqtt3cs.dir/build.make src/CMakeFiles/paho-mqtt3cs.dir/build
+.PHONY : paho-mqtt3cs/fast
+
+#=============================================================================
+# Target rules for targets named paho-mqtt3c
+
+# Build rule for target.
+paho-mqtt3c: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 paho-mqtt3c
+.PHONY : paho-mqtt3c
+
+# fast build rule for target.
+paho-mqtt3c/fast:
+	$(MAKE) -f src/CMakeFiles/paho-mqtt3c.dir/build.make src/CMakeFiles/paho-mqtt3c.dir/build
+.PHONY : paho-mqtt3c/fast
+
+#=============================================================================
+# Target rules for targets named paho-mqtt3a
+
+# Build rule for target.
+paho-mqtt3a: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 paho-mqtt3a
+.PHONY : paho-mqtt3a
+
+# fast build rule for target.
+paho-mqtt3a/fast:
+	$(MAKE) -f src/CMakeFiles/paho-mqtt3a.dir/build.make src/CMakeFiles/paho-mqtt3a.dir/build
+.PHONY : paho-mqtt3a/fast
+
+#=============================================================================
+# Target rules for targets named common_ssl_obj
+
+# Build rule for target.
+common_ssl_obj: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 common_ssl_obj
+.PHONY : common_ssl_obj
+
+# fast build rule for target.
+common_ssl_obj/fast:
+	$(MAKE) -f src/CMakeFiles/common_ssl_obj.dir/build.make src/CMakeFiles/common_ssl_obj.dir/build
+.PHONY : common_ssl_obj/fast
+
+#=============================================================================
+# Target rules for targets named Base64Test
+
+# Build rule for target.
+Base64Test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Base64Test
+.PHONY : Base64Test
+
+# fast build rule for target.
+Base64Test/fast:
+	$(MAKE) -f src/CMakeFiles/Base64Test.dir/build.make src/CMakeFiles/Base64Test.dir/build
+.PHONY : Base64Test/fast
+
+#=============================================================================
+# Target rules for targets named paho-mqtt3as
+
+# Build rule for target.
+paho-mqtt3as: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 paho-mqtt3as
+.PHONY : paho-mqtt3as
+
+# fast build rule for target.
+paho-mqtt3as/fast:
+	$(MAKE) -f src/CMakeFiles/paho-mqtt3as.dir/build.make src/CMakeFiles/paho-mqtt3as.dir/build
+.PHONY : paho-mqtt3as/fast
 
 #=============================================================================
 # Target rules for targets named Sha1Test
@@ -244,199 +309,147 @@ Sha1TestOpenSSL/fast:
 .PHONY : Sha1TestOpenSSL/fast
 
 #=============================================================================
-# Target rules for targets named paho-mqtt3a-static
+# Target rules for targets named Base64TestOpenSSL
 
 # Build rule for target.
-paho-mqtt3a-static: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 paho-mqtt3a-static
-.PHONY : paho-mqtt3a-static
+Base64TestOpenSSL: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Base64TestOpenSSL
+.PHONY : Base64TestOpenSSL
 
 # fast build rule for target.
-paho-mqtt3a-static/fast:
-	$(MAKE) -f src/CMakeFiles/paho-mqtt3a-static.dir/build.make src/CMakeFiles/paho-mqtt3a-static.dir/build
-.PHONY : paho-mqtt3a-static/fast
+Base64TestOpenSSL/fast:
+	$(MAKE) -f src/CMakeFiles/Base64TestOpenSSL.dir/build.make src/CMakeFiles/Base64TestOpenSSL.dir/build
+.PHONY : Base64TestOpenSSL/fast
 
 #=============================================================================
-# Target rules for targets named paho-mqtt3as-static
+# Target rules for targets named paho_c_pub
 
 # Build rule for target.
-paho-mqtt3as-static: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 paho-mqtt3as-static
-.PHONY : paho-mqtt3as-static
+paho_c_pub: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 paho_c_pub
+.PHONY : paho_c_pub
 
 # fast build rule for target.
-paho-mqtt3as-static/fast:
-	$(MAKE) -f src/CMakeFiles/paho-mqtt3as-static.dir/build.make src/CMakeFiles/paho-mqtt3as-static.dir/build
-.PHONY : paho-mqtt3as-static/fast
+paho_c_pub/fast:
+	$(MAKE) -f src/samples/CMakeFiles/paho_c_pub.dir/build.make src/samples/CMakeFiles/paho_c_pub.dir/build
+.PHONY : paho_c_pub/fast
 
 #=============================================================================
-# Target rules for targets named common_ssl_obj_static
+# Target rules for targets named paho_cs_pub
 
 # Build rule for target.
-common_ssl_obj_static: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 common_ssl_obj_static
-.PHONY : common_ssl_obj_static
+paho_cs_pub: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 paho_cs_pub
+.PHONY : paho_cs_pub
 
 # fast build rule for target.
-common_ssl_obj_static/fast:
-	$(MAKE) -f src/CMakeFiles/common_ssl_obj_static.dir/build.make src/CMakeFiles/common_ssl_obj_static.dir/build
-.PHONY : common_ssl_obj_static/fast
+paho_cs_pub/fast:
+	$(MAKE) -f src/samples/CMakeFiles/paho_cs_pub.dir/build.make src/samples/CMakeFiles/paho_cs_pub.dir/build
+.PHONY : paho_cs_pub/fast
 
 #=============================================================================
-# Target rules for targets named paho-mqtt3cs-static
+# Target rules for targets named paho_c_sub
 
 # Build rule for target.
-paho-mqtt3cs-static: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 paho-mqtt3cs-static
-.PHONY : paho-mqtt3cs-static
+paho_c_sub: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 paho_c_sub
+.PHONY : paho_c_sub
 
 # fast build rule for target.
-paho-mqtt3cs-static/fast:
-	$(MAKE) -f src/CMakeFiles/paho-mqtt3cs-static.dir/build.make src/CMakeFiles/paho-mqtt3cs-static.dir/build
-.PHONY : paho-mqtt3cs-static/fast
+paho_c_sub/fast:
+	$(MAKE) -f src/samples/CMakeFiles/paho_c_sub.dir/build.make src/samples/CMakeFiles/paho_c_sub.dir/build
+.PHONY : paho_c_sub/fast
 
 #=============================================================================
-# Target rules for targets named Base64Test
+# Target rules for targets named MQTTAsync_subscribe
 
 # Build rule for target.
-Base64Test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Base64Test
-.PHONY : Base64Test
+MQTTAsync_subscribe: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 MQTTAsync_subscribe
+.PHONY : MQTTAsync_subscribe
 
 # fast build rule for target.
-Base64Test/fast:
-	$(MAKE) -f src/CMakeFiles/Base64Test.dir/build.make src/CMakeFiles/Base64Test.dir/build
-.PHONY : Base64Test/fast
+MQTTAsync_subscribe/fast:
+	$(MAKE) -f src/samples/CMakeFiles/MQTTAsync_subscribe.dir/build.make src/samples/CMakeFiles/MQTTAsync_subscribe.dir/build
+.PHONY : MQTTAsync_subscribe/fast
 
 #=============================================================================
-# Target rules for targets named paho_c_pub_static
+# Target rules for targets named MQTTAsync_publish
 
 # Build rule for target.
-paho_c_pub_static: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 paho_c_pub_static
-.PHONY : paho_c_pub_static
+MQTTAsync_publish: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 MQTTAsync_publish
+.PHONY : MQTTAsync_publish
 
 # fast build rule for target.
-paho_c_pub_static/fast:
-	$(MAKE) -f src/samples/CMakeFiles/paho_c_pub_static.dir/build.make src/samples/CMakeFiles/paho_c_pub_static.dir/build
-.PHONY : paho_c_pub_static/fast
+MQTTAsync_publish/fast:
+	$(MAKE) -f src/samples/CMakeFiles/MQTTAsync_publish.dir/build.make src/samples/CMakeFiles/MQTTAsync_publish.dir/build
+.PHONY : MQTTAsync_publish/fast
 
 #=============================================================================
-# Target rules for targets named paho_c_sub_static
+# Target rules for targets named MQTTClient_subscribe
 
 # Build rule for target.
-paho_c_sub_static: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 paho_c_sub_static
-.PHONY : paho_c_sub_static
+MQTTClient_subscribe: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 MQTTClient_subscribe
+.PHONY : MQTTClient_subscribe
 
 # fast build rule for target.
-paho_c_sub_static/fast:
-	$(MAKE) -f src/samples/CMakeFiles/paho_c_sub_static.dir/build.make src/samples/CMakeFiles/paho_c_sub_static.dir/build
-.PHONY : paho_c_sub_static/fast
+MQTTClient_subscribe/fast:
+	$(MAKE) -f src/samples/CMakeFiles/MQTTClient_subscribe.dir/build.make src/samples/CMakeFiles/MQTTClient_subscribe.dir/build
+.PHONY : MQTTClient_subscribe/fast
 
 #=============================================================================
-# Target rules for targets named paho_cs_pub_static
+# Target rules for targets named MQTTClient_publish
 
 # Build rule for target.
-paho_cs_pub_static: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 paho_cs_pub_static
-.PHONY : paho_cs_pub_static
+MQTTClient_publish: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 MQTTClient_publish
+.PHONY : MQTTClient_publish
 
 # fast build rule for target.
-paho_cs_pub_static/fast:
-	$(MAKE) -f src/samples/CMakeFiles/paho_cs_pub_static.dir/build.make src/samples/CMakeFiles/paho_cs_pub_static.dir/build
-.PHONY : paho_cs_pub_static/fast
+MQTTClient_publish/fast:
+	$(MAKE) -f src/samples/CMakeFiles/MQTTClient_publish.dir/build.make src/samples/CMakeFiles/MQTTClient_publish.dir/build
+.PHONY : MQTTClient_publish/fast
 
 #=============================================================================
-# Target rules for targets named paho_cs_sub_static
+# Target rules for targets named paho_cs_sub
 
 # Build rule for target.
-paho_cs_sub_static: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 paho_cs_sub_static
-.PHONY : paho_cs_sub_static
+paho_cs_sub: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 paho_cs_sub
+.PHONY : paho_cs_sub
 
 # fast build rule for target.
-paho_cs_sub_static/fast:
-	$(MAKE) -f src/samples/CMakeFiles/paho_cs_sub_static.dir/build.make src/samples/CMakeFiles/paho_cs_sub_static.dir/build
-.PHONY : paho_cs_sub_static/fast
+paho_cs_sub/fast:
+	$(MAKE) -f src/samples/CMakeFiles/paho_cs_sub.dir/build.make src/samples/CMakeFiles/paho_cs_sub.dir/build
+.PHONY : paho_cs_sub/fast
 
 #=============================================================================
-# Target rules for targets named MQTTAsync_subscribe_static
+# Target rules for targets named MQTTAsync_publish_time
 
 # Build rule for target.
-MQTTAsync_subscribe_static: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 MQTTAsync_subscribe_static
-.PHONY : MQTTAsync_subscribe_static
+MQTTAsync_publish_time: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 MQTTAsync_publish_time
+.PHONY : MQTTAsync_publish_time
 
 # fast build rule for target.
-MQTTAsync_subscribe_static/fast:
-	$(MAKE) -f src/samples/CMakeFiles/MQTTAsync_subscribe_static.dir/build.make src/samples/CMakeFiles/MQTTAsync_subscribe_static.dir/build
-.PHONY : MQTTAsync_subscribe_static/fast
+MQTTAsync_publish_time/fast:
+	$(MAKE) -f src/samples/CMakeFiles/MQTTAsync_publish_time.dir/build.make src/samples/CMakeFiles/MQTTAsync_publish_time.dir/build
+.PHONY : MQTTAsync_publish_time/fast
 
 #=============================================================================
-# Target rules for targets named MQTTAsync_publish_static
+# Target rules for targets named MQTTClient_publish_async
 
 # Build rule for target.
-MQTTAsync_publish_static: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 MQTTAsync_publish_static
-.PHONY : MQTTAsync_publish_static
+MQTTClient_publish_async: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 MQTTClient_publish_async
+.PHONY : MQTTClient_publish_async
 
 # fast build rule for target.
-MQTTAsync_publish_static/fast:
-	$(MAKE) -f src/samples/CMakeFiles/MQTTAsync_publish_static.dir/build.make src/samples/CMakeFiles/MQTTAsync_publish_static.dir/build
-.PHONY : MQTTAsync_publish_static/fast
-
-#=============================================================================
-# Target rules for targets named MQTTClient_subscribe_static
-
-# Build rule for target.
-MQTTClient_subscribe_static: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 MQTTClient_subscribe_static
-.PHONY : MQTTClient_subscribe_static
-
-# fast build rule for target.
-MQTTClient_subscribe_static/fast:
-	$(MAKE) -f src/samples/CMakeFiles/MQTTClient_subscribe_static.dir/build.make src/samples/CMakeFiles/MQTTClient_subscribe_static.dir/build
-.PHONY : MQTTClient_subscribe_static/fast
-
-#=============================================================================
-# Target rules for targets named MQTTAsync_publish_time_static
-
-# Build rule for target.
-MQTTAsync_publish_time_static: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 MQTTAsync_publish_time_static
-.PHONY : MQTTAsync_publish_time_static
-
-# fast build rule for target.
-MQTTAsync_publish_time_static/fast:
-	$(MAKE) -f src/samples/CMakeFiles/MQTTAsync_publish_time_static.dir/build.make src/samples/CMakeFiles/MQTTAsync_publish_time_static.dir/build
-.PHONY : MQTTAsync_publish_time_static/fast
-
-#=============================================================================
-# Target rules for targets named MQTTClient_publish_async_static
-
-# Build rule for target.
-MQTTClient_publish_async_static: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 MQTTClient_publish_async_static
-.PHONY : MQTTClient_publish_async_static
-
-# fast build rule for target.
-MQTTClient_publish_async_static/fast:
-	$(MAKE) -f src/samples/CMakeFiles/MQTTClient_publish_async_static.dir/build.make src/samples/CMakeFiles/MQTTClient_publish_async_static.dir/build
-.PHONY : MQTTClient_publish_async_static/fast
-
-#=============================================================================
-# Target rules for targets named MQTTClient_publish_static
-
-# Build rule for target.
-MQTTClient_publish_static: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 MQTTClient_publish_static
-.PHONY : MQTTClient_publish_static
-
-# fast build rule for target.
-MQTTClient_publish_static/fast:
-	$(MAKE) -f src/samples/CMakeFiles/MQTTClient_publish_static.dir/build.make src/samples/CMakeFiles/MQTTClient_publish_static.dir/build
-.PHONY : MQTTClient_publish_static/fast
+MQTTClient_publish_async/fast:
+	$(MAKE) -f src/samples/CMakeFiles/MQTTClient_publish_async.dir/build.make src/samples/CMakeFiles/MQTTClient_publish_async.dir/build
+.PHONY : MQTTClient_publish_async/fast
 
 # Help Target
 help:
@@ -452,26 +465,27 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... package"
-	@echo "... Base64TestOpenSSL"
-	@echo "... common_obj_static"
-	@echo "... paho-mqtt3c-static"
+	@echo "... common_obj"
+	@echo "... MQTTVersion"
+	@echo "... paho-mqtt3cs"
+	@echo "... paho-mqtt3c"
+	@echo "... paho-mqtt3a"
+	@echo "... common_ssl_obj"
+	@echo "... Base64Test"
+	@echo "... paho-mqtt3as"
 	@echo "... Sha1Test"
 	@echo "... Sha1TestOpenSSL"
-	@echo "... paho-mqtt3a-static"
-	@echo "... paho-mqtt3as-static"
-	@echo "... common_ssl_obj_static"
-	@echo "... paho-mqtt3cs-static"
-	@echo "... Base64Test"
-	@echo "... paho_c_pub_static"
-	@echo "... paho_c_sub_static"
-	@echo "... paho_cs_pub_static"
-	@echo "... paho_cs_sub_static"
-	@echo "... MQTTAsync_subscribe_static"
-	@echo "... MQTTAsync_publish_static"
-	@echo "... MQTTClient_subscribe_static"
-	@echo "... MQTTAsync_publish_time_static"
-	@echo "... MQTTClient_publish_async_static"
-	@echo "... MQTTClient_publish_static"
+	@echo "... Base64TestOpenSSL"
+	@echo "... paho_c_pub"
+	@echo "... paho_cs_pub"
+	@echo "... paho_c_sub"
+	@echo "... MQTTAsync_subscribe"
+	@echo "... MQTTAsync_publish"
+	@echo "... MQTTClient_subscribe"
+	@echo "... MQTTClient_publish"
+	@echo "... paho_cs_sub"
+	@echo "... MQTTAsync_publish_time"
+	@echo "... MQTTClient_publish_async"
 .PHONY : help
 
 

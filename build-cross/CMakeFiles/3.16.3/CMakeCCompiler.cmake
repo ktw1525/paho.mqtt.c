@@ -71,6 +71,6 @@ endif()
 
 
 set(CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES "/home/ktw/Documents/tm2sdk-master/sysroots/x86_64-oesdk-linux/usr/lib/arm-oe-linux-gnueabi/gcc/arm-oe-linux-gnueabi/4.9.2/include;/home/ktw/Documents/tm2sdk-master/sysroots/x86_64-oesdk-linux/usr/lib/arm-oe-linux-gnueabi/gcc/arm-oe-linux-gnueabi/4.9.2/include-fixed;/home/ktw/Documents/tm2sdk-master/sysroots/armv7a-vfp-neon-oe-linux-gnueabi/usr/include")
-set(CMAKE_C_IMPLICIT_LINK_LIBRARIES "")
-set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "")
+set(CMAKE_C_IMPLICIT_LINK_LIBRARIES "MagicCrypto;mc;dl;pthread;z;rt;gcc;gcc_s;c;gcc;gcc_s")
+set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "/home/ktw/Documents/tm2sdk-master/sysroots/x86_64-oesdk-linux/usr/lib/arm-oe-linux-gnueabi/gcc/arm-oe-linux-gnueabi/4.9.2;/home/ktw/Documents/tm2sdk-master/sysroots/x86_64-oesdk-linux/usr/lib/arm-oe-linux-gnueabi/gcc;/home/ktw/Documents/tm2sdk-master/sysroots/armv7a-vfp-neon-oe-linux-gnueabi/lib;/home/ktw/Documents/tm2sdk-master/sysroots/armv7a-vfp-neon-oe-linux-gnueabi/usr/lib/arm-oe-linux-gnueabi/4.9.2;/home/ktw/Documents/tm2sdk-master/sysroots/armv7a-vfp-neon-oe-linux-gnueabi/usr/lib")
 set(CMAKE_C_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")
